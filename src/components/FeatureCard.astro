@@ -1,0 +1,98 @@
+---
+// FeatureCard — tarjeta con hairline, kicker mono, puntos y CTA opcional.
+interface Props {
+  kicker?: string;
+  title: string;
+  body: string;
+  points?: string[];
+  href?: string;
+  cta?: string;
+  highlight?: boolean;
+}
+
+const { kicker, title, body, points, href, cta, highlight = false } = Astro.props;
+---
+
+<article class:list={["fcard", { "fcard--highlight": highlight }]}>
+  {kicker && <p class="fcard-kicker mono">{kicker}</p>}
+  <h3>{title}</h3>
+  <p>{body}</p>
+  {
+    points && points.length > 0 && (
+      <ul>
+        {points.map((p) => (
+          <li>{p}</li>
+        ))}
+      </ul>
+    )
+  }
+  {href && cta && <a class="link-arrow" href={href}>{cta} <span aria-hidden="true">→</span></a>}
+</article>
+
+<style>
+  .fcard {
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    background: var(--surface);
+    padding: 1.75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.85rem;
+    transition: border-color 0.15s ease;
+  }
+
+  .fcard:hover {
+    border-color: var(--line-strong);
+  }
+
+  .fcard--highlight {
+    border-color: var(--signal);
+  }
+
+  .fcard-kicker {
+    font-size: 0.6875rem;
+    font-weight: 500;
+    letter-spacing: 0.14em;
+    color: var(--signal);
+  }
+
+  .fcard h3 {
+    font-size: 1.1875rem;
+  }
+
+  .fcard p {
+    color: var(--ink-2);
+    font-size: 0.9375rem;
+    line-height: 1.6;
+  }
+
+  .fcard ul {
+    list-style: none;
+    margin: 0.25rem 0 0;
+    padding: 0;
+    display: grid;
+    gap: 0.5rem;
+  }
+
+  .fcard ul li {
+    position: relative;
+    padding-left: 1.1rem;
+    font-size: 0.9375rem;
+    color: var(--ink-2);
+  }
+
+  .fcard ul li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.6em;
+    width: 0.45rem;
+    height: 1px;
+    background: var(--signal);
+  }
+
+  .fcard .link-arrow {
+    margin-top: auto;
+    padding-top: 0.75rem;
+  }
+</style>

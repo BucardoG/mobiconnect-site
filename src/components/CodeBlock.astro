@@ -1,0 +1,56 @@
+---
+// CodeBlock — bloque mono con hairline para datos técnicos.
+interface Props {
+  filename?: string;
+  code: string;
+  note?: string;
+}
+
+const { filename, code, note } = Astro.props;
+---
+
+<figure class="codeblock">
+  {filename && <figcaption class="codeblock-head mono">{filename}</figcaption>}
+  <pre><code>{code}</code></pre>
+  {note && <p class="codeblock-note">{note}</p>}
+</figure>
+
+<style>
+  .codeblock {
+    margin: 0;
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    background: var(--surface);
+    overflow: hidden;
+  }
+
+  .codeblock-head {
+    padding: 0.75rem 1.25rem;
+    font-size: 0.6875rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ink-3);
+    border-bottom: 1px solid var(--line);
+  }
+
+  .codeblock pre {
+    margin: 0;
+    padding: 1.25rem;
+    overflow-x: auto;
+    background: var(--signal-soft);
+  }
+
+  .codeblock code {
+    font-family: var(--font-mono);
+    font-size: 0.8125rem;
+    line-height: 1.7;
+    color: var(--signal-strong);
+  }
+
+  .codeblock-note {
+    padding: 0.65rem 1.25rem;
+    font-size: 0.75rem;
+    color: var(--ink-3);
+    border-top: 1px solid var(--line);
+  }
+</style>

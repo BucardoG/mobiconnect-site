@@ -1,0 +1,73 @@
+---
+import Base from "../../../layouts/Base.astro";
+import Hero from "../../../components/Hero.astro";
+import SectionHeader from "../../../components/SectionHeader.astro";
+import FeatureCard from "../../../components/FeatureCard.astro";
+import Steps from "../../../components/Steps.astro";
+import CodeBlock from "../../../components/CodeBlock.astro";
+import FAQ from "../../../components/FAQ.astro";
+import CTABand from "../../../components/CTABand.astro";
+import { en } from "../../../i18n";
+
+const t = en.entitlements;
+---
+
+<Base title={t.meta.title} description={t.meta.description} locale="en" path="/products/entitlements">
+  <Hero
+    eyebrow={t.hero.eyebrow}
+    title={t.hero.title}
+    sub={t.hero.sub}
+    ctaPrimary={t.hero.ctaPrimary}
+    ctaSecondary={t.hero.ctaSecondary}
+    panel={t.hero.panel}
+    panelLabel={t.hero.panelLabel}
+  />
+
+  <!-- Capabilities -->
+  <section class="section section--rule">
+    <div class="container">
+      <SectionHeader eyebrow={t.features.eyebrow} title={t.features.title} lede={t.features.lede} />
+      <div class="grid grid--3">
+        {
+          t.features.items.map((item) => (
+            <FeatureCard kicker={item.kicker} title={item.title} body={item.body} />
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- How it works -->
+  <section class="section section--rule">
+    <div class="container">
+      <SectionHeader eyebrow={t.how.eyebrow} title={t.how.title} />
+      <Steps steps={t.how.steps} />
+      <div class="code-wrap">
+        <CodeBlock filename={t.code.filename} code={t.code.code} note={t.code.note} />
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section section--rule">
+    <div class="container">
+      <SectionHeader eyebrow={t.faq.eyebrow} title={t.faq.title} />
+      <FAQ items={t.faq.items} />
+    </div>
+  </section>
+
+  <CTABand
+    eyebrow={en.shared.cta.eyebrow}
+    title={en.shared.cta.title}
+    body={en.shared.cta.body}
+    button={en.shared.cta.button}
+    href="/en/contact"
+  />
+</Base>
+
+<style>
+  .code-wrap {
+    margin-top: clamp(2rem, 5vw, 3.25rem);
+    max-width: 46rem;
+  }
+</style>

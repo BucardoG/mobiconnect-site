@@ -1,0 +1,136 @@
+---
+// Hero — titular display + sub + CTAs + panel mono lateral (ficha del sistema).
+interface Cta { label: string; href: string }
+interface PanelRow { k: string; v: string }
+
+interface Props {
+  eyebrow: string;
+  title: string;
+  sub: string;
+  ctaPrimary?: Cta;
+  ctaSecondary?: Cta;
+  panel?: PanelRow[];
+  panelLabel?: string;
+}
+
+const { eyebrow, title, sub, ctaPrimary, ctaSecondary, panel, panelLabel } = Astro.props;
+---
+
+<section class="hero">
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <p class="eyebrow">{eyebrow}</p>
+      <h1>{title}</h1>
+      <p class="hero-sub">{sub}</p>
+      <div class="hero-ctas">
+        {ctaPrimary && <a class="btn btn--primary" href={ctaPrimary.href}>{ctaPrimary.label}</a>}
+        {ctaSecondary && <a class="btn btn--ghost" href={ctaSecondary.href}>{ctaSecondary.label}</a>}
+      </div>
+    </div>
+
+    {
+      panel && panel.length > 0 && (
+        <aside class="hero-panel" aria-label={panelLabel}>
+          {panelLabel && <p class="panel-title mono">{panelLabel}</p>}
+          <dl>
+            {panel.map((row) => (
+              <div class="panel-row">
+                <dt class="mono">{row.k}</dt>
+                <dd class="mono">{row.v}</dd>
+              </div>
+            ))}
+          </dl>
+        </aside>
+      )
+    }
+  </div>
+</section>
+
+<style>
+  .hero {
+    padding-block: clamp(4rem, 9vw, 7rem) clamp(3.5rem, 7vw, 5.5rem);
+  }
+
+  .hero-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
+    gap: clamp(2.5rem, 5vw, 5rem);
+    align-items: end;
+  }
+
+  .hero-sub {
+    margin-top: 1.5rem;
+    font-size: clamp(1.0625rem, 1.6vw, 1.25rem);
+    line-height: 1.6;
+    color: var(--ink-2);
+    max-width: 56ch;
+  }
+
+  .hero-ctas {
+    margin-top: 2.25rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+
+  .hero-panel {
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    background: var(--surface);
+    padding: 1.5rem 1.5rem 1.25rem;
+  }
+
+  .panel-title {
+    font-size: 0.6875rem;
+    font-weight: 500;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--ink-3);
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 0.25rem;
+  }
+
+  .hero-panel dl {
+    margin: 0;
+  }
+
+  .panel-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1rem;
+    padding-block: 0.7rem;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .panel-row:last-child {
+    border-bottom: 0;
+    padding-bottom: 0.25rem;
+  }
+
+  .panel-row dt {
+    font-size: 0.6875rem;
+    letter-spacing: 0.12em;
+    color: var(--ink-3);
+    flex-shrink: 0;
+  }
+
+  .panel-row dd {
+    margin: 0;
+    font-size: 0.75rem;
+    letter-spacing: 0.02em;
+    color: var(--ink);
+    text-align: right;
+  }
+
+  @media (max-width: 900px) {
+    .hero-grid {
+      grid-template-columns: 1fr;
+      align-items: start;
+    }
+    .hero-panel {
+      max-width: 30rem;
+    }
+  }
+</style>

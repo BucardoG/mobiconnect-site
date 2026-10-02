@@ -1,0 +1,72 @@
+---
+// Steps — secuencia numerada (cómo funciona), número en mono.
+interface Props {
+  steps: { n: string; title: string; body: string }[];
+}
+
+const { steps } = Astro.props;
+---
+
+<ol class="steps">
+  {
+    steps.map((s) => (
+      <li>
+        <span class="step-n mono">{s.n}</span>
+        <div class="step-body">
+          <h3>{s.title}</h3>
+          <p>{s.body}</p>
+        </div>
+      </li>
+    ))
+  }
+</ol>
+
+<style>
+  .steps {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+  }
+
+  .steps li {
+    display: flex;
+    gap: 1.25rem;
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    background: var(--surface);
+    padding: 1.75rem;
+  }
+
+  .step-n {
+    font-size: 1.375rem;
+    font-weight: 600;
+    color: var(--signal);
+    line-height: 1;
+    letter-spacing: -0.02em;
+  }
+
+  .step-body {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .step-body h3 {
+    font-size: 1.0625rem;
+  }
+
+  .step-body p {
+    color: var(--ink-2);
+    font-size: 0.9375rem;
+    line-height: 1.6;
+  }
+
+  @media (max-width: 900px) {
+    .steps {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

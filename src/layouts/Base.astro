@@ -1,0 +1,69 @@
+---
+// Base layout — head completo (meta, OG, twitter, favicon, hreflang, canonical),
+// nav sticky y footer. `path` es la ruta neutra de locale: "/", "/products/entitlements"…
+import Nav from "../components/Nav.astro";
+import Footer from "../components/Footer.astro";
+import { es, en } from "../i18n";
+import "../styles/global.css";
+
+interface Props {
+  title: string;
+  description: string;
+  locale?: "es" | "en";
+  path?: string;
+  noIndex?: boolean;
+}
+
+const { title, description, locale = "es", path = "/", noIndex = false } = Astro.props;
+const t = locale === "en" ? en : es;
+
+const site = "https://mobiconnect.app";
+const esUrl = path === "/" ? `${site}/` : `${site}${path}/`;
+const enUrl = path === "/" ? `${site}/en/` : `${site}/en${path}/`;
+const canonical = locale === "en" ? enUrl : esUrl;
+const ogImage = `${site}/og.svg`;
+---
+
+<!doctype html>
+<html lang={locale === "en" ? "en" : "es"}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    {noIndex && <meta name="robots" content="noindex" />}
+    <link rel="canonical" href={canonical} />
+    <link rel="alternate" hreflang="es" href={esUrl} />
+    <link rel="alternate" hreflang="en" href={enUrl} />
+    <link rel="alternate" hreflang="x-default" href={esUrl} />
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="theme-color" content="#FAFAF9" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Mobiconnect" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:image:alt" content="Mobiconnect — la capa de inteligencia del operador soberano" />
+    <meta property="og:locale" content={locale === "en" ? "en_US" : "es_CL"} />
+    <meta property="og:locale:alternate" content={locale === "en" ? "es_CL" : "en_US"} />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">{t.a11y.skip}</a>
+    <Nav locale={locale} path={path} t={t.nav} />
+    <main id="main">
+      <slot />
+    </main>
+    <Footer locale={locale} path={path} t={t.footer} />
+  </body>
+</html>

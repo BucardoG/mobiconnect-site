@@ -1,0 +1,114 @@
+---
+import Base from "../layouts/Base.astro";
+import Hero from "../components/Hero.astro";
+import SectionHeader from "../components/SectionHeader.astro";
+import FeatureCard from "../components/FeatureCard.astro";
+import CTABand from "../components/CTABand.astro";
+import { es } from "../i18n";
+
+const t = es.about;
+---
+
+<Base title={t.meta.title} description={t.meta.description} locale="es" path="/about">
+  <Hero
+    eyebrow={t.hero.eyebrow}
+    title={t.hero.title}
+    sub={t.hero.sub}
+    ctaPrimary={t.hero.ctaPrimary}
+    ctaSecondary={t.hero.ctaSecondary}
+  />
+
+  <!-- Historia -->
+  <section class="section section--rule">
+    <div class="container history-grid">
+      <SectionHeader eyebrow={t.history.eyebrow} title={t.history.title} />
+      <div class="prose">
+        {t.history.body.map((p) => <p>{p}</p>)}
+      </div>
+    </div>
+  </section>
+
+  <!-- Presencia -->
+  <section class="section section--rule">
+    <div class="container">
+      <SectionHeader eyebrow={t.countries.eyebrow} title={t.countries.title} />
+      <ul class="countries">
+        {
+          t.countries.list.map((c) => (
+            <li>
+              <span class="country-name">{c.name}</span>
+              {c.note && <span class="country-note mono">{c.note}</span>}
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </section>
+
+  <!-- Principios -->
+  <section class="section section--rule">
+    <div class="container">
+      <SectionHeader eyebrow={t.principles.eyebrow} title={t.principles.title} />
+      <div class="grid grid--2">
+        {
+          t.principles.items.map((item) => (
+            <FeatureCard title={item.title} body={item.body} />
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <CTABand
+    eyebrow={es.shared.cta.eyebrow}
+    title={es.shared.cta.title}
+    body={es.shared.cta.body}
+    button={es.shared.cta.button}
+    href="/contact"
+  />
+</Base>
+
+<style>
+  .history-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+    gap: clamp(2rem, 5vw, 4.5rem);
+    align-items: start;
+  }
+
+  .countries {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid var(--line);
+    max-width: 46rem;
+  }
+
+  .countries li {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1.5rem;
+    padding: 0.85rem 0.25rem;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .country-name {
+    font-size: 1.0625rem;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+  }
+
+  .country-note {
+    font-size: 0.6875rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--signal);
+  }
+
+  @media (max-width: 900px) {
+    .history-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

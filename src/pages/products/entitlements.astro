@@ -1,0 +1,73 @@
+---
+import Base from "../../layouts/Base.astro";
+import Hero from "../../components/Hero.astro";
+import SectionHeader from "../../components/SectionHeader.astro";
+import FeatureCard from "../../components/FeatureCard.astro";
+import Steps from "../../components/Steps.astro";
+import CodeBlock from "../../components/CodeBlock.astro";
+import FAQ from "../../components/FAQ.astro";
+import CTABand from "../../components/CTABand.astro";
+import { es } from "../../i18n";
+
+const t = es.entitlements;
+---
+
+<Base title={t.meta.title} description={t.meta.description} locale="es" path="/products/entitlements">
+  <Hero
+    eyebrow={t.hero.eyebrow}
+    title={t.hero.title}
+    sub={t.hero.sub}
+    ctaPrimary={t.hero.ctaPrimary}
+    ctaSecondary={t.hero.ctaSecondary}
+    panel={t.hero.panel}
+    panelLabel={t.hero.panelLabel}
+  />
+
+  <!-- Capacidades -->
+  <section class="section section--rule">
+    <div class="container">
+      <SectionHeader eyebrow={t.features.eyebrow} title={t.features.title} lede={t.features.lede} />
+      <div class="grid grid--3">
+        {
+          t.features.items.map((item) => (
+            <FeatureCard kicker={item.kicker} title={item.title} body={item.body} />
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- Cómo funciona -->
+  <section class="section section--rule">
+    <div class="container">
+      <SectionHeader eyebrow={t.how.eyebrow} title={t.how.title} />
+      <Steps steps={t.how.steps} />
+      <div class="code-wrap">
+        <CodeBlock filename={t.code.filename} code={t.code.code} note={t.code.note} />
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section section--rule">
+    <div class="container">
+      <SectionHeader eyebrow={t.faq.eyebrow} title={t.faq.title} />
+      <FAQ items={t.faq.items} />
+    </div>
+  </section>
+
+  <CTABand
+    eyebrow={es.shared.cta.eyebrow}
+    title={es.shared.cta.title}
+    body={es.shared.cta.body}
+    button={es.shared.cta.button}
+    href="/contact"
+  />
+</Base>
+
+<style>
+  .code-wrap {
+    margin-top: clamp(2rem, 5vw, 3.25rem);
+    max-width: 46rem;
+  }
+</style>

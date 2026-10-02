@@ -1,0 +1,46 @@
+---
+import Base from "../layouts/Base.astro";
+import { es } from "../i18n";
+
+const t = es.notFound;
+---
+
+<Base title={t.title} description={t.body} locale="es" path="/" noIndex>
+  <section class="section nf">
+    <div class="container">
+      <p class="mono nf-code">404</p>
+      <h1>{t.heading}</h1>
+      <p class="nf-body">{t.body}</p>
+      <a class="btn btn--primary" href="/">{t.cta}</a>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .nf {
+    padding-block: clamp(6rem, 16vw, 11rem);
+    text-align: center;
+  }
+
+  .nf .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+  }
+
+  .nf-code {
+    font-size: 0.875rem;
+    letter-spacing: 0.2em;
+    color: var(--signal);
+  }
+
+  .nf-body {
+    color: var(--ink-2);
+    max-width: 40ch;
+  }
+
+  .nf .btn {
+    margin-top: 0.75rem;
+  }
+</style>

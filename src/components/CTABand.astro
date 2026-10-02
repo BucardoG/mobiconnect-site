@@ -1,0 +1,51 @@
+---
+// CTABand — cierre de página: tarjeta surface con hairline y acción primaria.
+interface Props {
+  eyebrow: string;
+  title: string;
+  body: string;
+  button: string;
+  href: string;
+}
+
+const { eyebrow, title, body, button, href } = Astro.props;
+---
+
+<section class="section section--rule">
+  <div class="container">
+    <div class="cta-card">
+      <p class="eyebrow">{eyebrow}</p>
+      <h2>{title}</h2>
+      <p>{body}</p>
+      <a class="btn btn--primary" href={href}>{button}</a>
+    </div>
+  </div>
+</section>
+
+<style>
+  .cta-card {
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    background: var(--surface);
+    padding: clamp(2rem, 5vw, 3.5rem);
+    max-width: 44rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.1rem;
+  }
+
+  .cta-card h2 {
+    font-size: clamp(1.625rem, 3vw, 2.125rem);
+  }
+
+  .cta-card p:not(.eyebrow) {
+    color: var(--ink-2);
+    font-size: 1.0625rem;
+    max-width: 52ch;
+  }
+
+  .cta-card .btn {
+    margin-top: 0.75rem;
+  }
+</style>

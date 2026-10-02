@@ -1,0 +1,110 @@
+---
+import Base from "../layouts/Base.astro";
+import Hero from "../components/Hero.astro";
+import SectionHeader from "../components/SectionHeader.astro";
+import FeatureCard from "../components/FeatureCard.astro";
+import StatBlock from "../components/StatBlock.astro";
+import CTABand from "../components/CTABand.astro";
+import { es } from "../i18n";
+
+const t = es.home;
+---
+
+<Base title={t.meta.title} description={t.meta.description} locale="es" path="/">
+  <Hero
+    eyebrow={t.hero.eyebrow}
+    title={t.hero.title}
+    sub={t.hero.sub}
+    ctaPrimary={t.hero.ctaPrimary}
+    ctaSecondary={t.hero.ctaSecondary}
+    panel={t.hero.panel}
+    panelLabel={t.hero.panelLabel}
+  />
+
+  <!-- Tesis -->
+  <section class="section section--rule">
+    <div class="container thesis-grid">
+      <SectionHeader eyebrow={t.thesis.eyebrow} title={t.thesis.title} />
+      <div class="prose">
+        {t.thesis.body.map((p) => <p>{p}</p>)}
+      </div>
+    </div>
+  </section>
+
+  <!-- Productos -->
+  <section class="section section--rule" id="productos">
+    <div class="container">
+      <SectionHeader eyebrow={t.products.eyebrow} title={t.products.title} lede={t.products.lede} />
+      <div class="grid grid--2">
+        {
+          t.products.items.map((item) => (
+            <FeatureCard
+              kicker={item.kicker}
+              title={item.title}
+              body={item.body}
+              points={item.points}
+              href={item.href}
+              cta={item.cta}
+            />
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- Grupo -->
+  <section class="section section--rule">
+    <div class="container group-grid">
+      <div>
+        <SectionHeader eyebrow={t.group.eyebrow} title={t.group.title} />
+        <div class="prose">
+          <p>{t.group.body}</p>
+        </div>
+        <p><a class="link-arrow" href={t.group.cta.href}>{t.group.cta.label} <span aria-hidden="true">→</span></a></p>
+      </div>
+      <div class="group-stats">
+        {t.group.stats.map((s) => <StatBlock value={s.value} label={s.label} />)}
+      </div>
+    </div>
+  </section>
+
+  <CTABand
+    eyebrow={es.shared.cta.eyebrow}
+    title={es.shared.cta.title}
+    body={es.shared.cta.body}
+    button={es.shared.cta.button}
+    href="/contact"
+  />
+</Base>
+
+<style>
+  .thesis-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+    gap: clamp(2rem, 5vw, 4.5rem);
+    align-items: start;
+  }
+
+  .group-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 7fr) minmax(0, 4fr);
+    gap: clamp(2.5rem, 6vw, 5rem);
+    align-items: start;
+  }
+
+  .group-grid .prose {
+    margin-bottom: 1.75rem;
+  }
+
+  .group-stats {
+    display: grid;
+    gap: 0.75rem;
+  }
+
+  @media (max-width: 900px) {
+    .thesis-grid,
+    .group-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

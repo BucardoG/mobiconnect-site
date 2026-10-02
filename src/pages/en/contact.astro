@@ -1,0 +1,214 @@
+---
+import Base from "../../layouts/Base.astro";
+import Hero from "../../components/Hero.astro";
+import { en } from "../../i18n";
+
+const t = en.contact;
+---
+
+<Base title={t.meta.title} description={t.meta.description} locale="en" path="/contact">
+  <Hero eyebrow={t.hero.eyebrow} title={t.hero.title} sub={t.hero.sub} />
+
+  <section class="section section--rule">
+    <div class="container">
+      <div class="contact-grid">
+        <form id="contact-form" class="contact-form" novalidate={false}>
+          <div class="field-row">
+            <div class="field">
+              <label for="f-name">{t.form.name}</label>
+              <input id="f-name" name="name" type="text" required autocomplete="name" />
+            </div>
+            <div class="field">
+              <label for="f-org">{t.form.org}</label>
+              <input id="f-org" name="org" type="text" autocomplete="organization" />
+            </div>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="f-email">{t.form.email}</label>
+              <input id="f-email" name="email" type="email" required autocomplete="email" />
+            </div>
+            <div class="field">
+              <label for="f-topic">{t.form.topic}</label>
+              <select id="f-topic" name="topic">
+                {t.form.topics.map((topic) => <option value={topic}>{topic}</option>)}
+              </select>
+            </div>
+          </div>
+          <div class="field">
+            <label for="f-message">{t.form.message}</label>
+            <textarea id="f-message" name="message" rows="6" required placeholder={t.form.messagePlaceholder}></textarea>
+          </div>
+          <div class="form-actions">
+            <button class="btn btn--primary" type="submit">{t.form.submit}</button>
+            <p class="form-note">{t.form.note}</p>
+          </div>
+        </form>
+
+        <aside class="contact-aside">
+          <p class="mono aside-label">{t.form.direct}</p>
+          <a class="aside-mail" href={`mailto:${t.email}`}>{t.email}</a>
+          <div class="aside-meta">
+            <p class="mono">SANTIAGO, CHILE</p>
+            <p class="mono">FOUNDER-LED</p>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+</Base>
+
+<script>
+  // The site's only JS: composes a mailto in the client. Nothing is sent or stored.
+  const form = document.getElementById("contact-form") as HTMLFormElement | null;
+  form?.addEventListener("submit", (e) => {
+    e.preventDefault();
+    if (!form.reportValidity()) return;
+    const data = new FormData(form);
+    const name = String(data.get("name") ?? "");
+    const topic = String(data.get("topic") ?? "");
+    const message = String(data.get("message") ?? "");
+    const subject = `[mobiconnect.app] ${topic} — ${name}`;
+    const body = `${message}\n\n—\n${name}\n${data.get("org") ?? ""}\n${data.get("email") ?? ""}`;
+    window.location.href = `mailto:hola@mobiconnect.app?subject=${encodeURIComponent(
+      subject
+    )}&body=${encodeURIComponent(body)}`;
+  });
+</script>
+
+<style>
+  .contact-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 7fr) minmax(0, 4fr);
+    gap: clamp(2.5rem, 6vw, 5rem);
+    align-items: start;
+  }
+
+  .contact-form {
+    display: grid;
+    gap: 1.25rem;
+    max-width: 40rem;
+  }
+
+  .field-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem;
+  }
+
+  .field {
+    display: grid;
+    gap: 0.45rem;
+  }
+
+  .field label {
+    font-size: 0.8125rem;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    color: var(--ink-2);
+  }
+
+  .field input,
+  .field select,
+  .field textarea {
+    border: 1px solid var(--line-strong);
+    border-radius: var(--radius-sm);
+    background: var(--surface);
+    padding: 0.65rem 0.8rem;
+    font-size: 0.9375rem;
+    color: var(--ink);
+    transition: border-color 0.15s ease;
+    width: 100%;
+  }
+
+  .field textarea {
+    resize: vertical;
+    min-height: 8rem;
+  }
+
+  .field input:hover,
+  .field select:hover,
+  .field textarea:hover {
+    border-color: var(--ink-3);
+  }
+
+  .field input:focus,
+  .field select:focus,
+  .field textarea:focus {
+    border-color: var(--signal);
+    outline: 2px solid var(--signal);
+    outline-offset: 1px;
+  }
+
+  .form-actions {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin-top: 0.5rem;
+  }
+
+  .form-note {
+    font-size: 0.8125rem;
+    color: var(--ink-3);
+    max-width: 38ch;
+    line-height: 1.5;
+  }
+
+  .contact-aside {
+    border-left: 1px solid var(--line);
+    padding-left: clamp(1.5rem, 3vw, 2.5rem);
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .aside-label {
+    font-size: 0.6875rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--ink-3);
+  }
+
+  .aside-mail {
+    font-family: var(--font-mono);
+    font-size: 1rem;
+    color: var(--signal);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+  }
+
+  .aside-mail:hover {
+    border-color: currentColor;
+  }
+
+  .aside-meta {
+    margin-top: 1.5rem;
+    display: grid;
+    gap: 0.35rem;
+  }
+
+  .aside-meta p {
+    font-size: 0.6875rem;
+    letter-spacing: 0.14em;
+    color: var(--ink-3);
+  }
+
+  @media (max-width: 900px) {
+    .contact-grid {
+      grid-template-columns: 1fr;
+    }
+    .contact-aside {
+      border-left: 0;
+      padding-left: 0;
+      border-top: 1px solid var(--line);
+      padding-top: 1.75rem;
+    }
+  }
+
+  @media (max-width: 560px) {
+    .field-row {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

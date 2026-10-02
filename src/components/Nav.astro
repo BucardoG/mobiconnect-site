@@ -1,0 +1,230 @@
+---
+// Nav — sticky con blur sutil. Cero JS: el menú móvil es <details>.
+interface Props {
+  locale: "es" | "en";
+  path: string;
+  t: {
+    aria: string;
+    menu: string;
+    entitlements: string;
+    people: string;
+    group: string;
+    contact: string;
+    langTo: string;
+    langLabel: string;
+  };
+}
+
+const { locale, path, t } = Astro.props;
+const pre = locale === "en" ? "/en" : "";
+const home = locale === "en" ? "/en/" : "/";
+
+const links = [
+  { key: "entitlements", href: `${pre}/products/entitlements`, label: t.entitlements, match: "/products/entitlements" },
+  { key: "people", href: `${pre}/products/people`, label: t.people, match: "/products/people" },
+  { key: "group", href: `${pre}/about`, label: t.group, match: "/about" },
+  { key: "contact", href: `${pre}/contact`, label: t.contact, match: "/contact" },
+];
+
+const altHref = locale === "en" ? (path === "/" ? "/" : `${path}/`) : path === "/" ? "/en/" : `/en${path}/`;
+
+const isActive = (match: string) => path === match;
+---
+
+<header class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href={home} aria-label="Mobiconnect — {locale === 'en' ? 'home' : 'inicio'}">
+      <svg width="22" height="22" viewBox="0 0 64 64" aria-hidden="true">
+        <rect width="64" height="64" rx="14" fill="var(--ink)"></rect>
+        <path d="M17 44V20l15 14.5L47 20v24" fill="none" stroke="#fff" stroke-width="5.5" stroke-linecap="square" stroke-linejoin="miter"></path>
+        <path d="M20 51h24" stroke="var(--signal-bright)" stroke-width="3" stroke-linecap="square"></path>
+      </svg>
+      <span>Mobiconnect</span>
+    </a>
+
+    <nav class="nav-links" aria-label={t.aria}>
+      <ul>
+        {
+          links.map((l) => (
+            <li>
+              <a href={l.href} aria-current={isActive(l.match) ? "page" : undefined}>
+                {l.label}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </nav>
+
+    <a
+      class="lang-switch mono"
+      href={altHref}
+      hreflang={locale === "en" ? "es" : "en"}
+      aria-label={t.langLabel}
+      lang={locale === "en" ? "es" : "en"}
+    >
+      {t.langTo}
+    </a>
+
+    <details class="nav-drawer">
+      <summary aria-label={t.menu}>
+        <span class="mono">{t.menu}</span>
+        <svg width="12" height="8" viewBox="0 0 12 8" aria-hidden="true">
+          <path d="M1 1l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.5"></path>
+        </svg>
+      </summary>
+      <ul>
+        {
+          links.map((l) => (
+            <li>
+              <a href={l.href} aria-current={isActive(l.match) ? "page" : undefined}>
+                {l.label}
+              </a>
+            </li>
+          ))
+        }
+        <li>
+          <a href={altHref} hreflang={locale === "en" ? "es" : "en"}>{t.langTo}</a>
+        </li>
+      </ul>
+    </details>
+  </div>
+</header>
+
+<style>
+  .nav {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    height: var(--nav-h);
+    background: rgb(250 250 249 / 0.84);
+    -webkit-backdrop-filter: blur(10px) saturate(1.1);
+    backdrop-filter: blur(10px) saturate(1.1);
+    border-bottom: 1px solid var(--line);
+  }
+
+  .nav-inner {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.55rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    font-size: 1.0625rem;
+    text-decoration: none;
+    margin-right: auto;
+  }
+
+  .nav-links ul {
+    display: flex;
+    align-items: center;
+    gap: 1.75rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav-links a {
+    font-size: 0.9375rem;
+    font-weight: 500;
+    color: var(--ink-2);
+    text-decoration: none;
+    transition: color 0.15s ease;
+  }
+
+  .nav-links a:hover {
+    color: var(--ink);
+  }
+
+  .nav-links a[aria-current="page"] {
+    color: var(--ink);
+    font-weight: 600;
+  }
+
+  .lang-switch {
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    padding: 0.3rem 0.6rem;
+    border: 1px solid var(--line-strong);
+    border-radius: var(--radius-sm);
+    color: var(--ink-2);
+    text-decoration: none;
+    transition: border-color 0.15s ease, color 0.15s ease;
+  }
+
+  .lang-switch:hover {
+    border-color: var(--ink);
+    color: var(--ink);
+  }
+
+  .nav-drawer {
+    display: none;
+    position: relative;
+  }
+
+  .nav-drawer summary {
+    list-style: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    font-size: 0.8125rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-2);
+    padding: 0.35rem 0.25rem;
+    user-select: none;
+  }
+
+  .nav-drawer summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .nav-drawer[open] summary svg {
+    transform: rotate(180deg);
+  }
+
+  .nav-drawer ul {
+    position: absolute;
+    right: 0;
+    top: calc(100% + 0.5rem);
+    min-width: 12rem;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 0.5rem;
+    list-style: none;
+    margin: 0;
+    box-shadow: 0 1px 2px rgb(10 10 10 / 0.04);
+  }
+
+  .nav-drawer ul a {
+    display: block;
+    padding: 0.55rem 0.75rem;
+    font-size: 0.9375rem;
+    font-weight: 500;
+    color: var(--ink-2);
+    text-decoration: none;
+    border-radius: var(--radius-sm);
+  }
+
+  .nav-drawer ul a:hover {
+    background: var(--bg);
+    color: var(--ink);
+  }
+
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+    }
+    .nav-drawer {
+      display: block;
+    }
+  }
+</style>
