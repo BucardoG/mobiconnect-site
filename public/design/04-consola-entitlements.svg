@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900">
+<title>Mobiconnect — Consola Entitlements (app 1440)</title>
+<rect x="0" y="0" width="1440" height="900" fill="#FAFAF9"/>
+<rect x="0" y="0" width="1440" height="900" fill="#FFFFFF"/>
+<rect x="0" y="0" width="232" height="900" fill="#F5F5F4"/>
+<line x1="232" y1="0" x2="232" y2="900" stroke="#E7E5E4" stroke-width="1"/>
+<g transform="translate(24,24) scale(0.7)">
+  <rect x="2" y="2" width="4" height="28" fill="#1C1917" rx="1"/>
+  <rect x="26" y="2" width="4" height="28" fill="#1C1917" rx="1"/>
+  <rect x="8" y="19" width="4" height="11" fill="#1C1917" rx="1"/>
+  <rect x="14" y="13" width="4" height="17" fill="#1C1917" rx="1"/>
+  <rect x="20" y="7" width="4" height="23" fill="#B45309" rx="1"/>
+  <text x="44" y="33" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="600" fill="#1C1917" letter-spacing="-0.5">mobiconnect</text>
+  </g>
+<text x="32" y="104" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13.5" font-weight="400" fill="#52525B">Catálogo</text>
+<rect x="12" y="124" width="208" height="40" fill="#FFFFFF" rx="6" stroke="#E7E5E4" stroke-width="1"/>
+<rect x="12" y="124" width="3" height="40" fill="#B45309"/>
+<text x="32" y="150" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13.5" font-weight="500" fill="#1C1917">Planes</text>
+<text x="32" y="196" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13.5" font-weight="400" fill="#52525B">Suscripciones</text>
+<text x="32" y="242" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13.5" font-weight="400" fill="#52525B">Uso</text>
+<text x="32" y="288" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13.5" font-weight="400" fill="#52525B">Tenants</text>
+<text x="32" y="334" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13.5" font-weight="400" fill="#52525B">Claves API</text>
+<rect x="16" y="844" width="86" height="22" fill="#FEF3E7" rx="11" stroke="#FDE6CE"/>
+  <text x="59.0" y="859" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="500" fill="#9A3412" text-anchor="middle">PRODUCCIÓN</text>
+<rect x="232" y="0" width="1208" height="56" fill="#FFFFFF"/>
+<line x1="232" y1="56" x2="1440" y2="56" stroke="#E7E5E4" stroke-width="1"/>
+<text x="260" y="35" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="500" fill="#1C1917">Planes · operador-demo</text>
+<rect x="1080" y="12" width="180" height="32" fill="#FAFAF9" rx="6" stroke="#E7E5E4" stroke-width="1"/>
+<text x="1094" y="33" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="12" font-weight="400" fill="#52525B">operador-demo</text>
+<circle cx="1280" cy="28" r="14" fill="#FEF3E7" stroke="#FDE6CE" stroke-width="1"/>
+<text x="1280" y="33" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="600" fill="#9A3412" text-anchor="middle">W</text>
+<g id="encabezado">
+  <text x="264" y="96" font-family="'Inter Tight', Inter, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="600" fill="#1C1917">Planes y cuotas</text>
+  <text x="504" y="97" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="10.5" font-weight="500" fill="#71717A" letter-spacing="1.1">CATÁLOGO COMERCIAL · POR CONTRATO</text>
+  <rect x="1284" y="76" width="112" height="38" fill="#B45309" rx="6"/>
+  <text x="1340.0" y="100.0" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="500" fill="#FFFFFF" text-anchor="middle">Nuevo plan</text>
+</g>
+<line x1="264" y1="136" x2="964" y2="136" stroke="#E7E5E4" stroke-width="1"/>
+<text x="264" y="166" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="10" font-weight="500" fill="#71717A" letter-spacing="1.1">PLAN</text>
+<text x="464" y="166" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="10" font-weight="500" fill="#71717A" letter-spacing="1.1">CUOTA</text>
+<text x="594" y="166" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="10" font-weight="500" fill="#71717A" letter-spacing="1.1">USADO</text>
+<text x="704" y="166" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="10" font-weight="500" fill="#71717A" letter-spacing="1.1">USO</text>
+<text x="264" y="196" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="13" font-weight="500" fill="#1C1917">connectivity-m</text>
+<text x="464" y="196" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="12.5" font-weight="400" fill="#52525B">250000/mes</text>
+<text x="594" y="196" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="12.5" font-weight="400" fill="#52525B">184203</text>
+<rect x="704" y="186" width="110" height="6" fill="#E7E5E4" rx="3"/>
+<rect x="704" y="186" width="81.07" height="6" fill="#B45309" rx="3"/>
+<text x="826" y="192" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="11.5" font-weight="500" fill="#52525B">73.7%</text>
+<rect x="884" y="181" width="59" height="22" fill="#F0FDF4" rx="11" stroke="#BBF7D0"/>
+  <text x="913.5" y="196" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="500" fill="#15803D" text-anchor="middle">ACTIVO</text>
+<line x1="264" y1="224" x2="964" y2="224" stroke="#E7E5E4" stroke-width="1"/>
+<text x="264" y="242" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="13" font-weight="500" fill="#1C1917">did.provision</text>
+<text x="464" y="242" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="12.5" font-weight="400" fill="#52525B">1200</text>
+<text x="594" y="242" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="12.5" font-weight="400" fill="#52525B">914</text>
+<rect x="704" y="232" width="110" height="6" fill="#E7E5E4" rx="3"/>
+<rect x="704" y="232" width="83.82" height="6" fill="#B45309" rx="3"/>
+<text x="826" y="238" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="11.5" font-weight="500" fill="#52525B">76.2%</text>
+<rect x="884" y="227" width="59" height="22" fill="#F0FDF4" rx="11" stroke="#BBF7D0"/>
+  <text x="913.5" y="242" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="500" fill="#15803D" text-anchor="middle">ACTIVO</text>
+<line x1="264" y1="270" x2="964" y2="270" stroke="#E7E5E4" stroke-width="1"/>
+<text x="264" y="288" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="13" font-weight="500" fill="#1C1917">rcs.message</text>
+<text x="464" y="288" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="12.5" font-weight="400" fill="#52525B">50000/mes</text>
+<text x="594" y="288" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="12.5" font-weight="400" fill="#52525B">6120</text>
+<rect x="704" y="278" width="110" height="6" fill="#E7E5E4" rx="3"/>
+<rect x="704" y="278" width="13.42" height="6" fill="#B45309" rx="3"/>
+<text x="826" y="284" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="11.5" font-weight="500" fill="#52525B">12.2%</text>
+<rect x="884" y="273" width="59" height="22" fill="#F0FDF4" rx="11" stroke="#BBF7D0"/>
+  <text x="913.5" y="288" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="500" fill="#15803D" text-anchor="middle">ACTIVO</text>
+<line x1="264" y1="316" x2="964" y2="316" stroke="#E7E5E4" stroke-width="1"/>
+<text x="264" y="334" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="13" font-weight="500" fill="#1C1917">sms.otp-trial</text>
+<text x="464" y="334" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="12.5" font-weight="400" fill="#52525B">1000/mes</text>
+<text x="594" y="334" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="12.5" font-weight="400" fill="#52525B">1000</text>
+<rect x="704" y="324" width="110" height="6" fill="#E7E5E4" rx="3"/>
+<rect x="704" y="324" width="110.0" height="6" fill="#B91C1C" rx="3"/>
+<text x="826" y="330" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="11.5" font-weight="500" fill="#52525B">100.0%</text>
+<rect x="884" y="319" width="66" height="22" fill="#FEF2F2" rx="11" stroke="#FECACA"/>
+  <text x="917.0" y="334" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="500" fill="#B91C1C" text-anchor="middle">AGOTADO</text>
+<line x1="264" y1="362" x2="964" y2="362" stroke="#E7E5E4" stroke-width="1"/>
+<g id="panel-check">
+  <rect x="1004" y="136" width="340" height="330" fill="#F5F5F4" rx="10" stroke="#E7E5E4" stroke-width="1"/>
+  <rect x="1004" y="136" width="3" height="330" fill="#B45309"/>
+  <text x="1028" y="172" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="10.5" font-weight="500" fill="#71717A" letter-spacing="1.1">ENTITLEMENTS CHECK · PDP</text>
+  <text x="1028" y="202" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="12.5" font-weight="500" fill="#1C1917">POST /v1/entitlements/check</text>
+</g>
+<text x="1028" y="232" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="12" font-weight="400" fill="#52525B">{</text>
+<text x="1028" y="254" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="12" font-weight="400" fill="#52525B">  &quot;tenant_id&quot;: &quot;00000000-…e001&quot;,</text>
+<text x="1028" y="276" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="12" font-weight="400" fill="#52525B">  &quot;product_code&quot;: &quot;sms.otp&quot;,</text>
+<text x="1028" y="298" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="12" font-weight="400" fill="#52525B">  &quot;scope&quot;: &quot;send&quot;, &quot;quantity&quot;: 1</text>
+<text x="1028" y="320" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="12" font-weight="400" fill="#52525B">}</text>
+<line x1="1028" y1="352" x2="1320" y2="352" stroke="#D6D3D1" stroke-width="1"/>
+<text x="1028" y="378" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="12" font-weight="500" fill="#52525B">{</text>
+<text x="1028" y="400" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="12" font-weight="500" fill="#15803D">  &quot;allow&quot;: true,</text>
+<text x="1028" y="422" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="12" font-weight="500" fill="#52525B">  &quot;reason&quot;: &quot;ok&quot;,</text>
+<text x="1028" y="444" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="12" font-weight="500" fill="#52525B">  &quot;remaining_quota&quot;: 99941</text>
+<text x="1028" y="466" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="12" font-weight="500" fill="#52525B">}</text>
+<rect x="1028" y="490" width="92" height="22" fill="#F0FDF4" rx="11" stroke="#BBF7D0"/>
+  <text x="1074.0" y="505" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="500" fill="#15803D" text-anchor="middle">200 · ALLOW</text>
+<text x="1320" y="506" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="10.5" font-weight="400" fill="#71717A" text-anchor="end">deny-by-default · fail-closed</text>
+<g id="nota">
+  <text x="264" y="868" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="11" font-weight="400" fill="#71717A">Scopes: entitlement:check · entitlement:admin — OAuth2 client_credentials, tokens ES256, vida máxima 1 h.</text>
+</g>
+</svg>

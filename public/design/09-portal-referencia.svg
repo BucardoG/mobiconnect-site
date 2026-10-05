@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1146" viewBox="0 0 1440 1146">
+<title>Mobiconnect — Portal · Referencia check</title>
+<rect x="0" y="0" width="1440" height="1146" fill="#FAFAF9"/>
+<g id="nav">
+  <g transform="translate(96,16) scale(0.66)">
+  <rect x="2" y="2" width="4" height="28" fill="#1C1917" rx="1"/>
+  <rect x="26" y="2" width="4" height="28" fill="#1C1917" rx="1"/>
+  <rect x="8" y="19" width="4" height="11" fill="#1C1917" rx="1"/>
+  <rect x="14" y="13" width="4" height="17" fill="#1C1917" rx="1"/>
+  <rect x="20" y="7" width="4" height="23" fill="#B45309" rx="1"/>
+  <text x="44" y="33" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="600" fill="#1C1917" letter-spacing="-0.5">mobiconnect</text>
+  </g>
+  <text x="426" y="39" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13.5" font-weight="600" fill="#1C1917">Docs</text>
+  <text x="496" y="39" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13.5" font-weight="400" fill="#52525B">Referencia API</text>
+  <text x="658" y="39" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13.5" font-weight="400" fill="#52525B">Claves API</text>
+  <text x="784" y="39" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13.5" font-weight="400" fill="#52525B">Try it</text>
+  <rect x="978" y="14" width="165" height="22" fill="#FEF3E7" rx="11" stroke="#FDE6CE"/>
+  <text x="1060.5" y="29" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="500" fill="#9A3412" text-anchor="middle">STAGING · SOLO PRUEBAS</text>
+  <text x="1344" y="39" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="12" font-weight="400" fill="#71717A" text-anchor="end">Docs EN</text>
+  <line x1="0" y1="80" x2="1440" y2="80" stroke="#E7E5E4" stroke-width="1"/>
+</g>
+<g id="crumb">
+  <text x="96" y="116" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="11.5" font-weight="400" fill="#71717A" letter-spacing="0.8">referencia / entitlements / check</text>
+</g>
+<g id="hero">
+  <text x="96" y="188" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="11.5" font-weight="500" fill="#B45309" letter-spacing="1.4">REFERENCIA API</text>
+  <text x="96" y="240" font-family="'Inter Tight', Inter, 'Helvetica Neue', Arial, sans-serif" font-size="30" font-weight="600" fill="#1C1917" letter-spacing="-0.6">POST /v1/entitlements/check</text>
+  <text x="96" y="276" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="400" fill="#52525B">La decisión. Deny-by-default: todo lo que no sea 200 {allow:true} se trata como deny.</text>
+</g>
+<g id="scope">
+  <rect x="1134" y="206" width="178" height="22" fill="#FEF3E7" rx="11" stroke="#FDE6CE"/>
+  <text x="1223.0" y="221" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="500" fill="#9A3412" text-anchor="middle">scope: entitlement:check</text>
+</g>
+<g id="endpoint-list">
+  <rect x="96" y="314" width="380" height="470" fill="#FFFFFF" rx="10" stroke="#E7E5E4" stroke-width="1"/>
+  <text x="120" y="350" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="10.5" font-weight="500" fill="#71717A" letter-spacing="1.2">SUPERFICIE v1</text>
+</g>
+<g id="ep-check">
+  <rect x="108" y="360" width="356" height="34" fill="#FEF3E7" rx="6"/>
+  <rect x="108" y="360" width="3" height="34" fill="#B45309"/>
+  <text x="124" y="382" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="10.5" font-weight="600" fill="#9A3412">POST</text>
+  <text x="174" y="382" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="11.5" font-weight="500" fill="#1C1917">/v1/entitlements/check</text>
+</g>
+<g id="ep-release">
+  <text x="124" y="426" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="10.5" font-weight="600" fill="#52525B">POST</text>
+  <text x="174" y="426" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="11.5" font-weight="400" fill="#52525B">/v1/entitlements/release</text>
+</g>
+<g id="ep-catalog">
+  <text x="124" y="470" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="10.5" font-weight="600" fill="#52525B">GET</text>
+  <text x="174" y="470" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="11.5" font-weight="400" fill="#52525B">/v1/admin/catalog</text>
+</g>
+<g id="ep-subscriptions">
+  <text x="124" y="514" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="10.5" font-weight="600" fill="#52525B">POST</text>
+  <text x="174" y="514" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="11.5" font-weight="400" fill="#52525B">/v1/admin/subscriptions</text>
+</g>
+<g id="ep-suspend">
+  <text x="124" y="558" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="10.5" font-weight="600" fill="#52525B">POST</text>
+  <text x="174" y="558" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="11.5" font-weight="400" fill="#52525B">/v1/admin/subscriptions/:id/suspend</text>
+</g>
+<g id="request">
+  <rect x="504" y="314" width="840" height="278" fill="#F5F5F4" rx="10" stroke="#E7E5E4" stroke-width="1"/>
+  <line x1="504" y1="354" x2="1344" y2="354" stroke="#E7E5E4" stroke-width="1"/>
+  <circle cx="528" cy="334" r="5" fill="#E7E5E4"/>
+  <circle cx="546" cy="334" r="5" fill="#D6D3D1"/>
+  <circle cx="564" cy="334" r="5" fill="#A8A29E"/>
+  <text x="1320" y="339" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="11" font-weight="400" fill="#71717A" text-anchor="end">request body</text>
+  <text x="532" y="390" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="12.5" font-weight="400" fill="#1C1917">{</text>
+  <text x="532" y="416" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="12.5" font-weight="400" fill="#52525B">  &quot;tenant_id&quot;: </text>
+  <text x="644.5" y="416" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="12.5" font-weight="500" fill="#9A3412">&quot;uuid&quot;</text>
+  <text x="689.5" y="416" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="12.5" font-weight="400" fill="#52525B">,</text>
+  <text x="532" y="442" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="12.5" font-weight="400" fill="#52525B">  &quot;product_code&quot;: </text>
+  <text x="667.0" y="442" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="12.5" font-weight="500" fill="#9A3412">&quot;sms.otp&quot;</text>
+  <text x="734.5" y="442" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="12.5" font-weight="400" fill="#52525B">,</text>
+  <text x="532" y="468" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="12.5" font-weight="400" fill="#52525B">  &quot;scope&quot;: </text>
+  <text x="614.5" y="468" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="12.5" font-weight="500" fill="#9A3412">&quot;send&quot;</text>
+  <text x="659.5" y="468" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="12.5" font-weight="400" fill="#52525B">,</text>
+  <text x="532" y="494" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="12.5" font-weight="400" fill="#52525B">  &quot;quantity&quot;: </text>
+  <text x="637.0" y="494" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="12.5" font-weight="500" fill="#9A3412">1</text>
+  <text x="644.5" y="494" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="12.5" font-weight="400" fill="#52525B">,</text>
+  <text x="532" y="520" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="12.5" font-weight="400" fill="#52525B">  &quot;correlation_id&quot;: </text>
+  <text x="682.0" y="520" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="12.5" font-weight="500" fill="#92400E">&quot;opcional — idempotencia&quot;</text>
+  <text x="532" y="546" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="12.5" font-weight="400" fill="#1C1917">}</text>
+  <text x="532" y="572" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="11" font-weight="400" fill="#71717A">Ejemplo ilustrativo del modelo de datos, no una respuesta real de la API.</text>
+</g>
+<g id="response">
+  <text x="504" y="620" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="11" font-weight="500" fill="#71717A" letter-spacing="1.2">200 · respuesta</text>
+</g>
+<text x="504" y="644" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="12.5" font-weight="500" fill="#1C1917">allow</text>
+<text x="694" y="644" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="12.5" font-weight="400" fill="#52525B">true | false — la decisión</text>
+<text x="504" y="674" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="12.5" font-weight="500" fill="#1C1917">reason</text>
+<text x="694" y="674" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="12.5" font-weight="400" fill="#52525B">ok · no_subscription · suspended · scope_denied · quota_exceeded</text>
+<text x="504" y="704" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="12.5" font-weight="500" fill="#1C1917">remaining_quota</text>
+<text x="694" y="704" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="12.5" font-weight="400" fill="#52525B">entero — unidades disponibles del plan</text>
+<text x="504" y="734" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="12.5" font-weight="500" fill="#1C1917">plan_id · price_ref</text>
+<text x="694" y="734" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="12.5" font-weight="400" fill="#52525B">uuid — plan y precio congelado</text>
+<line x1="504" y1="772" x2="1344" y2="772" stroke="#E7E5E4" stroke-width="1"/>
+<text x="504" y="796" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="10.5" font-weight="500" fill="#71717A" letter-spacing="1.2">ERRORES</text>
+<text x="504" y="822" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="12" font-weight="600" fill="#52525B">400</text>
+<text x="614" y="822" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="12.5" font-weight="400" fill="#52525B">input inválido</text>
+<text x="504" y="850" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="12" font-weight="600" fill="#B91C1C">401 / 403</text>
+<text x="614" y="850" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="12.5" font-weight="400" fill="#52525B">auth o scope insuficiente</text>
+<text x="504" y="878" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="12" font-weight="600" fill="#B91C1C">409</text>
+<text x="614" y="878" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="12.5" font-weight="400" fill="#52525B">duplicate_correlation_id — replay</text>
+<text x="504" y="906" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="12" font-weight="600" fill="#B91C1C">503</text>
+<text x="614" y="906" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="12.5" font-weight="400" fill="#52525B">pdp_unavailable — fail-closed</text>
+<text x="504" y="944" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="11" font-weight="400" fill="#71717A">CAMARA: ErrorInfo común · x-correlator · OAuth2/OpenID · SemVer</text>
+<g id="footer">
+  <line x1="96" y1="1004" x2="1344" y2="1004" stroke="#E7E5E4" stroke-width="1"/>
+  <g transform="translate(96,1036) scale(0.7)">
+  <rect x="2" y="2" width="4" height="28" fill="#1C1917" rx="1"/>
+  <rect x="26" y="2" width="4" height="28" fill="#1C1917" rx="1"/>
+  <rect x="8" y="19" width="4" height="11" fill="#1C1917" rx="1"/>
+  <rect x="14" y="13" width="4" height="17" fill="#1C1917" rx="1"/>
+  <rect x="20" y="7" width="4" height="23" fill="#B45309" rx="1"/>
+  <text x="44" y="33" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="600" fill="#1C1917" letter-spacing="-0.5">mobiconnect</text>
+  </g>
+  <text x="396" y="1060" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="400" fill="#71717A">Servicios de AI y high-tech para el operador soberano del grupo.</text>
+  <text x="396" y="1082" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="500" fill="#52525B">Productos · Grupo · Contacto</text>
+  <text x="1344" y="1060" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="11.5" font-weight="400" fill="#71717A" text-anchor="end">© 2026 Mobiconnect — Inversiones Bucardo Zúñiga Limitada</text>
+  <text x="1344" y="1082" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="11.5" font-weight="400" fill="#71717A" text-anchor="end">Santiago de Chile</text>
+</g>
+</svg>

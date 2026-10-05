@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900">
+<title>Mobiconnect — App People · Evaluaciones (1440)</title>
+<rect x="0" y="0" width="1440" height="900" fill="#FAFAF9"/>
+<rect x="0" y="0" width="1440" height="900" fill="#FFFFFF"/>
+<rect x="0" y="0" width="232" height="900" fill="#F5F5F4"/>
+<line x1="232" y1="0" x2="232" y2="900" stroke="#E7E5E4" stroke-width="1"/>
+<g transform="translate(24,24) scale(0.7)">
+  <rect x="2" y="2" width="4" height="28" fill="#1C1917" rx="1"/>
+  <rect x="26" y="2" width="4" height="28" fill="#1C1917" rx="1"/>
+  <rect x="8" y="19" width="4" height="11" fill="#1C1917" rx="1"/>
+  <rect x="14" y="13" width="4" height="17" fill="#1C1917" rx="1"/>
+  <rect x="20" y="7" width="4" height="23" fill="#B45309" rx="1"/>
+  <text x="44" y="33" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="600" fill="#1C1917" letter-spacing="-0.5">mobiconnect</text>
+  </g>
+<text x="32" y="104" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13.5" font-weight="400" fill="#52525B">Equipo</text>
+<rect x="12" y="124" width="208" height="40" fill="#FFFFFF" rx="6" stroke="#E7E5E4" stroke-width="1"/>
+<rect x="12" y="124" width="3" height="40" fill="#B45309"/>
+<text x="32" y="150" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13.5" font-weight="500" fill="#1C1917">Evaluaciones</text>
+<text x="32" y="196" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13.5" font-weight="400" fill="#52525B">Scorecards</text>
+<text x="32" y="242" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13.5" font-weight="400" fill="#52525B">Agentes</text>
+<text x="32" y="288" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13.5" font-weight="400" fill="#52525B">Resultados</text>
+<rect x="16" y="844" width="86" height="22" fill="#FEF3E7" rx="11" stroke="#FDE6CE"/>
+  <text x="59.0" y="859" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="500" fill="#9A3412" text-anchor="middle">PRODUCCIÓN</text>
+<rect x="232" y="0" width="1208" height="56" fill="#FFFFFF"/>
+<line x1="232" y1="56" x2="1440" y2="56" stroke="#E7E5E4" stroke-width="1"/>
+<text x="260" y="35" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="500" fill="#1C1917">Evaluaciones · Ciclo 2026-10</text>
+<rect x="1080" y="12" width="180" height="32" fill="#FAFAF9" rx="6" stroke="#E7E5E4" stroke-width="1"/>
+<text x="1094" y="33" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="12" font-weight="400" fill="#52525B">operador-demo</text>
+<circle cx="1280" cy="28" r="14" fill="#FEF3E7" stroke="#FDE6CE" stroke-width="1"/>
+<text x="1280" y="33" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="600" fill="#9A3412" text-anchor="middle">W</text>
+<g id="encabezado">
+  <text x="264" y="96" font-family="'Inter Tight', Inter, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="600" fill="#1C1917">Evaluaciones · Ciclo 2026-10</text>
+  <text x="684" y="97" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="10.5" font-weight="500" fill="#B45309" letter-spacing="1.1">RESULTADOS, NO ACTIVIDAD</text>
+</g>
+<line x1="264" y1="136" x2="864" y2="136" stroke="#E7E5E4" stroke-width="1"/>
+<text x="264" y="166" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="10" font-weight="500" fill="#71717A" letter-spacing="1.1">TRABAJADOR</text>
+<text x="504" y="166" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="10" font-weight="500" fill="#71717A" letter-spacing="1.1">TIPO</text>
+<text x="634" y="166" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="10" font-weight="500" fill="#71717A" letter-spacing="1.1">ROL</text>
+<text x="764" y="166" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="10" font-weight="500" fill="#71717A" letter-spacing="1.1">SCORE</text>
+<circle cx="270" cy="186" r="4" fill="#D6D3D1"/>
+<text x="286" y="190" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13.5" font-weight="500" fill="#1C1917">Camila Rojas</text>
+<rect x="504" y="178" width="59" height="22" fill="#F5F5F4" rx="11"/>
+  <text x="533.5" y="193" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="500" fill="#52525B" text-anchor="middle">HUMANO</text>
+<text x="634" y="190" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="400" fill="#52525B">SDR comercial</text>
+<text x="764" y="190" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="13.5" font-weight="500" fill="#1C1917">87.4</text>
+<line x1="264" y1="222" x2="864" y2="222" stroke="#E7E5E4" stroke-width="1"/>
+<circle cx="270" cy="232" r="4" fill="#B45309"/>
+<text x="286" y="236" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13.5" font-weight="500" fill="#1C1917">agent-ventas-01</text>
+<rect x="504" y="224" width="59" height="22" fill="#FEF3E7" rx="11" stroke="#FDE6CE"/>
+  <text x="533.5" y="239" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="500" fill="#9A3412" text-anchor="middle">AGENTE</text>
+<text x="634" y="236" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="400" fill="#52525B">SDR digital</text>
+<text x="764" y="236" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="13.5" font-weight="500" fill="#1C1917">84.1</text>
+<line x1="264" y1="268" x2="864" y2="268" stroke="#E7E5E4" stroke-width="1"/>
+<circle cx="270" cy="278" r="4" fill="#D6D3D1"/>
+<text x="286" y="282" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13.5" font-weight="500" fill="#1C1917">Diego Fuentes</text>
+<rect x="504" y="270" width="59" height="22" fill="#F5F5F4" rx="11"/>
+  <text x="533.5" y="285" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="500" fill="#52525B" text-anchor="middle">HUMANO</text>
+<text x="634" y="282" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="400" fill="#52525B">Ing. soporte</text>
+<text x="764" y="282" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="13.5" font-weight="500" fill="#1C1917">79.8</text>
+<line x1="264" y1="314" x2="864" y2="314" stroke="#E7E5E4" stroke-width="1"/>
+<circle cx="270" cy="324" r="4" fill="#B45309"/>
+<text x="286" y="328" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13.5" font-weight="500" fill="#1C1917">agent-soporte-02</text>
+<rect x="504" y="316" width="59" height="22" fill="#FEF3E7" rx="11" stroke="#FDE6CE"/>
+  <text x="533.5" y="331" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="500" fill="#9A3412" text-anchor="middle">AGENTE</text>
+<text x="634" y="328" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="400" fill="#52525B">Soporte L1</text>
+<text x="764" y="328" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="13.5" font-weight="500" fill="#1C1917">91.2</text>
+<line x1="264" y1="360" x2="864" y2="360" stroke="#E7E5E4" stroke-width="1"/>
+<circle cx="270" cy="370" r="4" fill="#D6D3D1"/>
+<text x="286" y="374" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13.5" font-weight="500" fill="#1C1917">Valentina Soto</text>
+<rect x="504" y="362" width="59" height="22" fill="#F5F5F4" rx="11"/>
+  <text x="533.5" y="377" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="500" fill="#52525B" text-anchor="middle">HUMANO</text>
+<text x="634" y="374" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="400" fill="#52525B">Product manager</text>
+<text x="764" y="374" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="13.5" font-weight="500" fill="#1C1917">83.5</text>
+<line x1="264" y1="406" x2="864" y2="406" stroke="#E7E5E4" stroke-width="1"/>
+<g id="scorecard">
+  <rect x="896" y="136" width="448" height="240" fill="#FFFFFF" rx="10" stroke="#E7E5E4" stroke-width="1"/>
+  <rect x="896" y="136" width="3" height="240" fill="#B45309"/>
+  <text x="920" y="172" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="10.5" font-weight="500" fill="#71717A" letter-spacing="1.1">SCORECARD · ROL</text>
+  <text x="920" y="202" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="17" font-weight="600" fill="#1C1917">SDR híbrido</text>
+</g>
+<text x="920" y="236" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="12.5" font-weight="400" fill="#52525B">Resultados comerciales</text>
+<text x="1320" y="236" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="12.5" font-weight="500" fill="#1C1917" text-anchor="end">40%</text>
+<rect x="920" y="244" width="400" height="4" fill="#E7E5E4" rx="2"/>
+<rect x="920" y="244" width="160.0" height="4" fill="#B45309" rx="2"/>
+<text x="920" y="270" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="12.5" font-weight="400" fill="#52525B">Calidad de señales</text>
+<text x="1320" y="270" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="12.5" font-weight="500" fill="#1C1917" text-anchor="end">30%</text>
+<rect x="920" y="278" width="400" height="4" fill="#E7E5E4" rx="2"/>
+<rect x="920" y="278" width="120.0" height="4" fill="#B45309" rx="2"/>
+<text x="920" y="304" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="12.5" font-weight="400" fill="#52525B">Colaboración</text>
+<text x="1320" y="304" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="12.5" font-weight="500" fill="#1C1917" text-anchor="end">20%</text>
+<rect x="920" y="312" width="400" height="4" fill="#E7E5E4" rx="2"/>
+<rect x="920" y="312" width="80.0" height="4" fill="#B45309" rx="2"/>
+<text x="920" y="338" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="12.5" font-weight="400" fill="#52525B">Cumplimiento</text>
+<text x="1320" y="338" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="12.5" font-weight="500" fill="#1C1917" text-anchor="end">10%</text>
+<rect x="920" y="346" width="400" height="4" fill="#E7E5E4" rx="2"/>
+<rect x="920" y="346" width="40.0" height="4" fill="#B45309" rx="2"/>
+<g id="propuesta">
+  <rect x="896" y="396" width="448" height="250" fill="#FEF3E7" rx="10" stroke="#FDE6CE" stroke-width="1"/>
+  <text x="920" y="432" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="10.5" font-weight="500" fill="#9A3412" letter-spacing="1.1">AGENTE PROPONE · HUMANO DECIDE</text>
+  <text x="920" y="462" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="400" fill="#52525B">agent-ventas-01 propone ascender a</text>
+  <text x="920" y="484" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="600" fill="#1C1917">SDR comercial · Tier 2</text>
+  <text x="920" y="514" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="11.5" font-weight="400" fill="#71717A">Evidencia: 3 trim. sobre cuota · NPS 61</text>
+  <text x="920" y="534" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="11.5" font-weight="400" fill="#71717A">Responsable humano: W. Bucardo</text>
+  <rect x="920" y="560" width="89" height="36" fill="#B45309" rx="6"/>
+  <text x="964.5" y="583.0" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="500" fill="#FFFFFF" text-anchor="middle">Aprobar</text>
+  <rect x="1044" y="560" width="89" height="36" fill="#FFFFFF" rx="6" stroke="#D6D3D1" stroke-width="1"/>
+  <text x="1088.5" y="583.0" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="500" fill="#1C1917" text-anchor="middle">Revisar</text>
+  <text x="1320" y="584" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="10.5" font-weight="400" fill="#71717A" text-anchor="end">la decisión queda registrada</text>
+</g>
+</svg>
