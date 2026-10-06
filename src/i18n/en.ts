@@ -448,20 +448,16 @@ export const en: typeof es = {
       title: "How we decide.",
       items: [
         {
-          title: "Sovereignty before convenience",
-          body: "Owned infrastructure, owned code, owned decisions. You do not build on anything that a vendor can take away on a whim.",
+          title: "We run what we sell.",
+          body: "We operate the infrastructure our software runs on; we don't resell someone else's.",
         },
         {
-          title: "Outcomes, not theater",
-          body: "We measure what we define. If a number cannot be verified, it is not published — internally or externally.",
+          title: "Measure to govern.",
+          body: "Every call is metered and authorized before it happens. Control is not an after-the-fact report.",
         },
         {
-          title: "Agents propose, humans decide",
-          body: "Automation with named accountability. Every relevant decision has a human behind it.",
-        },
-        {
-          title: "Anti-MVP craft",
-          body: "Nothing half-baked. Consulting depth, carrier-grade engineering and real finish in every deliverable.",
+          title: "Control is not for rent.",
+          body: "Our own iron, our own contract. Accountability is not outsourced.",
         },
       ],
     },

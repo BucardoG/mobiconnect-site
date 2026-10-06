@@ -449,20 +449,16 @@ export const es = {
       title: "Cómo decidimos.",
       items: [
         {
-          title: "Soberanía antes que comodidad",
-          body: "Infraestructura propia, código propio, decisiones propias. Lo que se puede perder por capricho de un proveedor no se construye encima.",
+          title: "Corremos lo que vendemos.",
+          body: "Operamos la infraestructura sobre la que corre nuestro software; no revendemos la de otro.",
         },
         {
-          title: "Resultados, no teatro",
-          body: "Se mide lo que se define. Si un número no es verificable, no se publica — ni internamente ni afuera.",
+          title: "Medir es gobernar.",
+          body: "Cada consumo se mide y se autoriza antes de ocurrir. El control no es un reporte posterior.",
         },
         {
-          title: "Los agentes proponen, los humanos deciden",
-          body: "Automatización con responsabilidad nombrada. Toda decisión relevante tiene un humano detrás.",
-        },
-        {
-          title: "Craft anti-MVP",
-          body: "Nada “de kinder”. Profundidad de consultoría, ingeniería de carrier y acabado real en cada entregable.",
+          title: "El control no se renta.",
+          body: "Hierro propio, contrato propio. La responsabilidad no se delega.",
         },
       ],
     },
