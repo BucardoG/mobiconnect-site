@@ -141,7 +141,7 @@ export const en: typeof es = {
         "The commercial layer for carrier-grade APIs: plans, quotas, licenses and metering for operators and platforms that sell connectivity as a product. Under construction on sovereign infrastructure.",
     },
     hero: {
-      eyebrow: "Product · 01",
+      eyebrow: "P·01 · Core",
       title: "Entitlements",
       sub: "The commercial layer for APIs: plans, quotas, licenses and metering for anyone selling connectivity as a product. CAMARA (GSMA)-aligned surface, designed for operators with carrier-grade standards.",
       ctaPrimary: { label: "Talk about Entitlements", href: "/en/contact" },
@@ -263,7 +263,7 @@ export const en: typeof es = {
         "The performance system for hybrid teams: people and AI agents in the same registry, measured by outcomes rather than activity. Agents propose, humans decide.",
     },
     hero: {
-      eyebrow: "Product · 02",
+      eyebrow: "P·04 · Hybrid teams",
       title: "People",
       sub: "An HR system designed from the ground up for hybrid teams: people and AI agents in the same registry, with clear rules — outcomes are measured, not activity.",
       ctaPrimary: { label: "Talk about People", href: "/en/contact" },
@@ -435,7 +435,7 @@ export const en: typeof es = {
       org: "Organization",
       email: "Email",
       topic: "Topic",
-      topics: ["Entitlements", "People", "Partnership", "Other"],
+      topics: ["Entitlements", "API Platform (Telco)", "Open Finance", "People", "Partnership", "Other"],
       message: "Message",
       messagePlaceholder:
         "What you operate, what you sell today, and what's missing to sell it better…",

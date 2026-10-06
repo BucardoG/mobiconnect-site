@@ -11,7 +11,7 @@
   --surface: #ffffff;
   --ink: #0a0a0a;
   --ink-2: #57534e;
-  --ink-3: #a8a29e;
+  --ink-3: #78716c; /* AIR-1573: antes #a8a29e (2.41:1). Ahora 4.59:1 sobre --bg, 4.80:1 sobre --surface (WCAG AA) */
   --line: #e7e5e4;
   --line-strong: #d6d3d1;
   --signal: #0f766e;

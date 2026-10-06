@@ -142,7 +142,7 @@ export const es = {
         "La capa comercial de las APIs carrier-grade: planes, cuotas, licencias y medición para operadores y plataformas que venden conectividad como producto. En construcción sobre infraestructura soberana.",
     },
     hero: {
-      eyebrow: "Producto · 01",
+      eyebrow: "P·01 · Núcleo",
       title: "Entitlements",
       sub: "La capa comercial de las APIs: planes, cuotas, licencias y medición para quien vende conectividad como producto. Superficie alineada a CAMARA (GSMA) y diseñada para operadores con estándares carrier-grade.",
       ctaPrimary: { label: "Hablar de Entitlements", href: "/contact" },
@@ -264,7 +264,7 @@ export const es = {
         "El sistema de desempeño para equipos híbridos: personas y agentes AI en el mismo registro, medidos por resultados y no por actividad. Los agentes proponen, los humanos deciden.",
     },
     hero: {
-      eyebrow: "Producto · 02",
+      eyebrow: "P·04 · Equipos híbridos",
       title: "People",
       sub: "Un sistema de RR.HH. diseñado desde cero para equipos híbridos: personas y agentes AI en el mismo registro, con reglas claras — se mide resultados, no actividad.",
       ctaPrimary: { label: "Hablar de People", href: "/contact" },
@@ -436,7 +436,7 @@ export const es = {
       org: "Organización",
       email: "Correo",
       topic: "Tema",
-      topics: ["Entitlements", "People", "Alianza", "Otro"],
+      topics: ["Entitlements", "Plataforma de APIs (Telco)", "Open Finance", "People", "Alianza", "Otro"],
       message: "Mensaje",
       messagePlaceholder:
         "Qué operas, qué vendes hoy y qué te falta para venderlo mejor…",
