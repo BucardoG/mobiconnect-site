@@ -13,6 +13,7 @@ interface Props {
     developers: string;
     openFinance: string;
     people: string;
+    plans: string;
     group: string;
     contact: string;
     langTo: string;
@@ -30,6 +31,7 @@ const links = [
   { key: "developers", href: `${pre}/developers`, label: t.developers, match: "/developers" },
   { key: "openFinance", href: `${pre}/open-finance`, label: t.openFinance, match: "/open-finance" },
   { key: "people", href: `${pre}/products/people`, label: t.people, match: "/products/people" },
+  { key: "plans", href: `${pre}/plans`, label: t.plans, match: "/plans" },
   { key: "group", href: `${pre}/about`, label: t.group, match: "/about" },
   { key: "contact", href: `${pre}/contact`, label: t.contact, match: "/contact" },
 ];
@@ -133,6 +135,7 @@ const isActive = (match: string) => path === match;
   .nav-links a {
     font-size: 0.9375rem;
     font-weight: 500;
+    white-space: nowrap;
     color: var(--ink-2);
     text-decoration: none;
     transition: color 0.15s ease;
@@ -219,7 +222,18 @@ const isActive = (match: string) => path === match;
     color: var(--ink);
   }
 
-  @media (max-width: 768px) {
+  /* 8 enlaces desde AIR-1520 (Planes): se aprieta el espaciado en pantallas medianas
+     y el cajón móvil entra antes, para que ningún enlace se parta en dos líneas. */
+  @media (max-width: 1180px) {
+    .nav-links ul {
+      gap: 1.1rem;
+    }
+    .nav-links a {
+      font-size: 0.875rem;
+    }
+  }
+
+  @media (max-width: 960px) {
     .nav-links {
       display: none;
     }

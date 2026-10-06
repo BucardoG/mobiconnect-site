@@ -1,0 +1,21 @@
+{
+  "schema_version": "1",
+  "generated_at": "2026-10-06T05:20:00Z",
+  "source": "seed contract M1 (entitlement/orchestration-plan.md) — primer export en vivo pendiente de token entitlement:admin",
+  "currency_note": "pricing not published",
+  "plans": [
+    {
+      "plan_id": null,
+      "code": "starter",
+      "name": "Starter",
+      "product_code": "sms.otp",
+      "product_name": "SMS OTP",
+      "rate_limit_rps": 5,
+      "burst": 10,
+      "quota": { "amount": 1000, "period": "month", "unit": "units" },
+      "price_model": "retail_flat",
+      "audience": "retail",
+      "status": "draft"
+    }
+  ]
+}
