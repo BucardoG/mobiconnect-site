@@ -62,6 +62,21 @@ const ogImage = locale === "en" ? `${site}/og-en.png` : `${site}/og.png`;
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={ogImage} />
+
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      name: "Mobiconnect",
+      url: `${site}/`,
+      logo: `${site}/apple-touch-icon.png`,
+    })} />
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      name: "Mobiconnect",
+      url: `${site}/`,
+      inLanguage: locale === "en" ? "en" : "es",
+    })} />
   </head>
   <body>
     <a class="skip-link" href="#main">{t.a11y.skip}</a>

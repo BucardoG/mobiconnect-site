@@ -18,12 +18,43 @@ const t = es.about;
     ctaSecondary={t.hero.ctaSecondary}
   />
 
+  <!-- Por qué existimos (D7) -->
+  <section class="section section--rule">
+    <div class="container history-grid">
+      <SectionHeader eyebrow={t.why.eyebrow} title={t.why.title} />
+      <div class="prose">
+        {t.why.body.map((p) => <p>{p}</p>)}
+        <blockquote class="dq">{t.why.quote}</blockquote>
+      </div>
+    </div>
+  </section>
+
   <!-- Historia -->
   <section class="section section--rule">
     <div class="container history-grid">
       <SectionHeader eyebrow={t.history.eyebrow} title={t.history.title} />
       <div class="prose">
         {t.history.body.map((p) => <p>{p}</p>)}
+      </div>
+    </div>
+  </section>
+
+  <!-- La oferta -->
+  <section class="section section--rule">
+    <div class="container">
+      <SectionHeader eyebrow={t.offer.eyebrow} title={t.offer.title} />
+      <div class="grid grid--2">
+        {
+          t.offer.items.map((item) => (
+            <FeatureCard
+              kicker={item.kicker}
+              title={item.title}
+              body={item.body}
+              href={item.href}
+              cta={item.cta}
+            />
+          ))
+        }
       </div>
     </div>
   </section>
@@ -104,6 +135,17 @@ const t = es.about;
     letter-spacing: 0.12em;
     text-transform: uppercase;
     color: var(--signal);
+  }
+
+  .dq {
+    margin: 2rem 0 0;
+    padding-left: 1.25rem;
+    border-left: 2px solid var(--signal);
+    font-size: 1.1875rem;
+    line-height: 1.55;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    color: var(--ink);
   }
 
   @media (max-width: 900px) {

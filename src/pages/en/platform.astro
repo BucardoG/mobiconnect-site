@@ -1,0 +1,171 @@
+---
+import Base from "../../layouts/Base.astro";
+import Hero from "../../components/Hero.astro";
+import SectionHeader from "../../components/SectionHeader.astro";
+import FeatureCard from "../../components/FeatureCard.astro";
+import CTABand from "../../components/CTABand.astro";
+---
+
+<Base
+  title="API Platform — Mobiconnect"
+  description="The operator's CAMARA (GSMA) API serving platform: gateway, Entitlements and the developer portal under one standard, deployable on your own infrastructure. Number Verification, SIM Swap, network quality and more — exposed under a commercial contract."
+  locale="en"
+  path="/platform"
+>
+  <Hero
+    eyebrow="P·02 · Telco"
+    title="The operator's API platform."
+    sub="Gateway, Entitlements and the developer portal under a single standard — CAMARA (GSMA). The network implementation is the operator's; Mobiconnect brings the exposure, the contract and the measurement. Deployable on your own infrastructure."
+    ctaPrimary={{ label: "Talk to the founder", href: "/en/contact" }}
+    ctaSecondary={{ label: "Go to the developer portal", href: "/en/developers" }}
+    panelLabel="Platform card"
+    panel={[
+      { k: "STANDARD", v: "CAMARA (GSMA)" },
+      { k: "COMPONENTS", v: "GATEWAY · ENTITLEMENTS · PORTAL" },
+      { k: "STATUS", v: "STAGING GATEWAY LIVE" },
+      { k: "DEPLOYMENT", v: "YOUR OWN INFRASTRUCTURE" },
+    ]}
+  />
+
+  <section class="section section--rule">
+    <div class="container history-grid">
+      <SectionHeader
+        eyebrow="What it solves"
+        title="The standard solves the interface. The platform brings the contract."
+        />
+      <div class="prose">
+        <p>
+          When an operator exposes network APIs — verification, SIM swap,
+          quality — the CAMARA standard defines how they are called and what
+          they return. It does not define who may consume them, how much, at
+          what price, with which auditable measurement. That layer usually
+          gets outsourced to global aggregators, and every outsourced layer
+          is margin and control that belongs to someone else.
+        </p>
+        <p>
+          Mobiconnect is the layer where that API becomes a contract: plans,
+          quotas, usage licenses and measurement on top of the standard
+          surface — with the operator owning the relationship, the data and
+          the margin. It is the same core as
+          <a href="/en/products/entitlements">Entitlements</a>, applied to
+          network APIs.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--rule">
+    <div class="container">
+      <SectionHeader
+        eyebrow="Target APIs · CAMARA"
+        title="Five network signals, one contract."
+        lede="The network implementation is the operator's; Mobiconnect brings the exposure, the contract and the measurement."
+      />
+      <div class="grid grid--3">
+        <FeatureCard
+          kicker="CAMARA"
+          title="Number Verification"
+          body="Confirms the device's number is what it claims to be — no OTP, no friction for the user."
+        />
+        <FeatureCard
+          kicker="CAMARA"
+          title="SIM Swap"
+          body="Detects a recent SIM change: the anti-fraud signal banking already consumes in the region's first Open Gateway cases."
+        />
+        <FeatureCard
+          kicker="CAMARA"
+          title="Device Location"
+          body="Device location verification for the use cases that require it."
+        />
+        <FeatureCard
+          kicker="CAMARA"
+          title="Quality on Demand"
+          body="Guaranteed network quality for a session, under contract and with measurement."
+        />
+        <FeatureCard
+          kicker="CAMARA"
+          title="SMS and OTP"
+          body="OTP delivery and verification over the operator's network, with the contract in the middle."
+        />
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--rule">
+    <div class="container">
+      <SectionHeader
+        eyebrow="Architecture"
+        title="Three components, sovereign deployment."
+        lede="The platform deploys on the operator's network or on whatever infrastructure it chooses. Nothing goes through an aggregator."
+      />
+      <div class="grid grid--3">
+        <FeatureCard
+          kicker="Component 01"
+          title="Gateway"
+          body="The door: authentication, routing and access control for the exposed APIs."
+        />
+        <FeatureCard
+          kicker="Component 02 · Core"
+          title="Entitlements"
+          body="The contract: plans, quotas, usage licenses and auditable measurement of every consumption."
+          href="/en/products/entitlements"
+          cta="See the core"
+        />
+        <FeatureCard
+          kicker="Component 03"
+          title="Developer portal"
+          body="The experience: API reference, environment keys and try-it. This platform's technical surface."
+          href="/en/developers"
+          cta="Go to the portal"
+        />
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--rule">
+    <div class="container">
+      <SectionHeader
+        eyebrow="Status"
+        title="What exists and what is on the way."
+      />
+      <div class="grid grid--2">
+        <FeatureCard
+          highlight={true}
+          title="Today: a live staging gateway."
+          body="The Entitlements server runs on staging with its CAMARA-aligned surface; the developer portal is designed and in the making — reference, test keys and try-it."
+        />
+        <FeatureCard
+          title="On the way: CAMARA conformance."
+          body="Conformance with the standard advances with a documented, item-by-item closing plan. No dates we cannot prove."
+        />
+      </div>
+    </div>
+  </section>
+
+  <CTABand
+    eyebrow="API Platform"
+    title="Take your operator's APIs to the contract."
+    body="If your operator exposes CAMARA APIs and today governs them with a call count — or an aggregator — let's talk about what changes when the contract is yours."
+    button="Start a conversation"
+    href="/en/contact"
+  />
+</Base>
+
+<style>
+  .history-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+    gap: clamp(2rem, 5vw, 4.5rem);
+    align-items: start;
+  }
+
+  .history-grid .prose a {
+    color: var(--signal);
+  }
+
+  @media (max-width: 900px) {
+    .history-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
