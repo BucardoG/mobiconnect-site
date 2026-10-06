@@ -1,0 +1,299 @@
+---
+// BrandPage — página pública de marca (/design y /en/design). AIR-1576, decisión del CEO 2026-10-06: publicar.
+// Fuente: brand/brand-book.md v2.0 y el manual de Figma S9WhMuToj4lwisbDAK8VhF. Sin licencias (D8) ni cifras.
+import Hero from "./Hero.astro";
+import SectionHeader from "./SectionHeader.astro";
+import FeatureCard from "./FeatureCard.astro";
+import CTABand from "./CTABand.astro";
+import Logo from "./Logo.astro";
+
+interface Props { locale: "es" | "en" }
+const { locale } = Astro.props;
+const en = locale === "en";
+const pre = en ? "/en" : "";
+const anchor = en ? "downloads" : "descargas";
+
+const t = en
+  ? {
+      eyebrow: "Brand · v1.0",
+      title: "The symbol is an instrument.",
+      sub: "Mobiconnect's M is made of what we do: two legs that are full-scale measurement bars, three readings inside, and a carrier wave that joins them. Discrete measurement of a continuous signal — exactly what Entitlements does with an API's traffic.",
+      ctaDl: "Download the logo",
+      ctaTalk: "Talk to the team",
+      panelLabel: "Brand card",
+      panel: [
+        { k: "LOGO", v: "01 «MUESTREO»" },
+        { k: "SIGNAL", v: "TEAL #0F766E" },
+        { k: "GRID", v: "48 × 48 U" },
+        { k: "WORDMARK", v: "INTER TIGHT 600 · OUTLINED" },
+        { k: "STATUS", v: "APPROVED · 2026-10-05" },
+      ],
+      concept: { eyebrow: "Concept", title: "Four parts, one letter.", lede: "Nothing in the symbol is decoration: every element is part of the product's story." },
+      parts: [
+        ["The legs", "Two measurement bars at full scale: the bounds of the contract — what a customer has the right to consume."],
+        ["The carrier", "The teal wave: the network's continuous signal and an API's traffic. It is born inside the legs: the signal belongs to the contract."],
+        ["The samples", "Three readings below the wave: discrete measurement. Entitlements meters, freezes the price and bills."],
+        ["The letter", "All of it, together, is an M. The brand does not decorate the name: it builds it."],
+      ],
+      build: { eyebrow: "Construction", title: "A 48-unit grid.", lede: "The wave is born hidden inside each leg and emerges already descending — no false joins. The valley carries an optical correction so its inner edge does not close into a point." },
+      spec: [["Grid", "48 × 48 u · module 8"], ["Legs", "6 u · full height (4 → 44)"], ["Carrier", "5 u · teal #0F766E"], ["Inner samples", "4 u · gap 2.5 u below the wave"], ["Valley", "y = 31 · optical correction"], ["Wordmark", "Inter Tight 600 · −2.2 % · outlined"], ["Lockup", "x-height = 0.6 × symbol · gap 0.4 ×"]],
+      reduce: { eyebrow: "Reduction", title: "Two drawings, one sign.", lede: "Above 32 px, the master with its three samples. At 32 px or less the inner samples drop and the legs and wave gain weight: it still reads as an M at the 16 px favicon." },
+      versions: { eyebrow: "Lockups and versions", title: "One piece, approved forms.", lede: "The horizontal lockup is always a single vector — the wordmark is outlined, never live type." },
+      vLabels: ["Positive · preferred", "Reduced · ≤ 32 px tall", "Reverse · on ink", "App icon · ink", "App icon · teal"],
+      color: { eyebrow: "Color", title: "Ivory, ink and a single signal.", lede: "Light-first. Ink gives structure; teal is the only signal — if everything is signal, nothing is. Contrast ratios computed with the WCAG formula." },
+      roles: { bg: "Base background", surface: "Cards and surfaces", ink: "Text, legs and wordmark", ink2: "Secondary text", ink3: "Mono labels, metadata", line: "1 px rules, borders", signal: "The only signal", reverse: "Wave on ink" },
+      type: { eyebrow: "Typography", title: "Hierarchy through type, not color.", lede: "Three open-source (OFL) families: a tense display for headlines, a text face for long reading, and a monospace for everything that is data." },
+      typeRoles: [["Display", "Inter Tight · 600", "Headlines. Tracking −2 % to −3 %."], ["Text", "Inter · 400 / 500 / 600", "Paragraphs, UI, buttons."], ["Data", "IBM Plex Mono · 400 / 500", "Kickers, LABEL → VALUE cards, code."]],
+      use: { eyebrow: "Use", title: "What's right, and what never.", lede: "The logo is a calibrated instrument: any distortion de-calibrates it. When in doubt, use the positive lockup on ivory." },
+      dos: ["Positive lockup on ivory or white", "Reverse on ink: ivory legs, teal-reverse wave", "Single-color ink when only one color is available", "The reduction at 32 px or less", "Clear space of ¼ of the symbol's height on all sides"],
+      donts: ["Rotate, skew or distort", "Another signal color (copper, purple…) or gradients", "Swap roles: teal legs, ink wave", "Shadows, glows or effects", "Inner samples at 16 px — use the reduction", "Rewrite the wordmark in live type or uppercase"],
+      dl: { eyebrow: "Downloads", title: "Official files.", lede: "SVG vectors from the approved master. Use them as they are: do not redraw or recolor." },
+      files: [["Horizontal lockup · positive", "mobiconnect-lockup.svg"], ["Horizontal lockup · reverse", "mobiconnect-lockup-reverse.svg"], ["Symbol · master", "mobiconnect-symbol.svg"], ["Symbol · reduction ≤ 32 px", "mobiconnect-symbol-small.svg"], ["Symbol · single-color ink", "mobiconnect-symbol-mono.svg"], ["App icon · ink", "mobiconnect-app-ink.svg"], ["App icon · teal", "mobiconnect-app-teal.svg"]],
+      cta: { eyebrow: "Brand", title: "Using the brand in a partnership?", body: "For co-branding, press or partner material, talk to us before publishing. We'll send the right files and check the application.", button: "Start a conversation" },
+      dlWord: "Download SVG",
+    }
+  : {
+      eyebrow: "Marca · v1.0",
+      title: "El símbolo es un instrumento.",
+      sub: "La M de Mobiconnect está hecha de lo que hacemos: dos patas que son barras de medición a plena escala, tres lecturas interiores y una onda portadora que las une. Medición discreta de una señal continua — exactamente lo que hace Entitlements con el tráfico de una API.",
+      ctaDl: "Descargar el logotipo",
+      ctaTalk: "Hablar con el equipo",
+      panelLabel: "Ficha de marca",
+      panel: [
+        { k: "LOGOTIPO", v: "01 «MUESTREO»" },
+        { k: "SEÑAL", v: "TEAL #0F766E" },
+        { k: "RETÍCULA", v: "48 × 48 U" },
+        { k: "WORDMARK", v: "INTER TIGHT 600 · CONTORNOS" },
+        { k: "ESTADO", v: "APROBADO · 2026-10-05" },
+      ],
+      concept: { eyebrow: "Concepto", title: "Cuatro partes, una letra.", lede: "Nada en el símbolo es decoración: cada elemento es parte de la historia del producto." },
+      parts: [
+        ["Las patas", "Dos barras de medición a plena escala: los límites del contrato. Lo que el cliente tiene derecho a consumir."],
+        ["La portadora", "La onda teal: la señal continua de la red y del tráfico de una API. Nace dentro de las patas: la señal pertenece al contrato."],
+        ["Las muestras", "Tres lecturas bajo la onda: la medición discreta. Entitlements mide, congela el precio y factura."],
+        ["La letra", "Todo eso, junto, es una M. La marca no decora el nombre: lo construye."],
+      ],
+      build: { eyebrow: "Construcción", title: "Retícula de 48 unidades.", lede: "La onda nace oculta dentro de cada pata y emerge ya descendiendo: no hay empalmes falsos. El valle lleva corrección óptica para que su cara interior no cierre en punta." },
+      spec: [["Retícula", "48 × 48 u · módulo 8"], ["Patas", "6 u · plena altura (4 → 44)"], ["Portadora", "5 u · teal #0F766E"], ["Muestras interiores", "4 u · separación 2.5 u bajo la onda"], ["Valle", "y = 31 · corrección óptica"], ["Wordmark", "Inter Tight 600 · −2.2 % · en contornos"], ["Lockup", "altura de x = 0.6 × símbolo · separación 0.4 ×"]],
+      reduce: { eyebrow: "Reducción", title: "Dos dibujos, un mismo signo.", lede: "Sobre 32 px, el master con sus tres muestras. A 32 px o menos las muestras interiores desaparecen y las patas y la onda ganan peso: sigue leyéndose como M en los 16 px del favicon." },
+      versions: { eyebrow: "Lockups y versiones", title: "Una sola pieza, formas aprobadas.", lede: "El lockup horizontal es siempre un único vector: el wordmark va en contornos, nunca en tipografía viva." },
+      vLabels: ["Positivo · preferido", "Reducido · ≤ 32 px de alto", "Reverso · sobre tinta", "App icon · tinta", "App icon · teal"],
+      color: { eyebrow: "Color", title: "Marfil, tinta y una sola señal.", lede: "Light-first. La tinta da estructura; el teal es la única señal — si todo es señal, nada lo es. Razones de contraste calculadas con la fórmula de WCAG." },
+      roles: { bg: "Fondo base", surface: "Tarjetas y superficies", ink: "Texto, patas y wordmark", ink2: "Texto secundario", ink3: "Etiquetas mono, metadatos", line: "Reglas de 1 px, bordes", signal: "Única señal", reverse: "Onda sobre tinta" },
+      type: { eyebrow: "Tipografía", title: "Jerarquía por tipografía, no por color.", lede: "Tres familias open source (OFL): una display con tensión para titulares, una de texto para leer largo y una monoespaciada para todo lo que es dato." },
+      typeRoles: [["Display", "Inter Tight · 600", "Titulares. Tracking −2 % a −3 %."], ["Texto", "Inter · 400 / 500 / 600", "Párrafos, UI, botones."], ["Dato", "IBM Plex Mono · 400 / 500", "Kickers, fichas LABEL → VALOR, código."]],
+      use: { eyebrow: "Uso", title: "Lo correcto, y lo que nunca.", lede: "El logotipo es un instrumento calibrado: cualquier deformación lo descalibra. Ante la duda, el lockup positivo sobre marfil." },
+      dos: ["Lockup positivo sobre marfil o blanco", "Reverso sobre tinta: patas marfil, onda teal reverso", "Monocromo tinta cuando hay un solo color", "La reducción a 32 px o menos", "Margen libre de ¼ de la altura del símbolo en los cuatro lados"],
+      donts: ["Rotar, inclinar o deformar", "Otro color de señal (cobre, morado…) o gradientes", "Invertir roles: patas teal, onda tinta", "Sombras, brillos o efectos", "Muestras interiores a 16 px — usar la reducción", "Reescribir el wordmark con tipografía viva o en mayúsculas"],
+      dl: { eyebrow: "Descargas", title: "Archivos oficiales.", lede: "Vectores SVG del master aprobado. Úsalos tal cual: no los redibujes ni los recolorees." },
+      files: [["Lockup horizontal · positivo", "mobiconnect-lockup.svg"], ["Lockup horizontal · reverso", "mobiconnect-lockup-reverse.svg"], ["Símbolo · master", "mobiconnect-symbol.svg"], ["Símbolo · reducción ≤ 32 px", "mobiconnect-symbol-small.svg"], ["Símbolo · monocromo tinta", "mobiconnect-symbol-mono.svg"], ["App icon · tinta", "mobiconnect-app-ink.svg"], ["App icon · teal", "mobiconnect-app-teal.svg"]],
+      cta: { eyebrow: "Marca", title: "¿Usarás la marca en una alianza?", body: "Para co-branding, prensa o material de partners, conversemos antes de publicar: enviamos los archivos correctos y revisamos la aplicación.", button: "Iniciar conversación" },
+      dlWord: "Descargar SVG",
+    };
+
+const swatches = [
+  ["bg", "#FAFAF9", t.roles.bg, "—"],
+  ["surface", "#FFFFFF", t.roles.surface, "—"],
+  ["ink", "#0A0A0A", t.roles.ink, "18.96:1"],
+  ["ink-2", "#57534E", t.roles.ink2, "7.30:1"],
+  ["ink-3", "#78716C", t.roles.ink3, "4.59:1"],
+  ["line", "#E7E5E4", t.roles.line, "—"],
+  ["signal", "#0F766E", t.roles.signal, "5.24:1"],
+  ["signal-reverse", "#5EEAD4", t.roles.reverse, "13.38:1"],
+];
+const sizes = [96, 64, 48, 32, 24, 16];
+---
+
+<Hero
+  eyebrow={t.eyebrow}
+  title={t.title}
+  sub={t.sub}
+  ctaPrimary={{ label: t.ctaDl, href: `${pre}/design/#${anchor}` }}
+  ctaSecondary={{ label: t.ctaTalk, href: `${pre}/contact` }}
+  panelLabel={t.panelLabel}
+  panel={t.panel}
+/>
+
+<section class="section section--rule">
+  <div class="container">
+    <SectionHeader eyebrow={t.concept.eyebrow} title={t.concept.title} lede={t.concept.lede} />
+    <div class="concept">
+      <div class="figure figure--big"><Logo height={280} symbolOnly label="" /></div>
+      <div class="grid grid--2">
+        {t.parts.map(([k, v]) => <FeatureCard title={k} body={v} />)}
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--rule">
+  <div class="container">
+    <SectionHeader eyebrow={t.build.eyebrow} title={t.build.title} lede={t.build.lede} />
+    <div class="build">
+      <div class="gridfig" role="img" aria-label={en ? "Symbol on its 48-unit grid" : "Símbolo sobre su retícula de 48 unidades"}>
+        <Logo height={384} symbolOnly label="" />
+      </div>
+      <dl class="spec">
+        {t.spec.map(([k, v]) => (<div><dt class="mono">{k}</dt><dd class="mono">{v}</dd></div>))}
+      </dl>
+    </div>
+  </div>
+</section>
+
+<section class="section section--rule">
+  <div class="container">
+    <SectionHeader eyebrow={t.reduce.eyebrow} title={t.reduce.title} lede={t.reduce.lede} />
+    <div class="sizes">
+      {sizes.map((s) => (
+        <figure class="size">
+          <div class="figure"><Logo height={s} symbolOnly label="" /></div>
+          <figcaption class="mono">{s} px · {s > 32 ? "master" : (en ? "reduction" : "reducción")}</figcaption>
+        </figure>
+      ))}
+    </div>
+  </div>
+</section>
+
+<section class="section section--rule">
+  <div class="container">
+    <SectionHeader eyebrow={t.versions.eyebrow} title={t.versions.title} lede={t.versions.lede} />
+    <div class="versions">
+      <figure class="v v--wide"><div class="figure"><Logo height={72} label="Mobiconnect" /></div><figcaption class="mono">{t.vLabels[0]}</figcaption></figure>
+      <figure class="v"><div class="figure"><Logo height={30} label="Mobiconnect" /></div><figcaption class="mono">{t.vLabels[1]}</figcaption></figure>
+      <figure class="v"><div class="figure figure--ink"><Logo height={44} ink="#FAFAF9" signal="#5EEAD4" label="Mobiconnect" /></div><figcaption class="mono">{t.vLabels[2]}</figcaption></figure>
+      <figure class="v v--app"><div class="app app--ink"><Logo height={96} symbolOnly ink="#FAFAF9" signal="#5EEAD4" label="" /></div><figcaption class="mono">{t.vLabels[3]}</figcaption></figure>
+      <figure class="v v--app"><div class="app app--teal"><Logo height={96} symbolOnly ink="#FAFAF9" signal="#FAFAF9" label="" /></div><figcaption class="mono">{t.vLabels[4]}</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="section section--rule">
+  <div class="container">
+    <SectionHeader eyebrow={t.color.eyebrow} title={t.color.title} lede={t.color.lede} />
+    <div class="swatches">
+      {swatches.map(([k, hex, role, ratio]) => (
+        <div class="sw">
+          <div class="chip" style={`background:${hex}`}></div>
+          <div class="sw-info">
+            <span class="mono sw-k">{k}</span>
+            <span class="mono sw-hex">{hex}</span>
+            <span class="sw-role">{role}</span>
+            {ratio !== "—" && <span class="mono sw-ratio">{ratio}{k === "signal-reverse" ? (en ? " on ink" : " sobre tinta") : (en ? " on ivory" : " sobre marfil")}</span>}
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<section class="section section--rule">
+  <div class="container">
+    <SectionHeader eyebrow={t.type.eyebrow} title={t.type.title} lede={t.type.lede} />
+    <div class="grid grid--3">
+      {t.typeRoles.map(([k, fam, use], i) => (
+        <div class="type-card">
+          <span class="mono type-k">{k}</span>
+          <span class={`specimen specimen--${i}`}>{i === 2 ? "Aa 048" : "Aa Gg"}</span>
+          <span class="mono type-fam">{fam}</span>
+          <span class="type-use">{use}</span>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<section class="section section--rule">
+  <div class="container">
+    <SectionHeader eyebrow={t.use.eyebrow} title={t.use.title} lede={t.use.lede} />
+    <div class="grid grid--2">
+      <ul class="rules rules--do">{t.dos.map((s) => <li>{s}</li>)}</ul>
+      <ul class="rules rules--dont">{t.donts.map((s) => <li>{s}</li>)}</ul>
+    </div>
+  </div>
+</section>
+
+<section class="section section--rule" id={anchor}>
+  <div class="container">
+    <SectionHeader eyebrow={t.dl.eyebrow} title={t.dl.title} lede={t.dl.lede} />
+    <ul class="files">
+      {t.files.map(([label, file]) => (
+        <li><span>{label}</span><a class="mono" href={`/brand/${file}`} download aria-label={`${t.dlWord}: ${label}`}>{t.dlWord} ↓</a></li>
+      ))}
+    </ul>
+  </div>
+</section>
+
+<CTABand eyebrow={t.cta.eyebrow} title={t.cta.title} body={t.cta.body} button={t.cta.button} href={`${pre}/contact`} />
+
+<style>
+  .mono { font-family: var(--font-mono); }
+  .concept { display: grid; grid-template-columns: minmax(0, 4fr) minmax(0, 8fr); gap: 1.5rem; align-items: stretch; }
+  .figure { display: flex; align-items: center; justify-content: center; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 1.5rem; min-height: 120px; }
+  .figure--big { padding: 2.5rem; }
+  .figure--ink { background: var(--ink); border-color: var(--ink); }
+  .build { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 2.5rem; align-items: start; }
+  .gridfig {
+    width: 432px; height: 432px; padding: 24px; box-sizing: border-box;
+    background-color: var(--surface);
+    background-image:
+      linear-gradient(to right, rgb(15 118 110 / 0.28) 1px, transparent 1px),
+      linear-gradient(to bottom, rgb(15 118 110 / 0.28) 1px, transparent 1px),
+      linear-gradient(to right, var(--line) 1px, transparent 1px),
+      linear-gradient(to bottom, var(--line) 1px, transparent 1px);
+    background-size: 64px 64px, 64px 64px, 8px 8px, 8px 8px;
+    background-position: 24px 24px;
+    border: 1px solid var(--line); border-radius: var(--radius);
+  }
+  .spec { margin: 0; }
+  .spec div { display: grid; grid-template-columns: 12rem 1fr; gap: 1rem; padding: 0.85rem 0; border-bottom: 1px solid var(--line); }
+  .spec dt { font-size: 0.75rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-3); }
+  .spec dd { margin: 0; font-size: 0.9rem; color: var(--ink); }
+  .sizes { display: flex; flex-wrap: wrap; gap: 1rem; align-items: flex-end; }
+  .size { margin: 0; display: grid; gap: 0.6rem; justify-items: center; }
+  .size .figure { min-height: 0; padding: 1.25rem; }
+  .size figcaption, .v figcaption { font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-3); }
+  .versions { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 1rem; }
+  .v { margin: 0; display: grid; gap: 0.6rem; grid-column: span 2; }
+  .v--wide { grid-column: span 4; }
+  .v .figure { min-height: 160px; }
+  .v--app { grid-column: span 1; }
+  .app { aspect-ratio: 1; border-radius: 22.5%; display: flex; align-items: center; justify-content: center; }
+  .app--ink { background: var(--ink); }
+  .app--teal { background: var(--signal); }
+  .swatches { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1rem; }
+  .sw { border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; background: var(--surface); }
+  .chip { height: 96px; border-bottom: 1px solid var(--line); }
+  .sw-info { display: grid; gap: 0.25rem; padding: 1rem; }
+  .sw-k { font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--signal); }
+  .sw-hex { font-size: 1rem; font-weight: 500; }
+  .sw-role { font-size: 0.875rem; color: var(--ink-2); }
+  .sw-ratio { font-size: 0.75rem; color: var(--ink-3); }
+  .type-card { display: grid; gap: 0.6rem; padding: 1.5rem; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); }
+  .type-k { font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--signal); }
+  .specimen { font-size: 4rem; line-height: 1.05; }
+  .specimen--0 { font-family: "Inter Tight", var(--font-sans); font-weight: 600; letter-spacing: -0.03em; }
+  .specimen--1 { font-family: var(--font-sans); font-weight: 400; }
+  .specimen--2 { font-family: var(--font-mono); }
+  .type-fam { font-size: 0.9rem; }
+  .type-use { font-size: 0.875rem; color: var(--ink-2); }
+  .rules { list-style: none; margin: 0; padding: 1.5rem; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); display: grid; gap: 0.75rem; }
+  .rules li { padding-left: 1.6rem; position: relative; font-size: 0.95rem; }
+  .rules--do { border-top: 3px solid var(--signal); }
+  .rules--do li::before { content: "✓"; position: absolute; left: 0; color: var(--signal); font-weight: 600; }
+  .rules--dont { border-top: 3px solid #B91C1C; }
+  .rules--dont li::before { content: "✕"; position: absolute; left: 0; color: #B91C1C; font-weight: 600; }
+  .files { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); }
+  .files li { display: flex; justify-content: space-between; gap: 1rem; padding: 1rem 0; border-bottom: 1px solid var(--line); }
+  .files a { font-size: 0.85rem; color: var(--signal); text-decoration: none; white-space: nowrap; }
+  .files a:hover { text-decoration: underline; text-underline-offset: 3px; }
+  @media (max-width: 900px) {
+    .concept, .build { grid-template-columns: 1fr; }
+    .gridfig { width: 100%; height: auto; aspect-ratio: 1; }
+    .gridfig :global(svg) { width: 100%; height: auto; }
+    .swatches { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .versions { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .v, .v--wide { grid-column: span 2; }
+    .v--app { grid-column: span 1; }
+    .spec div { grid-template-columns: 1fr; gap: 0.25rem; }
+  }
+</style>

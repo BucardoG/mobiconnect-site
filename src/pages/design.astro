@@ -1,55 +1,15 @@
 ---
+// /design — página pública de marca (AIR-1576). Decisión del CEO 2026-10-06: publicar con la marca nueva.
+// Reemplaza las 12 propuestas del 2026-10-02 (logo «instrumento» y cobre), retiradas de site/public/design/.
 import Base from "../layouts/Base.astro";
-
-const propuestas = [
-  { file: "00-fundamentos.svg", num: "00", title: "Fundamentos", desc: "Design system: neutrales, señal cobre, tipografía (Inter Tight / Inter / IBM Plex Mono), botones y radios." },
-  { file: "01-home-es.svg", num: "01", title: "Home ES", desc: "Portada: hero con ficha del sistema, tesis, productos, grupo, CTA y footer." },
-  { file: "02-producto-entitlements.svg", num: "02", title: "Producto · Entitlements", desc: "Capacidades, tres movimientos, contrato de ejemplo y ruta de la API (Caller → Guard → PDP → Backend)." },
-  { file: "03-producto-people.svg", num: "03", title: "Producto · People", desc: "Capacidades y la regla: los agentes proponen, los humanos deciden." },
-  { file: "04-consola-entitlements.svg", num: "04", title: "Consola · Entitlements", desc: "App: planes con medidores de cuota y el playground del contrato real del PDP." },
-  { file: "05-app-people.svg", num: "05", title: "App · People", desc: "Evaluaciones de equipos híbridos: scorecard por rol y propuesta de agente con responsable humano." },
-  { file: "06-marca.svg", num: "06", title: "Marca", desc: "Lockups, símbolo de medición, reverso en cobre, área segura y reglas (INAPI)." },
-  { file: "07-home-mobile.svg", num: "07", title: "Home móvil", desc: "La portada apilada a 390 px." },
-  { file: "08-portal-docs.svg", num: "08", title: "Portal · Docs", desc: "Quickstart en tres movimientos y la superficie de endpoints (staging, solo pruebas)." },
-  { file: "09-portal-referencia.svg", num: "09", title: "Portal · Referencia", desc: "POST /v1/entitlements/check completo: request, respuesta y errores." },
-  { file: "10-portal-claves.svg", num: "10", title: "Portal · Claves", desc: "Claves atk_live / atk_test con scopes y estados." },
-  { file: "11-portal-tryit.svg", num: "11", title: "Portal · Try it", desc: "Request/response real contra staging, fail-closed e idempotencia." },
-];
+import BrandPage from "../components/BrandPage.astro";
 ---
 
-<Base title="Propuesta de diseño — Mobiconnect" description="Las 12 propuestas de diseño de la plataforma Mobiconnect: sitio, consolas de producto y portal de desarrolladores." locale="es" path="/design/" noIndex={true}>
-  <main class="wrap">
-    <p class="kicker">Propuesta de diseño</p>
-    <h1>La plataforma, diseñada.</h1>
-    <p class="lede">
-      Doce propuestas que cubren el sistema completo: identidad, sitio público,
-      consolas de producto y portal de desarrolladores. Todo sobre un mismo
-      sistema — fondo claro, tinta casi negra, datos en monoespaciada y un solo
-      color de señal.
-    </p>
-    <section class="grid">
-      {propuestas.map((p) => (
-        <a class="card" href={`/design/${p.file}`} target="_blank" rel="noopener">
-          <span class="num">{p.num}</span>
-          <span class="ttl">{p.title}</span>
-          <span class="desc">{p.desc}</span>
-          <span class="ver">Ver propuesta →</span>
-        </a>
-      ))}
-    </section>
-  </main>
+<Base
+  title="Marca — el símbolo es un instrumento · Mobiconnect"
+  description="El sistema de marca de Mobiconnect: logotipo 01 «Muestreo», construcción, reducción, versiones, color con contraste WCAG, tipografía, reglas de uso y archivos oficiales para descargar."
+  locale="es"
+  path="/design"
+>
+  <BrandPage locale="es" />
 </Base>
-
-<style>
-  .wrap { max-width: 1080px; margin: 0 auto; padding: 3rem 1.5rem 4rem; }
-  .kicker { color: var(--color-signal, #B45309); font-family: var(--font-mono, monospace); font-size: .75rem; letter-spacing: .12em; text-transform: uppercase; }
-  h1 { font-size: 2.4rem; margin: .6rem 0 .8rem; letter-spacing: -.02em; }
-  .lede { color: #52525B; max-width: 44rem; line-height: 1.6; }
-  .grid { margin-top: 2.2rem; display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1rem; }
-  .card { display: flex; flex-direction: column; gap: .35rem; padding: 1.1rem 1.2rem; border: 1px solid #E7E5E4; border-radius: 10px; background: #fff; text-decoration: none; transition: border-color .15s; }
-  .card:hover { border-color: #B45309; }
-  .num { font-family: var(--font-mono, monospace); font-size: .7rem; color: #B45309; letter-spacing: .12em; }
-  .ttl { font-weight: 600; font-size: 1.05rem; }
-  .desc { font-size: .85rem; color: #52525B; line-height: 1.5; }
-  .ver { margin-top: .5rem; font-size: .85rem; color: #B45309; font-weight: 500; }
-</style>
