@@ -370,9 +370,9 @@ export const en: typeof es = {
         "Mobiconnect belongs to Inversiones Bucardo Zúñiga: a Chilean group that builds and operates telecommunications technology on its own sovereign infrastructure, with presence in seven countries.",
     },
     hero: {
-      eyebrow: "Inversiones Bucardo Zúñiga",
-      title: "A real operation, a software house.",
-      sub: "The Chilean group that builds and operates its own telecommunications infrastructure across seven countries — and the software house that turns regulated APIs into contracts: network and open finance.",
+      eyebrow: "The group behind Mobiconnect",
+      title: "We run what we sell.",
+      sub: "Mobiconnect is the software house of Inversiones Bucardo Zúñiga, a group that builds and runs its own telecommunications infrastructure across seven countries in the Americas. On that iron, owned and not rented, we authorize, meter and price every API call before it happens.",
       ctaPrimary: { label: "Start a conversation", href: "/en/contact" },
       ctaSecondary: { label: "View products", href: "/en/#products" },
     },
