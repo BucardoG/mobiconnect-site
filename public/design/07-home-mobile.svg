@@ -6,11 +6,11 @@
   <rect x="26" y="2" width="4" height="28" fill="#1C1917" rx="1"/>
   <rect x="8" y="19" width="4" height="11" fill="#1C1917" rx="1"/>
   <rect x="14" y="13" width="4" height="17" fill="#1C1917" rx="1"/>
-  <rect x="20" y="7" width="4" height="23" fill="#B45309" rx="1"/>
+  <rect x="20" y="7" width="4" height="23" fill="#0F766E" rx="1"/>
   <text x="44" y="33" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="600" fill="#1C1917" letter-spacing="-0.5">mobiconnect</text>
   </g>
 <line x1="0" y1="88" x2="390" y2="88" stroke="#E7E5E4" stroke-width="1"/>
-<text x="24" y="140" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="11.5" font-weight="500" fill="#B45309" letter-spacing="1.4">PLATAFORMA DE AI Y HIGH-TECH</text>
+<text x="24" y="140" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="11.5" font-weight="500" fill="#0F766E" letter-spacing="1.4">PLATAFORMA DE AI Y HIGH-TECH</text>
 <text x="24" y="208" font-family="'Inter Tight', Inter, 'Helvetica Neue', Arial, sans-serif" font-size="34" font-weight="600" fill="#1C1917" letter-spacing="-1.2">La capa de</text>
 <text x="24" y="252" font-family="'Inter Tight', Inter, 'Helvetica Neue', Arial, sans-serif" font-size="34" font-weight="600" fill="#1C1917" letter-spacing="-1.2">inteligencia del</text>
 <text x="24" y="296" font-family="'Inter Tight', Inter, 'Helvetica Neue', Arial, sans-serif" font-size="34" font-weight="600" fill="#1C1917" letter-spacing="-1.2">operador</text>
@@ -21,12 +21,12 @@
 <text x="24" y="464" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="14.5" font-weight="400" fill="#52525B">APIs y el sistema de desempeño para</text>
 <text x="24" y="488" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="14.5" font-weight="400" fill="#52525B">equipos híbridos de personas y</text>
 <text x="24" y="512" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="14.5" font-weight="400" fill="#52525B">agentes.</text>
-<rect x="24" y="560" width="226" height="46" fill="#B45309" rx="6"/>
+<rect x="24" y="560" width="226" height="46" fill="#0F766E" rx="6"/>
   <text x="137.0" y="588.0" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="500" fill="#FFFFFF" text-anchor="middle">Conversar con el fundador</text>
 <rect x="24" y="626" width="165" height="46" fill="#FFFFFF" rx="6" stroke="#D6D3D1" stroke-width="1"/>
   <text x="106.5" y="654.0" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="500" fill="#1C1917" text-anchor="middle">Ver los productos</text>
 <rect x="24" y="702" width="342" height="216" fill="#FFFFFF" rx="8" stroke="#E7E5E4" stroke-width="1"/>
-  <rect x="24" y="702" width="3" height="216" fill="#B45309"/>
+  <rect x="24" y="702" width="3" height="216" fill="#0F766E"/>
   <text x="48" y="738" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="10.5" font-weight="500" fill="#71717A" letter-spacing="1.2">FICHA DEL SISTEMA</text>
   <text x="48" y="774" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="10.5" font-weight="500" fill="#71717A" letter-spacing="1.1">GRUPO</text>
   <text x="144" y="774" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="12.5" font-weight="500" fill="#1C1917">INV. BUCARDO ZÚÑIGA</text>
@@ -34,35 +34,35 @@
   <text x="48" y="812" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="10.5" font-weight="500" fill="#71717A" letter-spacing="1.1">OPERADOR</text>
   <text x="144" y="812" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="12.5" font-weight="500" fill="#1C1917">AIRTIME CONNECT</text>
   <line x1="48" y1="842" x2="342" y2="842" stroke="#E7E5E4" stroke-width="1"/>
-  <text x="48" y="850" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="10.5" font-weight="500" fill="#71717A" letter-spacing="1.1">LICENCIA</text>
-  <text x="144" y="850" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="12.5" font-weight="500" fill="#1C1917">SUBTEL 114/260/427</text>
+  <text x="48" y="850" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="10.5" font-weight="500" fill="#71717A" letter-spacing="1.1">SUPERFICIE</text>
+  <text x="144" y="850" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="12.5" font-weight="500" fill="#1C1917">APIs · CAMARA</text>
   <line x1="48" y1="880" x2="342" y2="880" stroke="#E7E5E4" stroke-width="1"/>
   <text x="48" y="888" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="10.5" font-weight="500" fill="#71717A" letter-spacing="1.1">PRESENCIA</text>
   <text x="144" y="888" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="12.5" font-weight="500" fill="#1C1917">7 PAÍSES</text>
 <line x1="24" y1="942" x2="366" y2="942" stroke="#E7E5E4" stroke-width="1"/>
-<text x="24" y="982" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="11.5" font-weight="500" fill="#B45309" letter-spacing="1.4">PRODUCTOS</text>
+<text x="24" y="982" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="11.5" font-weight="500" fill="#0F766E" letter-spacing="1.4">PRODUCTOS</text>
 <rect x="24" y="1022" width="342" height="236" fill="#FFFFFF" rx="10" stroke="#E7E5E4" stroke-width="1"/>
-<text x="48" y="1066" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="11" font-weight="500" fill="#B45309" letter-spacing="1.4">P·01</text>
+<text x="48" y="1066" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="11" font-weight="500" fill="#0F766E" letter-spacing="1.4">P·01</text>
 <text x="48" y="1106" font-family="'Inter Tight', Inter, 'Helvetica Neue', Arial, sans-serif" font-size="24" font-weight="600" fill="#1C1917" letter-spacing="-0.6">Entitlements</text>
 <text x="48" y="1138" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="12.5" font-weight="400" fill="#52525B">La capa comercial de las APIs: planes,</text>
 <text x="48" y="1160" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="12.5" font-weight="400" fill="#52525B">cuotas, licencias y medición para quien</text>
 <text x="48" y="1182" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="12.5" font-weight="400" fill="#52525B">vende conectividad como producto.</text>
-<text x="48" y="1232" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="12.5" font-weight="500" fill="#B45309">Ver producto  →</text>
+<text x="48" y="1232" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="12.5" font-weight="500" fill="#0F766E">Ver producto  →</text>
 <rect x="24" y="1278" width="342" height="236" fill="#FFFFFF" rx="10" stroke="#E7E5E4" stroke-width="1"/>
-<text x="48" y="1322" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="11" font-weight="500" fill="#B45309" letter-spacing="1.4">P·02</text>
+<text x="48" y="1322" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="11" font-weight="500" fill="#0F766E" letter-spacing="1.4">P·02</text>
 <text x="48" y="1362" font-family="'Inter Tight', Inter, 'Helvetica Neue', Arial, sans-serif" font-size="24" font-weight="600" fill="#1C1917" letter-spacing="-0.6">People</text>
 <text x="48" y="1394" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="12.5" font-weight="400" fill="#52525B">Personas y agentes AI en el mismo</text>
 <text x="48" y="1416" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="12.5" font-weight="400" fill="#52525B">registro, medidos por resultados — no</text>
 <text x="48" y="1438" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="12.5" font-weight="400" fill="#52525B">por actividad.</text>
-<text x="48" y="1488" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="12.5" font-weight="500" fill="#B45309">Ver producto  →</text>
+<text x="48" y="1488" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="12.5" font-weight="500" fill="#0F766E">Ver producto  →</text>
 <g id="cta-movil">
-  <rect x="24" y="1550" width="342" height="280" fill="#FEF3E7" rx="12" stroke="#FDE6CE" stroke-width="1"/>
-  <text x="48" y="1594" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="11.5" font-weight="500" fill="#B45309" letter-spacing="1.4">CONTACTO</text>
+  <rect x="24" y="1550" width="342" height="280" fill="#F0FDFA" rx="12" stroke="#CCFBF1" stroke-width="1"/>
+  <text x="48" y="1594" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="11.5" font-weight="500" fill="#0F766E" letter-spacing="1.4">CONTACTO</text>
   <text x="48" y="1634" font-family="'Inter Tight', Inter, 'Helvetica Neue', Arial, sans-serif" font-size="24" font-weight="600" fill="#1C1917" letter-spacing="-0.4">Hable con quien</text>
   <text x="48" y="1666" font-family="'Inter Tight', Inter, 'Helvetica Neue', Arial, sans-serif" font-size="24" font-weight="600" fill="#1C1917" letter-spacing="-0.4">construye.</text>
   <text x="48" y="1702" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="12.5" font-weight="400" fill="#52525B">Contacto fundador-led: conversaciones</text>
   <text x="48" y="1722" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="12.5" font-weight="400" fill="#52525B">técnicas directas, sin funnels.</text>
-  <rect x="48" y="1754" width="188" height="44" fill="#B45309" rx="6"/>
+  <rect x="48" y="1754" width="188" height="44" fill="#0F766E" rx="6"/>
   <text x="142.0" y="1781.0" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="500" fill="#FFFFFF" text-anchor="middle">Iniciar conversación</text>
 </g>
 <line x1="24" y1="1870" x2="366" y2="1870" stroke="#E7E5E4" stroke-width="1"/>

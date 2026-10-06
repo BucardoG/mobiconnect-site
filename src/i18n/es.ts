@@ -2,7 +2,9 @@
 // Mobiconnect — diccionario ES (primario).
 // Toda la narrativa del sitio vive aquí: se refina sin tocar layout.
 // Regla dura: cero datos inventados. Solo hechos verificables del
-// charter y del brief (grupo, IDOs SUBTEL 114/260/427, 7 países).
+// charter y del brief (grupo, 7 países, infraestructura propia).
+// PROHIBIDO (decisión CEO 2026-10-05): SUBTEL, IDOs, «operador licenciado».
+// Las licencias son de Airtime, no de Mobiconnect.
 // ============================================================
 
 export const es = {
@@ -14,6 +16,7 @@ export const es = {
     menu: "Menú",
     entitlements: "Entitlements",
     people: "People",
+    developers: "Developers",
     group: "Grupo",
     contact: "Contacto",
     langTo: "EN",
@@ -51,7 +54,7 @@ export const es = {
       panel: [
         { k: "GRUPO", v: "INVERSIONES BUCARDO ZÚÑIGA" },
         { k: "OPERADOR", v: "AIRTIME CONNECT · TELCO OS" },
-        { k: "LICENCIA", v: "SUBTEL · IDO 114 / 260 / 427" },
+        { k: "SUPERFICIE", v: "APIs · CAMARA (GSMA)" },
         { k: "PRESENCIA", v: "7 PAÍSES · CL EC PE NI US MX" },
         { k: "PRODUCTOS", v: "ENTITLEMENTS · PEOPLE" },
       ],
@@ -60,7 +63,7 @@ export const es = {
       eyebrow: "Tesis",
       title: "El margen y el control no se regalan: se construyen.",
       body: [
-        "El grupo construyó su operador — licencia SUBTEL en Chile, presencia en siete países — y recuperó su infraestructura sobre hardware propio. Ese control no se delega: es la condición de partida.",
+        "El grupo construyó su propia operación de telecomunicaciones — presencia en siete países — y recuperó su infraestructura sobre hardware propio. Ese control no se delega: es la condición de partida.",
         "Mobiconnect existe para construir encima. Cada servicio — entitlements, desempeño, identidad — convierte esa infraestructura soberana en producto vendible, con la disciplina de ingeniería de un carrier y el ritmo de una casa de software.",
       ],
     },
@@ -98,10 +101,10 @@ export const es = {
     group: {
       eyebrow: "El grupo",
       title: "Un operador real detrás de cada producto.",
-      body: "Mobiconnect pertenece a Inversiones Bucardo Zúñiga: el grupo que construyó y opera un operador de telecomunicaciones licenciado en Chile, con presencia en siete países y creciendo. Cada producto nace de una necesidad real del operador — y se endurece ahí antes de salir al mercado.",
+      body: "Mobiconnect pertenece a Inversiones Bucardo Zúñiga: el grupo que construye y opera infraestructura de telecomunicaciones propia, con presencia en siete países y creciendo. Cada producto nace de una necesidad real de esa operación — y se endurece ahí antes de salir al mercado.",
       stats: [
         { value: "7", label: "países con presencia" },
-        { value: "114·260·427", label: "IDOs · licencia SUBTEL, Chile" },
+        { value: "CAMARA", label: "superficie de APIs alineada (GSMA)" },
         { value: "Propia", label: "infraestructura soberana del grupo" },
       ],
       cta: { label: "Conocer el grupo", href: "/about" },
@@ -338,7 +341,7 @@ export const es = {
     meta: {
       title: "El grupo — Inversiones Bucardo Zúñiga · Mobiconnect",
       description:
-        "Mobiconnect pertenece a Inversiones Bucardo Zúñiga: grupo chileno que construye y opera un operador de telecomunicaciones licenciado en Chile, con presencia en siete países e infraestructura soberana propia.",
+        "Mobiconnect pertenece a Inversiones Bucardo Zúñiga: grupo chileno que construye y opera tecnología de telecomunicaciones sobre infraestructura soberana propia, con presencia en siete países.",
     },
     hero: {
       eyebrow: "Inversiones Bucardo Zúñiga",
@@ -351,7 +354,7 @@ export const es = {
       eyebrow: "Historia",
       title: "De la conectividad a la inteligencia.",
       body: [
-        "La historia empieza con conectividad. El grupo construyó un operador de telecomunicaciones — licenciado por SUBTEL en Chile — y creció con él: Ecuador, Perú, Nicaragua, Estados Unidos, México, y Colombia en apertura.",
+        "La historia empieza con conectividad. El grupo construyó su operación de telecomunicaciones en Chile y creció con ella: Ecuador, Perú, Nicaragua, Estados Unidos, México, y Colombia en apertura.",
         "Después vino la corrección de fondo: salir de la infraestructura ajena y volver a hierro propio. Hoy el grupo opera su plataforma sobre hardware soberano, y esa infraestructura es la condición de partida de todo lo demás.",
         "Mobiconnect es el siguiente paso: la capa de software, identidad e inteligencia que convierte esa infraestructura en productos — para el propio operador primero, para el mercado después.",
       ],

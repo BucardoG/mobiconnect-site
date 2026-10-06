@@ -7,15 +7,15 @@
   <rect x="26" y="2" width="4" height="28" fill="#1C1917" rx="1"/>
   <rect x="8" y="19" width="4" height="11" fill="#1C1917" rx="1"/>
   <rect x="14" y="13" width="4" height="17" fill="#1C1917" rx="1"/>
-  <rect x="20" y="7" width="4" height="23" fill="#B45309" rx="1"/>
+  <rect x="20" y="7" width="4" height="23" fill="#0F766E" rx="1"/>
   <text x="44" y="33" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="600" fill="#1C1917" letter-spacing="-0.5">mobiconnect</text>
   </g>
   <text x="426" y="39" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13.5" font-weight="600" fill="#1C1917">Docs</text>
   <text x="496" y="39" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13.5" font-weight="400" fill="#52525B">Referencia API</text>
   <text x="658" y="39" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13.5" font-weight="400" fill="#52525B">Claves API</text>
   <text x="784" y="39" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13.5" font-weight="400" fill="#52525B">Try it</text>
-  <rect x="978" y="14" width="165" height="22" fill="#FEF3E7" rx="11" stroke="#FDE6CE"/>
-  <text x="1060.5" y="29" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="500" fill="#9A3412" text-anchor="middle">STAGING · SOLO PRUEBAS</text>
+  <rect x="978" y="14" width="165" height="22" fill="#F0FDFA" rx="11" stroke="#CCFBF1"/>
+  <text x="1060.5" y="29" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="500" fill="#115E59" text-anchor="middle">STAGING · SOLO PRUEBAS</text>
   <text x="1344" y="39" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="12" font-weight="400" fill="#71717A" text-anchor="end">Docs EN</text>
   <line x1="0" y1="80" x2="1440" y2="80" stroke="#E7E5E4" stroke-width="1"/>
 </g>
@@ -32,19 +32,19 @@
   <text x="682" y="205" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="11" font-weight="400" fill="#71717A" text-anchor="end">POST /v1/entitlements/check — request</text>
   <text x="124" y="256" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="12.5" font-weight="400" fill="#1C1917">{</text>
   <text x="124" y="282" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="12.5" font-weight="400" fill="#52525B">  &quot;tenant_id&quot;: </text>
-  <text x="236.5" y="282" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="12.5" font-weight="500" fill="#9A3412">&quot;00000000-5e5e-…-e001&quot;</text>
+  <text x="236.5" y="282" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="12.5" font-weight="500" fill="#115E59">&quot;00000000-5e5e-…-e001&quot;</text>
   <text x="401.5" y="282" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="12.5" font-weight="400" fill="#52525B">,</text>
   <text x="124" y="308" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="12.5" font-weight="400" fill="#52525B">  &quot;product_code&quot;: </text>
-  <text x="259.0" y="308" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="12.5" font-weight="500" fill="#9A3412">&quot;sms.otp&quot;</text>
+  <text x="259.0" y="308" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="12.5" font-weight="500" fill="#115E59">&quot;sms.otp&quot;</text>
   <text x="326.5" y="308" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="12.5" font-weight="400" fill="#52525B">,</text>
   <text x="124" y="334" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="12.5" font-weight="400" fill="#52525B">  &quot;scope&quot;: </text>
-  <text x="206.5" y="334" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="12.5" font-weight="500" fill="#9A3412">&quot;send&quot;</text>
+  <text x="206.5" y="334" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="12.5" font-weight="500" fill="#115E59">&quot;send&quot;</text>
   <text x="251.5" y="334" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="12.5" font-weight="400" fill="#52525B">,</text>
   <text x="124" y="360" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="12.5" font-weight="400" fill="#52525B">  &quot;quantity&quot;: </text>
-  <text x="229.0" y="360" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="12.5" font-weight="500" fill="#9A3412">1</text>
+  <text x="229.0" y="360" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="12.5" font-weight="500" fill="#115E59">1</text>
   <text x="236.5" y="360" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="12.5" font-weight="400" fill="#52525B">,</text>
   <text x="124" y="386" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="12.5" font-weight="400" fill="#52525B">  &quot;correlation_id&quot;: </text>
-  <text x="274.0" y="386" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="12.5" font-weight="500" fill="#92400E">&quot;7f3c9a01-…-demo00000123&quot;</text>
+  <text x="274.0" y="386" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="12.5" font-weight="500" fill="#115E59">&quot;7f3c9a01-…-demo00000123&quot;</text>
   <text x="124" y="412" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="12.5" font-weight="400" fill="#1C1917">}</text>
   <text x="124" y="438" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="11" font-weight="400" fill="#71717A">Ejemplo ilustrativo del modelo de datos, no una respuesta real de la API.</text>
 </g>
@@ -58,23 +58,23 @@
   <text x="762" y="256" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="12.5" font-weight="400" fill="#52525B">HTTP/1.1 </text>
   <text x="829.5" y="256" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="12.5" font-weight="500" fill="#15803D">200 OK</text>
   <text x="762" y="282" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="12.5" font-weight="400" fill="#52525B">x-correlator: </text>
-  <text x="867.0" y="282" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="12.5" font-weight="500" fill="#9A3412">b41d…9c02</text>
+  <text x="867.0" y="282" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="12.5" font-weight="500" fill="#115E59">b41d…9c02</text>
   <text x="762" y="308" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="12.5" font-weight="400" fill="#1C1917"></text>
   <text x="762" y="334" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="12.5" font-weight="400" fill="#1C1917">{</text>
   <text x="762" y="360" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="12.5" font-weight="400" fill="#52525B">  &quot;allow&quot;: </text>
   <text x="844.5" y="360" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="12.5" font-weight="500" fill="#15803D">true</text>
   <text x="874.5" y="360" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="12.5" font-weight="400" fill="#52525B">,</text>
   <text x="762" y="386" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="12.5" font-weight="400" fill="#52525B">  &quot;reason&quot;: </text>
-  <text x="852.0" y="386" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="12.5" font-weight="500" fill="#9A3412">&quot;ok&quot;</text>
+  <text x="852.0" y="386" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="12.5" font-weight="500" fill="#115E59">&quot;ok&quot;</text>
   <text x="882.0" y="386" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="12.5" font-weight="400" fill="#52525B">,</text>
   <text x="762" y="412" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="12.5" font-weight="400" fill="#52525B">  &quot;remaining_quota&quot;: </text>
-  <text x="919.5" y="412" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="12.5" font-weight="500" fill="#9A3412">99941</text>
+  <text x="919.5" y="412" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="12.5" font-weight="500" fill="#115E59">99941</text>
   <text x="957.0" y="412" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="12.5" font-weight="400" fill="#52525B">,</text>
   <text x="762" y="438" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="12.5" font-weight="400" fill="#52525B">  &quot;plan_id&quot;: </text>
-  <text x="859.5" y="438" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="12.5" font-weight="500" fill="#9A3412">&quot;…c21f&quot;</text>
+  <text x="859.5" y="438" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="12.5" font-weight="500" fill="#115E59">&quot;…c21f&quot;</text>
   <text x="912.0" y="438" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="12.5" font-weight="400" fill="#52525B">,</text>
   <text x="762" y="464" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="12.5" font-weight="400" fill="#52525B">  &quot;price_ref&quot;: </text>
-  <text x="874.5" y="464" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="12.5" font-weight="500" fill="#9A3412">&quot;…88d0&quot;</text>
+  <text x="874.5" y="464" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="12.5" font-weight="500" fill="#115E59">&quot;…88d0&quot;</text>
   <text x="762" y="490" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="12.5" font-weight="400" fill="#1C1917">}</text>
   <text x="762" y="516" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="11" font-weight="400" fill="#71717A">Ejemplo ilustrativo del modelo de datos, no una respuesta real de la API.</text>
 </g>
@@ -92,7 +92,7 @@
   <rect x="26" y="2" width="4" height="28" fill="#1C1917" rx="1"/>
   <rect x="8" y="19" width="4" height="11" fill="#1C1917" rx="1"/>
   <rect x="14" y="13" width="4" height="17" fill="#1C1917" rx="1"/>
-  <rect x="20" y="7" width="4" height="23" fill="#B45309" rx="1"/>
+  <rect x="20" y="7" width="4" height="23" fill="#0F766E" rx="1"/>
   <text x="44" y="33" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="600" fill="#1C1917" letter-spacing="-0.5">mobiconnect</text>
   </g>
   <text x="396" y="776" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="400" fill="#71717A">Servicios de AI y high-tech para el operador soberano del grupo.</text>
