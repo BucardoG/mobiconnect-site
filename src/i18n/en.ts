@@ -15,15 +15,16 @@ export const en: typeof es = {
     aria: "Main navigation",
     menu: "Menu",
     entitlements: "Entitlements",
-    people: "People",
     developers: "Developers",
+    openFinance: "Open Finance",
+    people: "People",
     group: "Group",
     contact: "Contact",
     langTo: "ES",
     langLabel: "Cambiar a español",
   },
   footer: {
-    tagline: "AI and high-tech services for the group's sovereign operator.",
+    tagline: "The commercial layer for network and open-finance APIs. Where the network becomes a contract.",
     products: "Products",
     company: "Company",
     legal:
@@ -41,21 +42,21 @@ export const en: typeof es = {
     meta: {
       title: "Mobiconnect — The intelligence layer for the sovereign operator",
       description:
-        "Mobiconnect builds the AI and high-tech services around Airtime Connect, the group's sovereign operator: commercial entitlements for APIs and People, the performance system for hybrid teams of humans and AI agents.",
+        "Mobiconnect is the commercial layer for network and open-finance APIs: entitlements — plans, quotas, pricing and metering — on CAMARA (GSMA) standard interfaces, deployable on sovereign infrastructure.",
     },
     hero: {
-      eyebrow: "AI & high-tech platform · Grupo Inversiones Bucardo Zúñiga",
+      eyebrow: "Entitlements · APIs for Telco and Open Finance",
       title: "The intelligence layer for the sovereign operator.",
-      sub: "Mobiconnect designs and operates the services around Airtime Connect, the group's operator: the commercial layer for APIs — plans, quotas and metering — and the performance system for hybrid teams of people and agents.",
+      sub: "The standard solves an API's interface. Mobiconnect solves the contract: who may consume, how much, at what price and with what auditable metering — for network APIs (CAMARA) and open-finance APIs, on sovereign infrastructure.",
       ctaPrimary: { label: "Talk to the founder", href: "/en/contact" },
-      ctaSecondary: { label: "See the products", href: "/en/#products" },
+      ctaSecondary: { label: "See Entitlements", href: "/en/products/entitlements" },
       panelLabel: "System card",
       panel: [
-        { k: "GROUP", v: "INVERSIONES BUCARDO ZÚÑIGA" },
-        { k: "OPERATOR", v: "AIRTIME CONNECT · TELCO OS" },
-        { k: "API SURFACE", v: "CAMARA (GSMA) ALIGNED" },
-        { k: "FOOTPRINT", v: "7 COUNTRIES · CL EC PE NI US MX" },
-        { k: "PRODUCTS", v: "ENTITLEMENTS · PEOPLE" },
+        { k: "CORE", v: "ENTITLEMENTS · COMMERCIAL PDP" },
+        { k: "STANDARD", v: "CAMARA · GSMA OPEN GATEWAY" },
+        { k: "SECTORS", v: "TELCO · OPEN FINANCE" },
+        { k: "DEPLOYMENT", v: "SOVEREIGN INFRASTRUCTURE" },
+        { k: "FOOTPRINT", v: "7 COUNTRIES · CO OPENING" },
       ],
     },
     thesis: {
@@ -63,28 +64,52 @@ export const en: typeof es = {
       title: "Margin and control are not given away: they are built.",
       body: [
         "The group built its own telecommunications operation — presence in seven countries — and brought its infrastructure back onto its own hardware. That control is not delegated: it is the starting condition.",
-        "Mobiconnect exists to build on top of it. Every service — entitlements, performance, identity — turns that sovereign infrastructure into a sellable product, with a carrier's engineering discipline and a software house's pace.",
+        "The coming decade is about exposure: verifying a number, detecting a SIM change, sharing financial data with consent — all as standard APIs. Whoever controls the contract of those APIs controls the margin. Mobiconnect builds that layer, with a carrier's engineering discipline and a software house's pace.",
       ],
     },
     products: {
       eyebrow: "Products",
-      title: "Two products, one discipline.",
-      lede: "Both are born from the operator's real needs and built on owned infrastructure: one turns APIs into a business; the other turns hybrid teams into measurable systems.",
+      title: "One commercial core, two industries that expose APIs.",
+      lede: "Entitlements is the core: the commercial contract of any API. On top of it sit the network-API platform for operators and the bridge to open finance. People completes the house: the system that measures the hybrid teams who build it.",
       items: [
         {
-          kicker: "P·01",
+          kicker: "P·01 · CORE",
           title: "Entitlements",
-          body: "The commercial layer for APIs: plans, quotas, licenses and metering for operators and platforms that sell connectivity as a product.",
+          body: "The commercial layer for APIs: plans, quotas, usage licenses, frozen pricing and auditable metering — for anyone selling an API as a product.",
           points: [
             "Plans, SKUs and quotas per contract",
-            "Real-time metering and enforcement",
-            "Trials, upgrades and feature flags",
+            "Allow/deny decisions with explicit fail-closed",
+            "Asynchronous, reproducible, billable metering",
           ],
           href: "/en/products/entitlements",
           cta: "View product",
         },
         {
-          kicker: "P·02",
+          kicker: "P·02 · TELCO",
+          title: "API Platform",
+          body: "The serving platform for an operator's CAMARA APIs: gateway, entitlements and developer portal under one standard — deployable on the operator's own infrastructure.",
+          points: [
+            "CAMARA Commonalities: ErrorInfo, x-correlator, versioning",
+            "atk_test_ / atk_live_ keys and scoped OAuth2",
+            "Portal with reference and try-it",
+          ],
+          href: "/en/developers",
+          cta: "See the platform",
+        },
+        {
+          kicker: "P·03 · OPEN FINANCE",
+          title: "Open Finance Bridge",
+          body: "The same contract applied to open finance — and the bridge between both worlds: the network's anti-fraud APIs packaged as a product for banks and fintechs.",
+          points: [
+            "Standard API + consent + contract",
+            "Anti-fraud: number verification and SIM swap",
+            "In design — no regulatory promises",
+          ],
+          href: "/en/open-finance",
+          cta: "See the approach",
+        },
+        {
+          kicker: "P·04",
           title: "People",
           body: "An HR system designed from the ground up for hybrid teams: people and AI agents in the same registry, measured by outcomes — not activity.",
           points: [
@@ -99,7 +124,7 @@ export const en: typeof es = {
     },
     group: {
       eyebrow: "The group",
-      title: "A real operator behind every product.",
+      title: "A real operation behind every product.",
       body: "Mobiconnect belongs to Inversiones Bucardo Zúñiga: the group that builds and operates its own telecommunications infrastructure, with presence in seven countries and growing. Every product is born from a real need of that operation — and hardened there before reaching the market.",
       stats: [
         { value: "7", label: "countries with presence" },

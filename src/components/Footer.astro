@@ -1,5 +1,7 @@
 ---
 // Footer — marca, productos, compañía y línea legal canónica.
+import Logo from "./Logo.astro";
+
 interface Props {
   locale: "es" | "en";
   path: string;
@@ -20,13 +22,8 @@ const home = locale === "en" ? "/en/" : "/";
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
-        <a class="brand" href={home}>
-          <svg width="20" height="20" viewBox="0 0 64 64" aria-hidden="true">
-            <rect width="64" height="64" rx="14" fill="var(--ink)"></rect>
-            <path d="M17 44V20l15 14.5L47 20v24" fill="none" stroke="#fff" stroke-width="5.5" stroke-linecap="square" stroke-linejoin="miter"></path>
-            <path d="M20 51h24" stroke="var(--signal-bright)" stroke-width="3" stroke-linecap="square"></path>
-          </svg>
-          <span>Mobiconnect</span>
+        <a class="brand" href={home} aria-label="Mobiconnect">
+          <Logo height={24} label="" />
         </a>
         <p class="tagline">{t.tagline}</p>
       </div>
@@ -35,6 +32,8 @@ const home = locale === "en" ? "/en/" : "/";
         <h3 class="mono">{t.products}</h3>
         <ul>
           <li><a href={`${pre}/products/entitlements`}>Entitlements</a></li>
+          <li><a href={`${pre}/developers`}>{locale === "en" ? "API Platform" : "Plataforma de APIs"}</a></li>
+          <li><a href={`${pre}/open-finance`}>Open Finance</a></li>
           <li><a href={`${pre}/products/people`}>People</a></li>
         </ul>
       </nav>
@@ -44,9 +43,6 @@ const home = locale === "en" ? "/en/" : "/";
         <ul>
           <li><a href={`${pre}/about`}>
             {locale === "en" ? "The group" : "El grupo"}
-          </a></li>
-          <li><a href={`${pre}/developers`}>
-            {locale === "en" ? "Developers" : "Para developers"}
           </a></li>
           <li><a href={`${pre}/contact`}>
             {locale === "en" ? "Contact" : "Contacto"}
@@ -77,10 +73,6 @@ const home = locale === "en" ? "/en/" : "/";
   .brand {
     display: inline-flex;
     align-items: center;
-    gap: 0.5rem;
-    font-weight: 700;
-    letter-spacing: -0.02em;
-    font-size: 1rem;
     text-decoration: none;
   }
 

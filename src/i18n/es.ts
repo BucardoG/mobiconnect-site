@@ -3,8 +3,8 @@
 // Toda la narrativa del sitio vive aquí: se refina sin tocar layout.
 // Regla dura: cero datos inventados. Solo hechos verificables del
 // charter y del brief (grupo, 7 países, infraestructura propia).
-// PROHIBIDO (decisión CEO 2026-10-05): SUBTEL, IDOs, «operador licenciado».
-// Las licencias son de Airtime, no de Mobiconnect.
+// PROHIBIDO (decisión CEO 2026-10-05, D8): mencionar licencias de
+// telecomunicaciones en cualquier forma (son de Airtime). Patrones: qa/leak-checklist.md L10.
 // ============================================================
 
 export const es = {
@@ -15,8 +15,9 @@ export const es = {
     aria: "Navegación principal",
     menu: "Menú",
     entitlements: "Entitlements",
-    people: "People",
     developers: "Developers",
+    openFinance: "Open Finance",
+    people: "People",
     group: "Grupo",
     contact: "Contacto",
     langTo: "EN",
@@ -24,7 +25,7 @@ export const es = {
   },
   footer: {
     tagline:
-      "Servicios de AI y high-tech para el operador soberano del grupo.",
+      "La capa comercial de las APIs de red y de finanzas abiertas. Donde la red se vuelve contrato.",
     products: "Productos",
     company: "Compañía",
     legal:
@@ -42,21 +43,21 @@ export const es = {
     meta: {
       title: "Mobiconnect — La capa de inteligencia del operador soberano",
       description:
-        "Mobiconnect construye los servicios de AI y high-tech que rodean a Airtime Connect, el operador soberano del grupo: entitlements comerciales para APIs y People, el sistema de desempeño para equipos híbridos de personas y agentes AI.",
+        "Mobiconnect es la capa comercial de las APIs de red y de finanzas abiertas: entitlements — planes, cuotas, precio y medición — sobre interfaces estándar CAMARA (GSMA), desplegable en infraestructura soberana.",
     },
     hero: {
-      eyebrow: "Plataforma de AI y high-tech · Grupo Inversiones Bucardo Zúñiga",
+      eyebrow: "Entitlements · APIs para Telco y Open Finance",
       title: "La capa de inteligencia del operador soberano.",
-      sub: "Mobiconnect diseña y opera los servicios que rodean a Airtime Connect, el operador del grupo: la capa comercial de las APIs — planes, cuotas y medición — y el sistema de desempeño para equipos híbridos de personas y agentes.",
+      sub: "El estándar resuelve la interfaz de una API. Mobiconnect resuelve el contrato: quién puede consumir, cuánto, a qué precio y con qué medición auditable — para las APIs de red (CAMARA) y las de finanzas abiertas, sobre infraestructura soberana.",
       ctaPrimary: { label: "Conversar con el fundador", href: "/contact" },
-      ctaSecondary: { label: "Ver los productos", href: "/#productos" },
+      ctaSecondary: { label: "Ver Entitlements", href: "/products/entitlements" },
       panelLabel: "Ficha del sistema",
       panel: [
-        { k: "GRUPO", v: "INVERSIONES BUCARDO ZÚÑIGA" },
-        { k: "OPERADOR", v: "AIRTIME CONNECT · TELCO OS" },
-        { k: "SUPERFICIE", v: "APIs · CAMARA (GSMA)" },
-        { k: "PRESENCIA", v: "7 PAÍSES · CL EC PE NI US MX" },
-        { k: "PRODUCTOS", v: "ENTITLEMENTS · PEOPLE" },
+        { k: "NÚCLEO", v: "ENTITLEMENTS · PDP COMERCIAL" },
+        { k: "ESTÁNDAR", v: "CAMARA · GSMA OPEN GATEWAY" },
+        { k: "SECTORES", v: "TELCO · OPEN FINANCE" },
+        { k: "DESPLIEGUE", v: "INFRAESTRUCTURA SOBERANA" },
+        { k: "PRESENCIA", v: "7 PAÍSES · CO EN APERTURA" },
       ],
     },
     thesis: {
@@ -64,28 +65,52 @@ export const es = {
       title: "El margen y el control no se regalan: se construyen.",
       body: [
         "El grupo construyó su propia operación de telecomunicaciones — presencia en siete países — y recuperó su infraestructura sobre hardware propio. Ese control no se delega: es la condición de partida.",
-        "Mobiconnect existe para construir encima. Cada servicio — entitlements, desempeño, identidad — convierte esa infraestructura soberana en producto vendible, con la disciplina de ingeniería de un carrier y el ritmo de una casa de software.",
+        "La década que viene se trata de exponer: verificar un número, detectar un cambio de SIM, compartir datos financieros con consentimiento — todo como API estándar. Quien controle el contrato de esas APIs controlará el margen. Mobiconnect construye esa capa, con la disciplina de ingeniería de un carrier y el ritmo de una casa de software.",
       ],
     },
     products: {
       eyebrow: "Productos",
-      title: "Dos productos, una misma disciplina.",
-      lede: "Ambos nacen de necesidades reales del operador y se construyen sobre infraestructura propia: uno convierte las APIs en negocio; el otro, los equipos híbridos en sistemas medibles.",
+      title: "Un núcleo comercial, dos industrias que exponen APIs.",
+      lede: "Entitlements es el núcleo: el contrato comercial de cualquier API. Sobre él se construyen la plataforma de APIs de red para operadores y el puente hacia las finanzas abiertas. People completa la casa: el sistema que mide a los equipos híbridos que lo construyen.",
       items: [
         {
-          kicker: "P·01",
+          kicker: "P·01 · NÚCLEO",
           title: "Entitlements",
-          body: "La capa comercial de las APIs: planes, cuotas, licencias y medición para operadores y plataformas que venden conectividad como producto.",
+          body: "La capa comercial de las APIs: planes, cuotas, licencias de uso, precio congelado y medición auditable — para quien vende una API como producto.",
           points: [
             "Planes, SKUs y cuotas por contrato",
-            "Medición y aplicación en tiempo real",
-            "Trials, upgrades y feature flags",
+            "Decisión allow/deny con fail-closed explícito",
+            "Medición asíncrona, reproducible y facturable",
           ],
           href: "/products/entitlements",
           cta: "Ver producto",
         },
         {
-          kicker: "P·02",
+          kicker: "P·02 · TELCO",
+          title: "Plataforma de APIs",
+          body: "La plataforma servidora de las APIs CAMARA de un operador: gateway, entitlements y portal de developers bajo un solo estándar — desplegable en su propia infraestructura.",
+          points: [
+            "Commonalities CAMARA: ErrorInfo, x-correlator, versionado",
+            "Claves atk_test_ / atk_live_ y OAuth2 con scopes",
+            "Portal con referencia y try-it",
+          ],
+          href: "/developers",
+          cta: "Ver la plataforma",
+        },
+        {
+          kicker: "P·03 · OPEN FINANCE",
+          title: "Open Finance Bridge",
+          body: "El mismo contrato aplicado a las finanzas abiertas, y el puente entre ambos mundos: las APIs antifraude de la red empaquetadas como producto para bancos y fintech.",
+          points: [
+            "API estándar + consentimiento + contrato",
+            "Antifraude: verificación de número y cambio de SIM",
+            "En diseño — sin promesas regulatorias",
+          ],
+          href: "/open-finance",
+          cta: "Ver el enfoque",
+        },
+        {
+          kicker: "P·04",
           title: "People",
           body: "Un sistema de RR.HH. diseñado desde cero para equipos híbridos: personas y agentes AI en el mismo registro, medidos por resultados — no por actividad.",
           points: [
@@ -100,7 +125,7 @@ export const es = {
     },
     group: {
       eyebrow: "El grupo",
-      title: "Un operador real detrás de cada producto.",
+      title: "Una operación real detrás de cada producto.",
       body: "Mobiconnect pertenece a Inversiones Bucardo Zúñiga: el grupo que construye y opera infraestructura de telecomunicaciones propia, con presencia en siete países y creciendo. Cada producto nace de una necesidad real de esa operación — y se endurece ahí antes de salir al mercado.",
       stats: [
         { value: "7", label: "países con presencia" },

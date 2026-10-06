@@ -1,0 +1,116 @@
+---
+// Open Finance — WP-B1 (DOSSIER-MAESTRO D7, §4.3, §5.3). EN transcreation of /open-finance.
+// Rule: no regulatory or authorization claims (that is WP-E1, with legal counsel).
+import Base from "../../layouts/Base.astro";
+import Hero from "../../components/Hero.astro";
+import SectionHeader from "../../components/SectionHeader.astro";
+import FeatureCard from "../../components/FeatureCard.astro";
+import Steps from "../../components/Steps.astro";
+import CTABand from "../../components/CTABand.astro";
+---
+
+<Base
+  title="Open Finance — where the network and open finance become a contract · Mobiconnect"
+  description="Standardized network APIs (CAMARA) and open-finance systems share one pattern: standard interface, consent and access control. Mobiconnect provides the layer both are missing: the commercial contract."
+  locale="en"
+  path="/open-finance"
+>
+  <Hero
+    eyebrow="P·03 · Open Finance Bridge"
+    title="Where the network and open finance become a contract."
+    sub="What open banking did for financial data, open network APIs do for the network. Both standardize the interface; neither solves the commercial contract — who consumes, how much, at what price and with what metering. That layer is Mobiconnect."
+    ctaPrimary={{ label: "Discuss the use case", href: "/en/contact" }}
+    ctaSecondary={{ label: "See Entitlements", href: "/en/products/entitlements" }}
+    panelLabel="Approach card"
+    panel={[
+      { k: "PATTERN", v: "STANDARD API + CONSENT" },
+      { k: "TELCO STANDARD", v: "CAMARA · GSMA OPEN GATEWAY" },
+      { k: "ANCHOR CASE", v: "ANTI-FRAUD FOR BANKS & FINTECH" },
+      { k: "CORE", v: "ENTITLEMENTS" },
+      { k: "STATUS", v: "IN DESIGN" },
+    ]}
+  />
+
+  <section class="section section--rule">
+    <div class="container">
+      <SectionHeader
+        eyebrow="The pattern"
+        title="Two industries, one architecture."
+        lede="Open finance and network APIs arrive at the same design by different roads. What neither standardizes is exactly what defines the business."
+      />
+      <div class="grid grid--3">
+        <FeatureCard
+          kicker="01 · Interface"
+          title="A standard API."
+          body="In telco, CAMARA defines what is asked and what is answered: verify a number, detect a SIM change, request network quality. In open finance, the interface is defined by its own standards."
+        />
+        <FeatureCard
+          kicker="02 · Access"
+          title="Consent and control."
+          body="In both worlds, whoever consumes the API must be authorized, identified and bounded. The data belongs to its owner; access is granted, recorded and revocable."
+        />
+        <FeatureCard
+          kicker="03 · Contract"
+          highlight={true}
+          title="The commercial contract — the gap."
+          body="Who may call, how much, under which plan, at what price and with what auditable metering. No standard solves it. Entitlements does: the same core for both industries."
+        />
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--rule">
+    <div class="container">
+      <SectionHeader
+        eyebrow="The case that joins both worlds"
+        title="The bank that consumes the network."
+        lede="The first GSMA Open Gateway launches in Latin America focus on fraud prevention. The natural buyer is the same bank or fintech taking part in open finance: the intersection is the market."
+      />
+      <Steps
+        steps={[
+          { n: "01", title: "Verify the number", body: "The bank's app confirms with the network that the number starting the operation belongs to the device — no interceptable SMS codes." },
+          { n: "02", title: "Detect the SIM change", body: "Before a sensitive transfer, it checks whether the SIM changed recently: the classic signal of an account takeover." },
+          { n: "03", title: "Decide by contract", body: "Every query goes through Entitlements: the bank has a plan, a quota and a price. Without the right, the answer is allow:false — explicit and traceable." },
+          { n: "04", title: "Meter and reconcile", body: "Every query is metered with its frozen price and its x-correlator: the operator bills what it sold, and the bank pays for what it consumed." },
+        ]}
+      />
+    </div>
+  </section>
+
+  <section class="section section--rule">
+    <div class="container">
+      <SectionHeader
+        eyebrow="Principles"
+        title="What we promise — and what we don't."
+        lede="A bridge between two regulated industries demands more precision, not less."
+      />
+      <div class="grid grid--2">
+        <FeatureCard
+          highlight={true}
+          title="No regulatory promises."
+          body="Mobiconnect does not present itself as an authorized participant of any open-finance system. Any regulated integration is designed with the institution and its legal counsel — not on a landing page."
+        />
+        <FeatureCard
+          title="Sovereign by design."
+          body="The contract layer is deployed on the operator's or institution's infrastructure, within its jurisdiction. Account holders' data does not travel to someone else's cloud."
+        />
+        <FeatureCard
+          title="Standard before invention."
+          body="CAMARA interfaces, typed errors, end-to-end traceability and explicit versioning. No proprietary dialects that lock the customer in."
+        />
+        <FeatureCard
+          title="Honest status: in design."
+          body="The Entitlements core is under construction on sovereign infrastructure. The bridge to open finance is in design. We will tell you exactly what runs today and what doesn't."
+        />
+      </div>
+    </div>
+  </section>
+
+  <CTABand
+    eyebrow="Banks, fintechs and operators"
+    title="Let's design the first case together."
+    body="If you are a bank or fintech that needs network signals to prevent fraud, or an operator that wants to sell those signals with its own contract and metering, let's talk."
+    button="Start a conversation"
+    href="/en/contact"
+  />
+</Base>
