@@ -1,0 +1,613 @@
+---
+// PlansPage — AIR-1520 · cómo cobra Mobiconnect (ES/EN).
+// Aprobada y publicada por el CEO el 2026-10-06 (en el menú y en el sitemap).
+// Estructura de cobro por producto en orden D7 (strategy/gtm.md §5.2–5.3).
+// NUNCA montos: las modalidades dicen qué incluyen y cómo se miden.
+import Base from "../layouts/Base.astro";
+import SectionHeader from "./SectionHeader.astro";
+import CTABand from "./CTABand.astro";
+import plans from "../data/plans.json";
+
+interface Props {
+  locale: "es" | "en";
+}
+
+const { locale } = Astro.props;
+const en = locale === "en";
+const pre = en ? "/en" : "";
+const example = plans.plans[0];
+
+type Mode = { name: string; includes: string; billing: string };
+type Product = {
+  id: string;
+  kicker: string;
+  title: string;
+  lede: string;
+  status: string;
+  href?: string;
+  cta?: string;
+  modes: Mode[];
+};
+
+const t = en
+  ? {
+      title: "Plans — Mobiconnect",
+      description:
+        "How Mobiconnect charges: one commercial core, four products. What each modality includes and how it is metered. Amounts pending the commercial decision.",
+      kicker: "PLANS",
+      h1: "How Mobiconnect charges.",
+      lede: "One commercial core, four products in the order we lead with. Each modality states what it includes and how it is metered. Amounts are published once the commercial decision closes.",
+      principlesEyebrow: "Principles",
+      principlesTitle: "Three rules behind every plan.",
+      principles: [
+        {
+          k: "01",
+          t: "You pay for what is metered.",
+          b: "Usage comes from the same auditable ledger that enforces the contract.",
+        },
+        {
+          k: "02",
+          t: "Predictable for procurement.",
+          b: "Customers with volume can commit annually instead of paying everything as variable usage.",
+        },
+        {
+          k: "03",
+          t: "Status said out loud.",
+          b: "Every product shows where it stands today. We do not sell what is not running.",
+        },
+      ],
+      includes: "INCLUDES",
+      billing: "HOW IT IS CHARGED",
+      status: "STATUS",
+      exampleEyebrow: "Inside Entitlements",
+      exampleTitle: "This is what a plan looks like in the catalog.",
+      exampleSub:
+        "A seed plan from the catalog contract, to show the shape of a plan. Test values; it is not an offer.",
+      exRate: "RATE LIMIT",
+      exQuota: "QUOTA",
+      exModel: "PRICE MODEL",
+      exStatus: "STATUS",
+      exSource: "source",
+      ctaEyebrow: "Plans",
+      ctaTitle: "Let's talk about your API's contract.",
+      ctaBody:
+        "Amounts are agreed per case while the public price list is being defined. Tell us which API you sell or consume and at what volume.",
+      ctaButton: "Start a conversation",
+    }
+  : {
+      title: "Planes — Mobiconnect",
+      description:
+        "Cómo cobra Mobiconnect: un núcleo comercial, cuatro productos. Qué incluye cada modalidad y cómo se mide. Montos pendientes de la decisión comercial.",
+      kicker: "PLANES",
+      h1: "Cómo cobra Mobiconnect.",
+      lede: "Un núcleo comercial, cuatro productos en el orden en que lideramos. Cada modalidad dice qué incluye y cómo se mide. Los montos se publican cuando se cierre la decisión comercial.",
+      principlesEyebrow: "Principios",
+      principlesTitle: "Tres reglas detrás de cada plan.",
+      principles: [
+        {
+          k: "01",
+          t: "Se paga por lo que se mide.",
+          b: "El uso sale del mismo registro auditable que aplica el contrato.",
+        },
+        {
+          k: "02",
+          t: "Predecible para compras.",
+          b: "Los clientes con volumen pueden comprometerse por año en vez de pagar todo como uso variable.",
+        },
+        {
+          k: "03",
+          t: "El estado, dicho en voz alta.",
+          b: "Cada producto muestra dónde está hoy. No vendemos lo que no está corriendo.",
+        },
+      ],
+      includes: "INCLUYE",
+      billing: "CÓMO SE COBRA",
+      status: "ESTADO",
+      exampleEyebrow: "Dentro de Entitlements",
+      exampleTitle: "Así se ve un plan en el catálogo.",
+      exampleSub:
+        "Un plan semilla del contrato del catálogo, para mostrar la forma de un plan. Valores de prueba; no es una oferta.",
+      exRate: "RATE LIMIT",
+      exQuota: "CUOTA",
+      exModel: "MODELO DE PRECIO",
+      exStatus: "ESTADO",
+      exSource: "fuente",
+      ctaEyebrow: "Planes",
+      ctaTitle: "Conversemos el contrato de tu API.",
+      ctaBody:
+        "Mientras se define la lista pública, los montos se acuerdan caso a caso. Cuéntanos qué API vendes o consumes y con qué volumen.",
+      ctaButton: "Iniciar conversación",
+    };
+
+const products: Product[] = en
+  ? [
+      {
+        id: "entitlements",
+        kicker: "P·01 · Core",
+        title: "Entitlements",
+        lede: "The commercial layer of any API sold as a product: plans, quotas, usage licenses and auditable metering.",
+        status: "Running on staging",
+        href: `${pre}/products/entitlements`,
+        cta: "View product",
+        modes: [
+          {
+            name: "Per tenant",
+            includes: "Plan catalog, quotas, rate limits, usage licenses, real-time enforcement and metering.",
+            billing: "Monthly base per tenant + usage per million metered events.",
+          },
+          {
+            name: "Annual commitment",
+            includes: "Everything per tenant, for operators and platforms with volume.",
+            billing: "Annual commitment on base and usage.",
+          },
+          {
+            name: "Integration and migration",
+            includes: "Moving legacy plans and portals onto the core and connecting billing.",
+            billing: "Project, quoted per case.",
+          },
+        ],
+      },
+      {
+        id: "platform",
+        kicker: "P·02 · Telco",
+        title: "API Platform",
+        lede: "The operator's CAMARA (GSMA) surface exposed under a commercial contract: gateway, Entitlements and developer portal.",
+        status: "In the making",
+        href: `${pre}/platform`,
+        cta: "See the platform",
+        modes: [
+          {
+            name: "Exposure under contract",
+            includes: "The operator's network APIs behind the Entitlements core, with plans for its own customers.",
+            billing: "Being defined with the first operator; built on the Entitlements core.",
+          },
+          {
+            name: "Deployment on own infrastructure",
+            includes: "Gateway, portal and conformance work deployed where the operator decides.",
+            billing: "Being defined with the first operator.",
+          },
+        ],
+      },
+      {
+        id: "open-finance",
+        kicker: "P·03 · Open finance",
+        title: "Open Finance Bridge",
+        lede: "The same contract control applied to financial data shared with consent, and network anti-fraud signals for banks and fintechs.",
+        status: "In design",
+        href: `${pre}/open-finance`,
+        cta: "See the vision",
+        modes: [
+          {
+            name: "Pilots",
+            includes: "Defined together with the first banks, fintechs and operators.",
+            billing: "No commercial modality published until the pilots and legal review close.",
+          },
+        ],
+      },
+      {
+        id: "people",
+        kicker: "P·04 · Second line",
+        title: "People",
+        lede: "Performance for hybrid teams of people and AI agents, measured by outcomes. It complements the core.",
+        status: "Pilots",
+        href: `${pre}/products/people`,
+        cta: "View product",
+        modes: [
+          {
+            name: "Subscription",
+            includes: "Registry of people and agents, scorecards and governed agent spend.",
+            billing: "Per registered person + per active AI agent (active: has a human owner and runs in the scorecard cycle; metered by the product).",
+          },
+          {
+            name: "90-day pilot",
+            includes: "One team, full product, outcomes reviewed at the end.",
+            billing: "Closed pilot price.",
+          },
+          {
+            name: "Implementation",
+            includes: "Onboarding per tenant: roles, agents and scorecards configured.",
+            billing: "Project, quoted per case.",
+          },
+        ],
+      },
+    ]
+  : [
+      {
+        id: "entitlements",
+        kicker: "P·01 · Núcleo",
+        title: "Entitlements",
+        lede: "La capa comercial de cualquier API que se venda como producto: planes, cuotas, licencias de uso y medición auditable.",
+        status: "Corriendo en staging",
+        href: "/products/entitlements",
+        cta: "Ver producto",
+        modes: [
+          {
+            name: "Por tenant",
+            includes: "Catálogo de planes, cuotas, rate limits, licencias de uso, aplicación en tiempo real y medición.",
+            billing: "Base mensual por tenant + uso por millón de eventos medidos.",
+          },
+          {
+            name: "Compromiso anual",
+            includes: "Todo lo del plan por tenant, para operadores y plataformas con volumen.",
+            billing: "Compromiso anual sobre base y uso.",
+          },
+          {
+            name: "Integración y migración",
+            includes: "Llevar planes y portales heredados al núcleo y conectar la facturación.",
+            billing: "Proyecto, cotizado caso a caso.",
+          },
+        ],
+      },
+      {
+        id: "platform",
+        kicker: "P·02 · Telco",
+        title: "Plataforma de APIs",
+        lede: "La superficie CAMARA (GSMA) del operador expuesta bajo contrato comercial: gateway, Entitlements y portal de developers.",
+        status: "En construcción",
+        href: "/platform",
+        cta: "Ver la plataforma",
+        modes: [
+          {
+            name: "Exposición bajo contrato",
+            includes: "Las APIs de red del operador detrás del núcleo Entitlements, con planes para sus propios clientes.",
+            billing: "En definición con el primer operador; se apoya en el núcleo Entitlements.",
+          },
+          {
+            name: "Despliegue en infraestructura propia",
+            includes: "Gateway, portal y trabajo de conformidad desplegados donde el operador decida.",
+            billing: "En definición con el primer operador.",
+          },
+        ],
+      },
+      {
+        id: "open-finance",
+        kicker: "P·03 · Finanzas abiertas",
+        title: "Open Finance Bridge",
+        lede: "El mismo control de contrato aplicado al dato financiero compartido con consentimiento, y las señales antifraude de la red para bancos y fintech.",
+        status: "En diseño",
+        href: "/open-finance",
+        cta: "Conocer la visión",
+        modes: [
+          {
+            name: "Pilotos",
+            includes: "Se definen junto con los primeros bancos, fintech y operadores.",
+            billing: "Sin modalidad comercial publicada hasta cerrar los pilotos y la revisión legal.",
+          },
+        ],
+      },
+      {
+        id: "people",
+        kicker: "P·04 · Segunda línea",
+        title: "People",
+        lede: "Desempeño para equipos híbridos de personas y agentes AI, medido por resultados. Complementa el núcleo.",
+        status: "Pilotos",
+        href: "/products/people",
+        cta: "Ver producto",
+        modes: [
+          {
+            name: "Suscripción",
+            includes: "Registro de personas y agentes, scorecards y gasto de agentes gobernado.",
+            billing: "Por persona registrada + por agente AI activo (activo: con dueño humano y operando en el ciclo de scorecards; lo mide el producto).",
+          },
+          {
+            name: "Piloto de 90 días",
+            includes: "Un equipo, producto completo, resultados revisados al cierre.",
+            billing: "Precio de piloto cerrado.",
+          },
+          {
+            name: "Implementación",
+            includes: "Puesta en marcha por tenant: roles, agentes y scorecards configurados.",
+            billing: "Proyecto, cotizado caso a caso.",
+          },
+        ],
+      },
+    ];
+
+const fmt = (n: number) => n.toLocaleString(en ? "en-US" : "es-CL");
+const ES_WORDS: Record<string, string> = { units: "unidades", month: "mes", draft: "borrador", live: "activo" };
+const w = (v: string) => (en ? v : ES_WORDS[v] ?? v);
+---
+
+<Base title={t.title} description={t.description} locale={locale} path="/plans">
+  <section class="section">
+    <div class="container">
+      <p class="kicker mono">{t.kicker}</p>
+      <h1>{t.h1}</h1>
+      <p class="lede">{t.lede}</p>
+      <nav class="jump mono" aria-label={en ? "Products" : "Productos"}>
+        {products.map((p) => <a href={`#${p.id}`}>{p.title}</a>)}
+      </nav>
+    </div>
+  </section>
+
+  <section class="section section--rule">
+    <div class="container">
+      <SectionHeader eyebrow={t.principlesEyebrow} title={t.principlesTitle} />
+      <ol class="principles">
+        {
+          t.principles.map((p) => (
+            <li>
+              <span class="mono pk">{p.k}</span>
+              <h3>{p.t}</h3>
+              <p>{p.b}</p>
+            </li>
+          ))
+        }
+      </ol>
+    </div>
+  </section>
+
+  {
+    products.map((p) => (
+      <section class="section section--rule" id={p.id}>
+        <div class="container">
+          <div class="phead">
+            <div>
+              <p class="kicker mono">{p.kicker}</p>
+              <h2>{p.title}</h2>
+              <p class="plede">{p.lede}</p>
+            </div>
+            <div class="pmeta">
+              <p class="mono status">
+                <span class="dot" aria-hidden="true" />
+                {t.status} · {p.status}
+              </p>
+              {p.href && p.cta && (
+                <a class="link-arrow" href={p.href}>
+                  {p.cta} <span aria-hidden="true">→</span>
+                </a>
+              )}
+            </div>
+          </div>
+          <div class:list={["modes", { "modes--single": p.modes.length === 1 }]}>
+            {p.modes.map((m) => (
+              <article class="mode">
+                <h3>{m.name}</h3>
+                <dl>
+                  <div>
+                    <dt class="mono">{t.includes}</dt>
+                    <dd>{m.includes}</dd>
+                  </div>
+                  <div>
+                    <dt class="mono">{t.billing}</dt>
+                    <dd>{m.billing}</dd>
+                  </div>
+                </dl>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+    ))
+  }
+
+  {
+    example && (
+      <section class="section section--rule">
+        <div class="container example">
+          <SectionHeader eyebrow={t.exampleEyebrow} title={t.exampleTitle} lede={t.exampleSub} />
+          <article class="plan">
+            <p class="kicker mono">
+              {example.code} · {example.audience}
+            </p>
+            <h3>{example.name}</h3>
+            <p class="mono pprod">
+              {example.product_name} · {example.product_code}
+            </p>
+            <dl>
+              <div>
+                <dt class="mono">{t.exRate}</dt>
+                <dd>
+                  {example.rate_limit_rps} rps · burst {example.burst}
+                </dd>
+              </div>
+              <div>
+                <dt class="mono">{t.exQuota}</dt>
+                <dd>
+                  {fmt(example.quota.amount)} {w(example.quota.unit)} / {w(example.quota.period)}
+                </dd>
+              </div>
+              <div>
+                <dt class="mono">{t.exModel}</dt>
+                <dd>{example.price_model}</dd>
+              </div>
+              <div>
+                <dt class="mono">{t.exStatus}</dt>
+                <dd>{w(example.status)}</dd>
+              </div>
+            </dl>
+            <p class="mono src">
+              {t.exSource}: plans.json · schema v{plans.schema_version}
+            </p>
+          </article>
+        </div>
+      </section>
+    )
+  }
+
+  <CTABand
+    eyebrow={t.ctaEyebrow}
+    title={t.ctaTitle}
+    body={t.ctaBody}
+    button={t.ctaButton}
+    href={`${pre}/contact`}
+  />
+</Base>
+
+<style>
+  .kicker {
+    font-size: 0.6875rem;
+    letter-spacing: 0.14em;
+    color: var(--signal);
+  }
+  h1 {
+    font-size: clamp(2.25rem, 5vw, 3.5rem);
+    letter-spacing: -0.02em;
+    margin: 0.5rem 0 1rem;
+  }
+  .lede {
+    max-width: 46rem;
+    color: var(--ink-2);
+    font-size: 1.0625rem;
+    line-height: 1.6;
+  }
+  .jump {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.25rem;
+    margin-top: 1.75rem;
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+  }
+  .jump a {
+    color: var(--ink-2);
+    text-decoration: none;
+    border-bottom: 1px solid var(--line-strong);
+    padding-bottom: 2px;
+  }
+  .jump a:hover {
+    color: var(--signal);
+    border-color: var(--signal);
+  }
+  .principles {
+    list-style: none;
+    padding: 0;
+    margin: 2rem 0 0;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+  }
+  .principles li {
+    border-top: 1px solid var(--ink);
+    padding-top: 1rem;
+  }
+  .pk {
+    font-size: 0.75rem;
+    color: var(--ink-3);
+  }
+  .principles h3 {
+    margin: 0.5rem 0 0.4rem;
+  }
+  .principles p {
+    color: var(--ink-2);
+    font-size: 0.9375rem;
+  }
+  .phead {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 2rem;
+    margin-bottom: 1.75rem;
+  }
+  .phead h2 {
+    margin: 0.4rem 0 0.5rem;
+  }
+  .plede {
+    max-width: 44rem;
+    color: var(--ink-2);
+  }
+  .pmeta {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.6rem;
+    flex-shrink: 0;
+  }
+  .status {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.6875rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ink-2);
+    border: 1px solid var(--line-strong);
+    border-radius: 999px;
+    padding: 0.3rem 0.75rem;
+  }
+  .dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--signal);
+  }
+  .modes {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+  }
+  .modes--single {
+    grid-template-columns: minmax(0, 1fr);
+    max-width: 40rem;
+  }
+  .mode,
+  .plan {
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    background: var(--surface);
+    padding: 1.5rem;
+  }
+  .mode h3 {
+    margin: 0 0 1rem;
+  }
+  dl {
+    margin: 0;
+    border-top: 1px solid var(--line);
+  }
+  dl > div {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid var(--line);
+  }
+  dl > div:last-child {
+    border-bottom: 0;
+  }
+  dt {
+    font-size: 0.6875rem;
+    letter-spacing: 0.12em;
+    color: var(--ink-3);
+    margin-bottom: 0.3rem;
+  }
+  dd {
+    margin: 0;
+    font-size: 0.9375rem;
+    line-height: 1.5;
+  }
+  .example .plan {
+    max-width: 26rem;
+    margin-top: 2rem;
+  }
+  .plan h3 {
+    margin: 0.4rem 0 0.2rem;
+  }
+  .plan dl > div {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    border-bottom: 1px solid var(--line);
+  }
+  .plan dd {
+    font-weight: 500;
+  }
+  .pprod,
+  .src {
+    font-size: 0.75rem;
+    color: var(--ink-3);
+    margin-bottom: 1rem;
+  }
+  .src {
+    margin: 1rem 0 0;
+  }
+  @media (max-width: 900px) {
+    .modes,
+    .principles {
+      grid-template-columns: minmax(0, 1fr);
+    }
+    .phead {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .pmeta {
+      align-items: flex-start;
+    }
+  }
+</style>

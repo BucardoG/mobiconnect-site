@@ -19,6 +19,7 @@ export const en: typeof es = {
     platform: "Platform",
     openFinance: "Open Finance",
     people: "People",
+    plans: "Plans",
     group: "Group",
     contact: "Contact",
     langTo: "ES",

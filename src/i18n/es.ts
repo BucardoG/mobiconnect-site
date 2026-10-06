@@ -19,6 +19,7 @@ export const es = {
     platform: "Plataforma",
     openFinance: "Open Finance",
     people: "People",
+    plans: "Planes",
     group: "Grupo",
     contact: "Contacto",
     langTo: "EN",
