@@ -371,9 +371,9 @@ export const es = {
         "Mobiconnect pertenece a Inversiones Bucardo Zúñiga: grupo chileno que construye y opera tecnología de telecomunicaciones sobre infraestructura soberana propia, con presencia en siete países.",
     },
     hero: {
-      eyebrow: "Inversiones Bucardo Zúñiga",
-      title: "Una operación real, una casa de software.",
-      sub: "El grupo chileno que construye y opera infraestructura propia de telecomunicaciones en siete países — y la casa de software que convierte APIs reguladas en contratos: red y finanzas abiertas.",
+      eyebrow: "El grupo detrás de Mobiconnect",
+      title: "Corremos lo que vendemos.",
+      sub: "Mobiconnect es la casa de software de Inversiones Bucardo Zúñiga, un grupo que construye y opera infraestructura de telecomunicaciones propia en siete países de las Américas. Sobre ese hierro, propio y no alquilado, autorizamos, medimos y valorizamos cada consumo de una API antes de que ocurra.",
       ctaPrimary: { label: "Iniciar conversación", href: "/contact" },
       ctaSecondary: { label: "Ver productos", href: "/#productos" },
     },
