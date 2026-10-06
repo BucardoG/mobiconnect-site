@@ -16,6 +16,7 @@ export const en: typeof es = {
     menu: "Menu",
     entitlements: "Entitlements",
     developers: "Developers",
+    platform: "Platform",
     openFinance: "Open Finance",
     people: "People",
     group: "Group",
@@ -93,7 +94,7 @@ export const en: typeof es = {
             "atk_test_ / atk_live_ keys and scoped OAuth2",
             "Portal with reference and try-it",
           ],
-          href: "/en/developers",
+          href: "/en/platform",
           cta: "See the platform",
         },
         {
@@ -369,10 +370,21 @@ export const en: typeof es = {
     },
     hero: {
       eyebrow: "Inversiones Bucardo Zúñiga",
-      title: "A real operator, a software house.",
-      sub: "Mobiconnect belongs to Inversiones Bucardo Zúñiga: a Chilean group that builds and operates telecommunications infrastructure and digital services across seven countries.",
+      title: "A real operation, a software house.",
+      sub: "The Chilean group that builds and operates its own telecommunications infrastructure across seven countries — and the software house that turns regulated APIs into contracts: network and open finance.",
       ctaPrimary: { label: "Start a conversation", href: "/en/contact" },
       ctaSecondary: { label: "View products", href: "/en/#products" },
+    },
+    why: {
+      eyebrow: "Why we exist",
+      title: "The standard solves the interface. The contract is still open.",
+      body: [
+        "The coming decade of telecommunications and finance is about exposing: verifying a number, detecting a SIM swap, guaranteeing network quality, sharing financial data with consent. All of it becomes standardized APIs — CAMARA and GSMA Open Gateway in telco; open finance in banking.",
+        "The standard solves the interface. Nobody solves the commercial contract: who may consume, how much, at what price, under which plan, with which auditable measurement. Today that layer is outsourced to global aggregators or hand-coded — and every outsourced layer is margin and control that belongs to someone else.",
+        "That is where Mobiconnect lives: the layer where a regulated API becomes a contract. One pattern across two industries — standard API, consent, participants, access control and billing — and the same buyer: the first Open Gateway cases in Latin America are anti-fraud for banking. The bank entering open finance is the same one consuming network APIs. The intersection is the market.",
+      ],
+      quote:
+        "What open banking did with financial data, open network APIs are doing with the network. The layer that turns that access into a contract is missing. That layer is Mobiconnect.",
     },
     history: {
       eyebrow: "History",
@@ -380,7 +392,41 @@ export const en: typeof es = {
       body: [
         "The story starts with connectivity. The group built its telecommunications operation in Chile and grew with it: Ecuador, Peru, Nicaragua, the United States, Mexico, and Colombia now opening.",
         "Then came the structural correction: leaving third-party infrastructure and returning to its own iron. Today the group runs its platform on sovereign hardware, and that infrastructure is the starting condition for everything else.",
-        "Mobiconnect is the next step: the software, identity and intelligence layer that turns that infrastructure into products — for the operator itself first, for the market afterwards.",
+        "Mobiconnect is the next step: the operator's intelligence layer made product. It was born inside the operator's own operation, hardened there, and is now opening to the market — the commercial core for network APIs and open finance, with People as a second line.",
+      ],
+    },
+    offer: {
+      eyebrow: "The offer",
+      title: "One commercial core, two industries that expose APIs.",
+      items: [
+        {
+          kicker: "01 · Core",
+          title: "Entitlements",
+          body: "Plans, quotas, usage licenses and measurement for any API sold as a product. Born inside the operator and hardened there.",
+          href: "/en/products/entitlements",
+          cta: "View product",
+        },
+        {
+          kicker: "02 · Telco",
+          title: "API Platform",
+          body: "The operator's CAMARA (GSMA) surface — verification, SIM Swap, network quality — is exposed under a commercial contract, not a call count. In the making.",
+          href: "/en/platform",
+          cta: "See the platform",
+        },
+        {
+          kicker: "03 · Open finance",
+          title: "Open Finance Bridge",
+          body: "The operator's bridge into open finance: the same contract control, applied to financial data shared with consent.",
+          href: "/en/open-finance",
+          cta: "See the vision",
+        },
+        {
+          kicker: "04 · Second line",
+          title: "People",
+          body: "Performance for hybrid teams of people and AI agents, measured by outcomes. It complements the core; it is not the core.",
+          href: "/en/products/people",
+          cta: "View product",
+        },
       ],
     },
     countries: {

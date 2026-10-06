@@ -1,0 +1,169 @@
+---
+import Base from "../layouts/Base.astro";
+import Hero from "../components/Hero.astro";
+import SectionHeader from "../components/SectionHeader.astro";
+import FeatureCard from "../components/FeatureCard.astro";
+import CTABand from "../components/CTABand.astro";
+---
+
+<Base
+  title="Plataforma de APIs — Mobiconnect"
+  description="La plataforma servidora de APIs CAMARA (GSMA) del operador: gateway, Entitlements y portal de developers bajo un solo estándar, desplegable en infraestructura propia. Verificación, SIM Swap, calidad de red y más — expuestas bajo contrato comercial."
+  locale="es"
+  path="/platform"
+>
+  <Hero
+    eyebrow="P·02 · Telco"
+    title="La plataforma de APIs del operador."
+    sub="Gateway, Entitlements y portal de developers bajo un solo estándar — CAMARA (GSMA). La implementación de red la aporta el operador; Mobiconnect aporta la exposición, el contrato y la medición. Desplegable en infraestructura propia."
+    ctaPrimary={{ label: "Conversar con el fundador", href: "/contact" }}
+    ctaSecondary={{ label: "Ir al portal de developers", href: "/developers" }}
+    panelLabel="Ficha de la plataforma"
+    panel={[
+      { k: "ESTÁNDAR", v: "CAMARA (GSMA)" },
+      { k: "COMPONENTES", v: "GATEWAY · ENTITLEMENTS · PORTAL" },
+      { k: "ESTADO", v: "GATEWAY DE STAGING OPERATIVO" },
+      { k: "DESPLIEGUE", v: "INFRAESTRUCTURA PROPIA" },
+    ]}
+  />
+
+  <section class="section section--rule">
+    <div class="container history-grid">
+      <SectionHeader
+        eyebrow="Qué resuelve"
+        title="El estándar resuelve la interfaz. La plataforma pone el contrato."
+        />
+      <div class="prose">
+        <p>
+          Cuando un operador expone APIs de red — verificación, SIM Swap,
+          calidad — el estándar CAMARA define cómo se llama y qué devuelve.
+          No define quién puede consumirla, cuánto, a qué precio ni con qué
+          medición auditable. Esa capa suele tercerizarse a agregadores
+          globales, y cada capa tercerizada es margen y control ajeno.
+        </p>
+        <p>
+          Mobiconnect es la capa donde esa API se vuelve contrato: planes,
+          cuotas, licencias de uso y medición sobre la superficie estándar —
+          con el operador como dueño de la relación, del dato y del margen.
+          Es el mismo núcleo de <a href="/products/entitlements">Entitlements</a>,
+          aplicado a las APIs de red.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--rule">
+    <div class="container">
+      <SectionHeader
+        eyebrow="APIs objetivo · CAMARA"
+        title="Cinco señales de red, un mismo contrato."
+        lede="La implementación de red la aporta el operador; Mobiconnect aporta la exposición, el contrato y la medición."
+      />
+      <div class="grid grid--3">
+        <FeatureCard
+          kicker="CAMARA"
+          title="Number Verification"
+          body="Verifica que el número del dispositivo es el que declara ser — sin OTP y sin fricción para el usuario."
+        />
+        <FeatureCard
+          kicker="CAMARA"
+          title="SIM Swap"
+          body="Detecta un cambio reciente de SIM: la señal antifraude que la banca ya consume en los primeros casos de Open Gateway de la región."
+        />
+        <FeatureCard
+          kicker="CAMARA"
+          title="Device Location"
+          body="Verificación de ubicación del dispositivo para los casos de uso que la requieren."
+        />
+        <FeatureCard
+          kicker="CAMARA"
+          title="Quality on Demand"
+          body="Calidad de red garantizada para una sesión, bajo contrato y con medición."
+        />
+        <FeatureCard
+          kicker="CAMARA"
+          title="SMS y OTP"
+          body="Entrega y verificación de OTP sobre la red del operador, con el contrato de por medio."
+        />
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--rule">
+    <div class="container">
+      <SectionHeader
+        eyebrow="Arquitectura"
+        title="Tres componentes, despliegue soberano."
+        lede="La plataforma se despliega en la red del operador o en la infraestructura que este elija. Nada pasa por un agregador."
+      />
+      <div class="grid grid--3">
+        <FeatureCard
+          kicker="Componente 01"
+          title="Gateway"
+          body="La puerta: autenticación, enrutamiento y control de acceso para las APIs expuestas."
+        />
+        <FeatureCard
+          kicker="Componente 02 · Núcleo"
+          title="Entitlements"
+          body="El contrato: planes, cuotas, licencias de uso y medición auditable de cada consumo."
+          href="/products/entitlements"
+          cta="Ver el núcleo"
+        />
+        <FeatureCard
+          kicker="Componente 03"
+          title="Portal de developers"
+          body="La experiencia: referencia de la API, claves de entorno y try-it. La superficie técnica de esta plataforma."
+          href="/developers"
+          cta="Ir al portal"
+        />
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--rule">
+    <div class="container">
+      <SectionHeader
+        eyebrow="Estado"
+        title="Lo que existe y lo que está en camino."
+      />
+      <div class="grid grid--2">
+        <FeatureCard
+          highlight={true}
+          title="Hoy: gateway de staging operativo."
+          body="El servidor de Entitlements corre en staging con su superficie alineada a CAMARA; el portal de developers está diseñado y en construcción — referencia, claves de prueba y try-it."
+        />
+        <FeatureCard
+          title="En camino: conformidad CAMARA."
+          body="La conformidad con el estándar avanza con un plan de cierre documentado, punto por punto. Sin fechas que no podamos probar."
+        />
+      </div>
+    </div>
+  </section>
+
+  <CTABand
+    eyebrow="Plataforma de APIs"
+    title="Lleva las APIs de tu operador al contrato."
+    body="Si tu operador expone APIs CAMARA y hoy las gobierna un conteo de llamadas — o un agregador —, hablemos de qué cambia cuando el contrato es tuyo."
+    button="Iniciar conversación"
+    href="/contact"
+  />
+</Base>
+
+<style>
+  .history-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+    gap: clamp(2rem, 5vw, 4.5rem);
+    align-items: start;
+  }
+
+  .history-grid .prose a {
+    color: var(--signal);
+  }
+
+  @media (max-width: 900px) {
+    .history-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
