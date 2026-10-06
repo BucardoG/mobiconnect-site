@@ -1,0 +1,108 @@
+---
+import Base from "../../layouts/Base.astro";
+import Hero from "../../components/Hero.astro";
+import SectionHeader from "../../components/SectionHeader.astro";
+import FeatureCard from "../../components/FeatureCard.astro";
+import CTABand from "../../components/CTABand.astro";
+---
+
+<Base
+  title="Developers — Mobiconnect"
+  description="The Mobiconnect developer portal: the CAMARA (GSMA)-aligned entitlements API reference, environment keys and a live try-it console. mobiconnect.dev, coming up."
+  locale="en"
+  path="/developers"
+>
+  <Hero
+    eyebrow="For those who build"
+    title="mobiconnect.dev — the developer surface."
+    sub="The Mobiconnect developer portal will live here: a living API reference, environment keys and a real try-it console. Explicit contracts, predictable responses, fail-closed — the standard a carrier runs on."
+    ctaPrimary={{ label: "Talk early access", href: "/en/contact" }}
+    ctaSecondary={{ label: "See the design proposal", href: "/design/" }}
+    panelLabel="Portal status"
+    panel={[
+      { k: "DOMAIN", v: "mobiconnect.dev" },
+      { k: "STATUS", v: "IN THE MAKING" },
+      { k: "STANDARD", v: "CAMARA (GSMA)" },
+      { k: "ENV", v: "STAGING · ATK_TEST_" },
+    ]}
+  />
+
+  <section class="section section--rule">
+    <div class="wrap">
+      <SectionHeader
+        eyebrow="The portal"
+        title="Three pieces, one contract."
+        lede="Everything an integrator needs to go from zero to the first allowed call — with the same discipline the group runs its network with."
+      />
+      <div class="grid grid--3">
+        <FeatureCard
+          kicker="01 · Reference"
+          title="The API, contract by contract."
+          body="POST /v1/entitlements/check documented end to end: request, responses and errors with their semantics. A CAMARA (GSMA)-aligned surface."
+          points={[
+            "Request and response with a real example",
+            "Typed errors: why they happen and what to do",
+            "Explicit versioning and deprecations",
+          ]}
+        />
+        <FeatureCard
+          kicker="02 · Keys"
+          title="Two environments, zero ambiguity."
+          body="atk_test_ to explore, atk_live_ for production. Granular per-key scopes, visible states and rotation without ceremony."
+          points={[
+            "Scopes: check · admin",
+            "The key is shown once",
+            "Instant revocation",
+          ]}
+        />
+        <FeatureCard
+          kicker="03 · Try it"
+          title="The contract, proven live."
+          body="A real request against staging from the browser: idempotency, x-correlator tracing and a fail-closed answer when the plan runs out."
+          points={[
+            "Idempotency-Key on every write",
+            "End-to-end trace with x-correlator",
+            "Fail-closed: no quota, no go",
+          ]}
+        />
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--rule">
+    <div class="wrap">
+      <SectionHeader
+        eyebrow="Principles"
+        title="A contract is a promise."
+        lede="Four rules that govern how we document, what we promise and what we don't."
+      />
+      <div class="grid grid--2">
+        <FeatureCard
+          highlight={true}
+          title="An exhausted quota is not an error."
+          body="When a plan runs out, the API answers 200 with allow:false and the reason. The 429 belongs to the gateway, not the contract. Predictability first."
+        />
+        <FeatureCard
+          title="Zero real data in the docs."
+          body="Examples use staging and test keys. Your production hosts are mentioned only inside your console — never in public material."
+        />
+        <FeatureCard
+          title="Bilingual from day one."
+          body="The reference is maintained in Spanish and English with the same precision in both languages — one standard, two readings."
+        />
+        <FeatureCard
+          title="Designed before being built."
+          body="Design frames 08–11 already define docs, reference, keys and try-it. The portal follows the design; it doesn't improvise."
+        />
+      </div>
+    </div>
+  </section>
+
+  <CTABand
+    eyebrow="Early access"
+    title="Build with us before everyone else."
+    body="We are opening a small group of teams to test the entitlements surface on staging. If you sell connectivity or APIs as a product, let's talk."
+    button="Request access"
+    href="/en/contact"
+  />
+</Base>

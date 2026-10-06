@@ -16,6 +16,7 @@ export const en: typeof es = {
     menu: "Menu",
     entitlements: "Entitlements",
     people: "People",
+    developers: "Developers",
     group: "Group",
     contact: "Contact",
     langTo: "ES",
@@ -52,7 +53,7 @@ export const en: typeof es = {
       panel: [
         { k: "GROUP", v: "INVERSIONES BUCARDO ZÚÑIGA" },
         { k: "OPERATOR", v: "AIRTIME CONNECT · TELCO OS" },
-        { k: "LICENSE", v: "SUBTEL · IDO 114 / 260 / 427" },
+        { k: "API SURFACE", v: "CAMARA (GSMA) ALIGNED" },
         { k: "FOOTPRINT", v: "7 COUNTRIES · CL EC PE NI US MX" },
         { k: "PRODUCTS", v: "ENTITLEMENTS · PEOPLE" },
       ],
@@ -61,7 +62,7 @@ export const en: typeof es = {
       eyebrow: "Thesis",
       title: "Margin and control are not given away: they are built.",
       body: [
-        "The group built its own operator — a SUBTEL license in Chile, presence in seven countries — and brought its infrastructure back onto its own hardware. That control is not delegated: it is the starting condition.",
+        "The group built its own telecommunications operation — presence in seven countries — and brought its infrastructure back onto its own hardware. That control is not delegated: it is the starting condition.",
         "Mobiconnect exists to build on top of it. Every service — entitlements, performance, identity — turns that sovereign infrastructure into a sellable product, with a carrier's engineering discipline and a software house's pace.",
       ],
     },
@@ -99,10 +100,10 @@ export const en: typeof es = {
     group: {
       eyebrow: "The group",
       title: "A real operator behind every product.",
-      body: "Mobiconnect belongs to Inversiones Bucardo Zúñiga: the group that built and operates a licensed telecommunications operator in Chile, with presence in seven countries and growing. Every product is born from a real need of the operator — and hardened there before reaching the market.",
+      body: "Mobiconnect belongs to Inversiones Bucardo Zúñiga: the group that builds and operates its own telecommunications infrastructure, with presence in seven countries and growing. Every product is born from a real need of that operation — and hardened there before reaching the market.",
       stats: [
         { value: "7", label: "countries with presence" },
-        { value: "114·260·427", label: "IDO licenses · SUBTEL, Chile" },
+        { value: "CAMARA", label: "GSMA-aligned API surface" },
         { value: "Owned", label: "sovereign group infrastructure" },
       ],
       cta: { label: "Meet the group", href: "/en/about" },
@@ -339,7 +340,7 @@ export const en: typeof es = {
     meta: {
       title: "The group — Inversiones Bucardo Zúñiga · Mobiconnect",
       description:
-        "Mobiconnect belongs to Inversiones Bucardo Zúñiga: a Chilean group that builds and operates a licensed telecommunications operator in Chile, with presence in seven countries and its own sovereign infrastructure.",
+        "Mobiconnect belongs to Inversiones Bucardo Zúñiga: a Chilean group that builds and operates telecommunications technology on its own sovereign infrastructure, with presence in seven countries.",
     },
     hero: {
       eyebrow: "Inversiones Bucardo Zúñiga",
@@ -352,7 +353,7 @@ export const en: typeof es = {
       eyebrow: "History",
       title: "From connectivity to intelligence.",
       body: [
-        "The story starts with connectivity. The group built a telecommunications operator — licensed by SUBTEL in Chile — and grew with it: Ecuador, Peru, Nicaragua, the United States, Mexico, and Colombia now opening.",
+        "The story starts with connectivity. The group built its telecommunications operation in Chile and grew with it: Ecuador, Peru, Nicaragua, the United States, Mexico, and Colombia now opening.",
         "Then came the structural correction: leaving third-party infrastructure and returning to its own iron. Today the group runs its platform on sovereign hardware, and that infrastructure is the starting condition for everything else.",
         "Mobiconnect is the next step: the software, identity and intelligence layer that turns that infrastructure into products — for the operator itself first, for the market afterwards.",
       ],

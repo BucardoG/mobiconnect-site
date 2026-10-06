@@ -9,30 +9,30 @@
   <rect x="26" y="2" width="4" height="28" fill="#1C1917" rx="1"/>
   <rect x="8" y="19" width="4" height="11" fill="#1C1917" rx="1"/>
   <rect x="14" y="13" width="4" height="17" fill="#1C1917" rx="1"/>
-  <rect x="20" y="7" width="4" height="23" fill="#B45309" rx="1"/>
+  <rect x="20" y="7" width="4" height="23" fill="#0F766E" rx="1"/>
   <text x="44" y="33" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="600" fill="#1C1917" letter-spacing="-0.5">mobiconnect</text>
   </g>
 <text x="32" y="104" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13.5" font-weight="400" fill="#52525B">Catálogo</text>
 <rect x="12" y="124" width="208" height="40" fill="#FFFFFF" rx="6" stroke="#E7E5E4" stroke-width="1"/>
-<rect x="12" y="124" width="3" height="40" fill="#B45309"/>
+<rect x="12" y="124" width="3" height="40" fill="#0F766E"/>
 <text x="32" y="150" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13.5" font-weight="500" fill="#1C1917">Planes</text>
 <text x="32" y="196" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13.5" font-weight="400" fill="#52525B">Suscripciones</text>
 <text x="32" y="242" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13.5" font-weight="400" fill="#52525B">Uso</text>
 <text x="32" y="288" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13.5" font-weight="400" fill="#52525B">Tenants</text>
 <text x="32" y="334" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13.5" font-weight="400" fill="#52525B">Claves API</text>
-<rect x="16" y="844" width="86" height="22" fill="#FEF3E7" rx="11" stroke="#FDE6CE"/>
-  <text x="59.0" y="859" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="500" fill="#9A3412" text-anchor="middle">PRODUCCIÓN</text>
+<rect x="16" y="844" width="86" height="22" fill="#F0FDFA" rx="11" stroke="#CCFBF1"/>
+  <text x="59.0" y="859" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="500" fill="#115E59" text-anchor="middle">PRODUCCIÓN</text>
 <rect x="232" y="0" width="1208" height="56" fill="#FFFFFF"/>
 <line x1="232" y1="56" x2="1440" y2="56" stroke="#E7E5E4" stroke-width="1"/>
 <text x="260" y="35" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="500" fill="#1C1917">Planes · operador-demo</text>
 <rect x="1080" y="12" width="180" height="32" fill="#FAFAF9" rx="6" stroke="#E7E5E4" stroke-width="1"/>
 <text x="1094" y="33" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="12" font-weight="400" fill="#52525B">operador-demo</text>
-<circle cx="1280" cy="28" r="14" fill="#FEF3E7" stroke="#FDE6CE" stroke-width="1"/>
-<text x="1280" y="33" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="600" fill="#9A3412" text-anchor="middle">W</text>
+<circle cx="1280" cy="28" r="14" fill="#F0FDFA" stroke="#CCFBF1" stroke-width="1"/>
+<text x="1280" y="33" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="600" fill="#115E59" text-anchor="middle">W</text>
 <g id="encabezado">
   <text x="264" y="96" font-family="'Inter Tight', Inter, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="600" fill="#1C1917">Planes y cuotas</text>
   <text x="504" y="97" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="10.5" font-weight="500" fill="#71717A" letter-spacing="1.1">CATÁLOGO COMERCIAL · POR CONTRATO</text>
-  <rect x="1284" y="76" width="112" height="38" fill="#B45309" rx="6"/>
+  <rect x="1284" y="76" width="112" height="38" fill="#0F766E" rx="6"/>
   <text x="1340.0" y="100.0" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="500" fill="#FFFFFF" text-anchor="middle">Nuevo plan</text>
 </g>
 <line x1="264" y1="136" x2="964" y2="136" stroke="#E7E5E4" stroke-width="1"/>
@@ -44,7 +44,7 @@
 <text x="464" y="196" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="12.5" font-weight="400" fill="#52525B">250000/mes</text>
 <text x="594" y="196" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="12.5" font-weight="400" fill="#52525B">184203</text>
 <rect x="704" y="186" width="110" height="6" fill="#E7E5E4" rx="3"/>
-<rect x="704" y="186" width="81.07" height="6" fill="#B45309" rx="3"/>
+<rect x="704" y="186" width="81.07" height="6" fill="#0F766E" rx="3"/>
 <text x="826" y="192" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="11.5" font-weight="500" fill="#52525B">73.7%</text>
 <rect x="884" y="181" width="59" height="22" fill="#F0FDF4" rx="11" stroke="#BBF7D0"/>
   <text x="913.5" y="196" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="500" fill="#15803D" text-anchor="middle">ACTIVO</text>
@@ -53,7 +53,7 @@
 <text x="464" y="242" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="12.5" font-weight="400" fill="#52525B">1200</text>
 <text x="594" y="242" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="12.5" font-weight="400" fill="#52525B">914</text>
 <rect x="704" y="232" width="110" height="6" fill="#E7E5E4" rx="3"/>
-<rect x="704" y="232" width="83.82" height="6" fill="#B45309" rx="3"/>
+<rect x="704" y="232" width="83.82" height="6" fill="#0F766E" rx="3"/>
 <text x="826" y="238" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="11.5" font-weight="500" fill="#52525B">76.2%</text>
 <rect x="884" y="227" width="59" height="22" fill="#F0FDF4" rx="11" stroke="#BBF7D0"/>
   <text x="913.5" y="242" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="500" fill="#15803D" text-anchor="middle">ACTIVO</text>
@@ -62,7 +62,7 @@
 <text x="464" y="288" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="12.5" font-weight="400" fill="#52525B">50000/mes</text>
 <text x="594" y="288" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="12.5" font-weight="400" fill="#52525B">6120</text>
 <rect x="704" y="278" width="110" height="6" fill="#E7E5E4" rx="3"/>
-<rect x="704" y="278" width="13.42" height="6" fill="#B45309" rx="3"/>
+<rect x="704" y="278" width="13.42" height="6" fill="#0F766E" rx="3"/>
 <text x="826" y="284" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="11.5" font-weight="500" fill="#52525B">12.2%</text>
 <rect x="884" y="273" width="59" height="22" fill="#F0FDF4" rx="11" stroke="#BBF7D0"/>
   <text x="913.5" y="288" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="500" fill="#15803D" text-anchor="middle">ACTIVO</text>
@@ -78,7 +78,7 @@
 <line x1="264" y1="362" x2="964" y2="362" stroke="#E7E5E4" stroke-width="1"/>
 <g id="panel-check">
   <rect x="1004" y="136" width="340" height="330" fill="#F5F5F4" rx="10" stroke="#E7E5E4" stroke-width="1"/>
-  <rect x="1004" y="136" width="3" height="330" fill="#B45309"/>
+  <rect x="1004" y="136" width="3" height="330" fill="#0F766E"/>
   <text x="1028" y="172" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="10.5" font-weight="500" fill="#71717A" letter-spacing="1.1">ENTITLEMENTS CHECK · PDP</text>
   <text x="1028" y="202" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="12.5" font-weight="500" fill="#1C1917">POST /v1/entitlements/check</text>
 </g>

@@ -7,20 +7,20 @@
   <rect x="26" y="2" width="4" height="28" fill="#1C1917" rx="1"/>
   <rect x="8" y="19" width="4" height="11" fill="#1C1917" rx="1"/>
   <rect x="14" y="13" width="4" height="17" fill="#1C1917" rx="1"/>
-  <rect x="20" y="7" width="4" height="23" fill="#B45309" rx="1"/>
+  <rect x="20" y="7" width="4" height="23" fill="#0F766E" rx="1"/>
   <text x="44" y="33" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="600" fill="#1C1917" letter-spacing="-0.5">mobiconnect</text>
   </g>
   <text x="476" y="39" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="500" fill="#52525B">Entitlements</text>
   <text x="580" y="39" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="500" fill="#52525B">People</text>
   <text x="684" y="39" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="500" fill="#52525B">Grupo</text>
   <text x="788" y="39" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="500" fill="#52525B">Contacto</text>
-  <rect x="1148" y="10" width="100" height="40" fill="#B45309" rx="6"/>
+  <rect x="1148" y="10" width="100" height="40" fill="#0F766E" rx="6"/>
   <text x="1198.0" y="35.0" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="500" fill="#FFFFFF" text-anchor="middle">Contacto</text>
   <text x="1024" y="39" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="500" fill="#71717A">EN</text>
   <line x1="0" y1="80" x2="1440" y2="80" stroke="#E7E5E4" stroke-width="1"/>
 </g>
 <g id="hero">
-  <text x="96" y="136" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="11.5" font-weight="500" fill="#B45309" letter-spacing="1.4">PLATAFORMA DE AI Y HIGH-TECH · GRUPO INVERSIONES BUCARDO ZÚÑIGA</text>
+  <text x="96" y="136" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="11.5" font-weight="500" fill="#0F766E" letter-spacing="1.4">PLATAFORMA DE AI Y HIGH-TECH · GRUPO INVERSIONES BUCARDO ZÚÑIGA</text>
   <text x="96" y="228" font-family="'Inter Tight', Inter, 'Helvetica Neue', Arial, sans-serif" font-size="60" font-weight="600" fill="#1C1917" letter-spacing="-1.2">La capa de inteligencia</text>
   <text x="96" y="298" font-family="'Inter Tight', Inter, 'Helvetica Neue', Arial, sans-serif" font-size="60" font-weight="600" fill="#1C1917" letter-spacing="-1.2">del operador soberano.</text>
   <text x="96" y="360" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="16.5" font-weight="400" fill="#52525B">Mobiconnect diseña y opera los servicios que rodean a Airtime Connect, el operador del grupo:</text>
@@ -28,7 +28,7 @@
   <text x="96" y="412" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="16.5" font-weight="400" fill="#52525B">para equipos híbridos de personas y agentes.</text>
 </g>
 <g id="hero-cta">
-  <rect x="96" y="460" width="234" height="48" fill="#B45309" rx="6"/>
+  <rect x="96" y="460" width="234" height="48" fill="#0F766E" rx="6"/>
   <text x="213.0" y="489.0" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="500" fill="#FFFFFF" text-anchor="middle">Conversar con el fundador</text>
   <rect x="346" y="460" width="173" height="48" fill="#FFFFFF" rx="6" stroke="#D6D3D1" stroke-width="1"/>
   <text x="432.5" y="489.0" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="500" fill="#1C1917" text-anchor="middle">Ver los productos</text>
@@ -59,11 +59,11 @@
   <line x1="56" y1="540" x2="61" y2="540" stroke="#D6D3D1" stroke-width="1"/>
   <line x1="56" y1="560" x2="61" y2="560" stroke="#D6D3D1" stroke-width="1"/>
   <text x="80" y="140" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="10" font-weight="500" fill="#71717A">01</text>
-  <text x="80" y="540" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="10" font-weight="500" fill="#B45309" letter-spacing="1.2">MEDIR</text>
+  <text x="80" y="540" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="10" font-weight="500" fill="#0F766E" letter-spacing="1.2">MEDIR</text>
 </g>
 <g id="ficha-sistema">
   <rect x="984" y="112" width="330" height="254" fill="#FFFFFF" rx="8" stroke="#E7E5E4" stroke-width="1"/>
-  <rect x="984" y="112" width="3" height="254" fill="#B45309"/>
+  <rect x="984" y="112" width="3" height="254" fill="#0F766E"/>
   <text x="1008" y="148" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="10.5" font-weight="500" fill="#71717A" letter-spacing="1.2">FICHA DEL SISTEMA</text>
   <text x="1008" y="184" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="10.5" font-weight="500" fill="#71717A" letter-spacing="1.1">GRUPO</text>
   <text x="1104" y="184" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="12.5" font-weight="500" fill="#1C1917">INV. BUCARDO ZÚÑIGA</text>
@@ -71,8 +71,8 @@
   <text x="1008" y="222" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="10.5" font-weight="500" fill="#71717A" letter-spacing="1.1">OPERADOR</text>
   <text x="1104" y="222" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="12.5" font-weight="500" fill="#1C1917">AIRTIME CONNECT</text>
   <line x1="1008" y1="252" x2="1290" y2="252" stroke="#E7E5E4" stroke-width="1"/>
-  <text x="1008" y="260" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="10.5" font-weight="500" fill="#71717A" letter-spacing="1.1">LICENCIA</text>
-  <text x="1104" y="260" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="12.5" font-weight="500" fill="#1C1917">SUBTEL 114/260/427</text>
+  <text x="1008" y="260" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="10.5" font-weight="500" fill="#71717A" letter-spacing="1.1">SUPERFICIE</text>
+  <text x="1104" y="260" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="12.5" font-weight="500" fill="#1C1917">APIs · CAMARA (GSMA)</text>
   <line x1="1008" y1="290" x2="1290" y2="290" stroke="#E7E5E4" stroke-width="1"/>
   <text x="1008" y="298" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="10.5" font-weight="500" fill="#71717A" letter-spacing="1.1">PRESENCIA</text>
   <text x="1104" y="298" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="12.5" font-weight="500" fill="#1C1917">7 PAÍSES · CL…MX</text>
@@ -82,9 +82,9 @@
 </g>
 <line x1="96" y1="640" x2="1344" y2="640" stroke="#E7E5E4" stroke-width="1"/>
 <g id="tesis">
-  <text x="96" y="704" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="11.5" font-weight="500" fill="#B45309" letter-spacing="1.4">TESIS</text>
+  <text x="96" y="704" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="11.5" font-weight="500" fill="#0F766E" letter-spacing="1.4">TESIS</text>
   <text x="96" y="748" font-family="'Inter Tight', Inter, 'Helvetica Neue', Arial, sans-serif" font-size="34" font-weight="600" fill="#1C1917" letter-spacing="-0.6">El margen y el control no se regalan: se construyen.</text>
-  <text x="96" y="806" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#52525B">El grupo construyó su operador — licencia SUBTEL en Chile, presencia en siete países — y</text>
+  <text x="96" y="806" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#52525B">El grupo construyó su propia operación de telecomunicaciones — siete países — y</text>
   <text x="96" y="832" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#52525B">recuperó su infraestructura sobre hardware propio. Ese control no se delega: es la</text>
   <text x="96" y="858" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#52525B">condición de partida. Mobiconnect existe para convertir esa infraestructura soberana en</text>
   <text x="96" y="884" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#52525B">producto vendible, con la disciplina de ingeniería de un carrier y el ritmo de una casa</text>
@@ -92,7 +92,7 @@
 </g>
 <line x1="96" y1="984" x2="1344" y2="984" stroke="#E7E5E4" stroke-width="1"/>
 <g id="productos-head">
-  <text x="96" y="1048" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="11.5" font-weight="500" fill="#B45309" letter-spacing="1.4">PRODUCTOS</text>
+  <text x="96" y="1048" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="11.5" font-weight="500" fill="#0F766E" letter-spacing="1.4">PRODUCTOS</text>
   <text x="96" y="1092" font-family="'Inter Tight', Inter, 'Helvetica Neue', Arial, sans-serif" font-size="34" font-weight="600" fill="#1C1917" letter-spacing="-0.6">Dos productos, una misma disciplina.</text>
   <text x="96" y="1150" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#52525B">Ambos nacen de necesidades reales del operador y se construyen sobre</text>
   <text x="96" y="1176" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#52525B">infraestructura propia.</text>
@@ -104,9 +104,9 @@
   <rect x="26" y="2" width="4" height="28" fill="#1C1917" rx="1"/>
   <rect x="8" y="19" width="4" height="11" fill="#1C1917" rx="1"/>
   <rect x="14" y="13" width="4" height="17" fill="#1C1917" rx="1"/>
-  <rect x="20" y="7" width="4" height="23" fill="#B45309" rx="1"/>
+  <rect x="20" y="7" width="4" height="23" fill="#0F766E" rx="1"/>
   </g>
-  <text x="132" y="1328" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="11" font-weight="500" fill="#B45309" letter-spacing="1.4">P·01</text>
+  <text x="132" y="1328" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="11" font-weight="500" fill="#0F766E" letter-spacing="1.4">P·01</text>
   <text x="132" y="1368" font-family="'Inter Tight', Inter, 'Helvetica Neue', Arial, sans-serif" font-size="30" font-weight="600" fill="#1C1917" letter-spacing="-0.6">Entitlements</text>
   <text x="132" y="1396" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="400" fill="#52525B">La capa comercial de las APIs: planes, cuotas, licencias y</text>
   <text x="132" y="1420" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="400" fill="#52525B">medición para operadores y plataformas que venden conectividad</text>
@@ -115,7 +115,7 @@
   <text x="132" y="1516" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13.5" font-weight="400" fill="#52525B">—  Medición y aplicación en tiempo real</text>
   <text x="132" y="1544" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13.5" font-weight="400" fill="#52525B">—  Trials, upgrades y feature flags</text>
   <line x1="132" y1="1558" x2="664" y2="1558" stroke="#E7E5E4" stroke-width="1"/>
-  <text x="132" y="1588" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13.5" font-weight="500" fill="#B45309">Ver producto  →</text>
+  <text x="132" y="1588" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13.5" font-weight="500" fill="#0F766E">Ver producto  →</text>
 </g>
 <g id="producto-2">
   <rect x="740" y="1210" width="604" height="400" fill="#FFFFFF" rx="10" stroke="#E7E5E4" stroke-width="1"/>
@@ -124,9 +124,9 @@
   <rect x="26" y="2" width="4" height="28" fill="#1C1917" rx="1"/>
   <rect x="8" y="19" width="4" height="11" fill="#1C1917" rx="1"/>
   <rect x="14" y="13" width="4" height="17" fill="#1C1917" rx="1"/>
-  <rect x="20" y="7" width="4" height="23" fill="#B45309" rx="1"/>
+  <rect x="20" y="7" width="4" height="23" fill="#0F766E" rx="1"/>
   </g>
-  <text x="776" y="1328" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="11" font-weight="500" fill="#B45309" letter-spacing="1.4">P·02</text>
+  <text x="776" y="1328" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="11" font-weight="500" fill="#0F766E" letter-spacing="1.4">P·02</text>
   <text x="776" y="1368" font-family="'Inter Tight', Inter, 'Helvetica Neue', Arial, sans-serif" font-size="30" font-weight="600" fill="#1C1917" letter-spacing="-0.6">People</text>
   <text x="776" y="1396" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="400" fill="#52525B">Un sistema de RR.HH. diseñado desde cero para equipos híbridos:</text>
   <text x="776" y="1420" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="400" fill="#52525B">personas y agentes AI en el mismo registro, medidos por</text>
@@ -135,15 +135,15 @@
   <text x="776" y="1516" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13.5" font-weight="400" fill="#52525B">—  Los agentes proponen, los humanos deciden</text>
   <text x="776" y="1544" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13.5" font-weight="400" fill="#52525B">—  Scorecards anclados a resultados</text>
   <line x1="776" y1="1558" x2="1308" y2="1558" stroke="#E7E5E4" stroke-width="1"/>
-  <text x="776" y="1588" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13.5" font-weight="500" fill="#B45309">Ver producto  →</text>
+  <text x="776" y="1588" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13.5" font-weight="500" fill="#0F766E">Ver producto  →</text>
 </g>
 <line x1="96" y1="1674" x2="1344" y2="1674" stroke="#E7E5E4" stroke-width="1"/>
 <g id="grupo">
-  <text x="96" y="1738" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="11.5" font-weight="500" fill="#B45309" letter-spacing="1.4">EL GRUPO</text>
-  <text x="96" y="1782" font-family="'Inter Tight', Inter, 'Helvetica Neue', Arial, sans-serif" font-size="34" font-weight="600" fill="#1C1917" letter-spacing="-0.6">Un operador real detrás de cada producto.</text>
-  <text x="96" y="1840" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#52525B">Mobiconnect pertenece a Inversiones Bucardo Zúñiga: el grupo que construyó y</text>
-  <text x="96" y="1866" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#52525B">opera un operador de telecomunicaciones licenciado en Chile. Cada producto</text>
-  <text x="96" y="1892" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#52525B">nace de una necesidad real del operador — y se endurece ahí antes de salir al</text>
+  <text x="96" y="1738" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="11.5" font-weight="500" fill="#0F766E" letter-spacing="1.4">EL GRUPO</text>
+  <text x="96" y="1782" font-family="'Inter Tight', Inter, 'Helvetica Neue', Arial, sans-serif" font-size="34" font-weight="600" fill="#1C1917" letter-spacing="-0.6">Una operación real detrás de cada producto.</text>
+  <text x="96" y="1840" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#52525B">Mobiconnect pertenece a Inversiones Bucardo Zúñiga: el grupo que construye y</text>
+  <text x="96" y="1866" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#52525B">opera infraestructura de telecomunicaciones propia. Cada producto</text>
+  <text x="96" y="1892" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#52525B">nace de una necesidad real de esa operación — y se endurece ahí antes de salir al</text>
   <text x="96" y="1918" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#52525B">mercado.</text>
 </g>
 <g id="stat-1">
@@ -153,8 +153,8 @@
 </g>
 <g id="stat-2">
   <line x1="512" y1="1960" x2="848" y2="1960" stroke="#D6D3D1" stroke-width="1"/>
-  <text x="512" y="2016" font-family="'Inter Tight', Inter, 'Helvetica Neue', Arial, sans-serif" font-size="36" font-weight="600" fill="#1C1917">114·260·427</text>
-  <text x="512" y="2042" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="400" fill="#71717A">IDOs · licencia SUBTEL, Chile</text>
+  <text x="512" y="2016" font-family="'Inter Tight', Inter, 'Helvetica Neue', Arial, sans-serif" font-size="36" font-weight="600" fill="#1C1917">CAMARA</text>
+  <text x="512" y="2042" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="400" fill="#71717A">superficie de APIs alineada (GSMA)</text>
 </g>
 <g id="stat-3">
   <line x1="928" y1="1960" x2="1264" y2="1960" stroke="#D6D3D1" stroke-width="1"/>
@@ -162,11 +162,11 @@
   <text x="928" y="2042" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="400" fill="#71717A">infraestructura soberana</text>
 </g>
 <g id="cta">
-  <rect x="96" y="2090" width="1248" height="200" fill="#FEF3E7" rx="12" stroke="#FDE6CE" stroke-width="1"/>
-  <text x="136" y="2142" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="11.5" font-weight="500" fill="#B45309" letter-spacing="1.4">CONTACTO</text>
+  <rect x="96" y="2090" width="1248" height="200" fill="#F0FDFA" rx="12" stroke="#CCFBF1" stroke-width="1"/>
+  <text x="136" y="2142" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="11.5" font-weight="500" fill="#0F766E" letter-spacing="1.4">CONTACTO</text>
   <text x="136" y="2194" font-family="'Inter Tight', Inter, 'Helvetica Neue', Arial, sans-serif" font-size="30" font-weight="600" fill="#1C1917" letter-spacing="-0.6">Hable con quien construye.</text>
   <text x="136" y="2224" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="14.5" font-weight="400" fill="#52525B">Contacto fundador-led: conversaciones técnicas directas, sin funnels.</text>
-  <rect x="1104" y="2166" width="196" height="46" fill="#B45309" rx="6"/>
+  <rect x="1104" y="2166" width="196" height="46" fill="#0F766E" rx="6"/>
   <text x="1202.0" y="2194.0" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="500" fill="#FFFFFF" text-anchor="middle">Iniciar conversación</text>
 </g>
 <g id="footer">
@@ -176,7 +176,7 @@
   <rect x="26" y="2" width="4" height="28" fill="#1C1917" rx="1"/>
   <rect x="8" y="19" width="4" height="11" fill="#1C1917" rx="1"/>
   <rect x="14" y="13" width="4" height="17" fill="#1C1917" rx="1"/>
-  <rect x="20" y="7" width="4" height="23" fill="#B45309" rx="1"/>
+  <rect x="20" y="7" width="4" height="23" fill="#0F766E" rx="1"/>
   <text x="44" y="33" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="600" fill="#1C1917" letter-spacing="-0.5">mobiconnect</text>
   </g>
   <text x="396" y="2402" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="400" fill="#71717A">Servicios de AI y high-tech para el operador soberano del grupo.</text>

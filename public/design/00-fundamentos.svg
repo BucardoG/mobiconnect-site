@@ -7,20 +7,20 @@
   <rect x="26" y="2" width="4" height="28" fill="#1C1917" rx="1"/>
   <rect x="8" y="19" width="4" height="11" fill="#1C1917" rx="1"/>
   <rect x="14" y="13" width="4" height="17" fill="#1C1917" rx="1"/>
-  <rect x="20" y="7" width="4" height="23" fill="#B45309" rx="1"/>
+  <rect x="20" y="7" width="4" height="23" fill="#0F766E" rx="1"/>
   <text x="44" y="33" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="600" fill="#1C1917" letter-spacing="-0.5">mobiconnect</text>
   </g>
 </g>
 <text x="1344" y="76" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="11" font-weight="500" fill="#71717A" letter-spacing="1.2" text-anchor="end">DESIGN SYSTEM · V1.0 · DIRECCIÓN A «INSTRUMENTO DE PRECISIÓN»</text>
 <line x1="0" y1="124" x2="1440" y2="124" stroke="#E7E5E4" stroke-width="1"/>
 <g id="principio">
-  <text x="96" y="176" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="11.5" font-weight="500" fill="#B45309" letter-spacing="1.4">PRINCIPIO</text>
+  <text x="96" y="176" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="11.5" font-weight="500" fill="#0F766E" letter-spacing="1.4">PRINCIPIO</text>
   <text x="96" y="228" font-family="'Inter Tight', Inter, 'Helvetica Neue', Arial, sans-serif" font-size="30" font-weight="600" fill="#1C1917" letter-spacing="-0.6">Mobiconnect se ve como un instrumento de medición.</text>
-  <text x="96" y="264" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="15.5" font-weight="400" fill="#52525B">Fondo claro, tinta casi negra, líneas de un píxel, datos en monoespaciada y un solo color de señal — cobre —</text>
+  <text x="96" y="264" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="15.5" font-weight="400" fill="#52525B">Fondo claro, tinta casi negra, líneas de un píxel, datos en monoespaciada y un solo color de señal — teal —</text>
   <text x="96" y="288" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="15.5" font-weight="400" fill="#52525B">que solo aparece donde hay algo operable o verdadero. Nada decora; todo informa.</text>
 </g>
 <line x1="96" y1="344" x2="1344" y2="344" stroke="#E7E5E4" stroke-width="1"/>
-<text x="96" y="384" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="11.5" font-weight="500" fill="#B45309" letter-spacing="1.4">COLOR · NEUTRALES</text>
+<text x="96" y="384" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="11.5" font-weight="500" fill="#0F766E" letter-spacing="1.4">COLOR · NEUTRALES</text>
 <rect x="96" y="412" width="56" height="56" fill="#FAFAF9" rx="6" stroke="#E7E5E4" stroke-width="1"/>
 <text x="124" y="488" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="10" font-weight="500" fill="#71717A" text-anchor="middle">50</text>
 <rect x="162" y="412" width="56" height="56" fill="#F5F5F4" rx="6" stroke="#E7E5E4" stroke-width="1"/>
@@ -43,29 +43,29 @@
 <text x="718" y="488" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="10" font-weight="500" fill="#71717A" text-anchor="middle">900</text>
 <rect x="756" y="412" width="56" height="56" fill="#0C0A09" rx="6" stroke="#E7E5E4" stroke-width="1"/>
 <text x="784" y="488" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="10" font-weight="500" fill="#71717A" text-anchor="middle">950</text>
-<text x="96" y="512" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="11.5" font-weight="500" fill="#B45309" letter-spacing="1.4">COLOR · SEÑAL (COBRE)</text>
-<rect x="96" y="540" width="184" height="56" fill="#FEF3E7" rx="6" stroke="#E7E5E4" stroke-width="1"/>
+<text x="96" y="512" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="11.5" font-weight="500" fill="#0F766E" letter-spacing="1.4">COLOR · SEÑAL (COBRE)</text>
+<rect x="96" y="540" width="184" height="56" fill="#F0FDFA" rx="6" stroke="#E7E5E4" stroke-width="1"/>
 <text x="108" y="616" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="10" font-weight="500" fill="#71717A">subtle</text>
-<rect x="296" y="540" width="184" height="56" fill="#B45309" rx="6" stroke="#E7E5E4" stroke-width="1"/>
+<rect x="296" y="540" width="184" height="56" fill="#0F766E" rx="6" stroke="#E7E5E4" stroke-width="1"/>
 <text x="308" y="616" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="10" font-weight="500" fill="#71717A">signal</text>
-<rect x="496" y="540" width="184" height="56" fill="#9A3412" rx="6" stroke="#E7E5E4" stroke-width="1"/>
+<rect x="496" y="540" width="184" height="56" fill="#115E59" rx="6" stroke="#E7E5E4" stroke-width="1"/>
 <text x="508" y="616" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="10" font-weight="500" fill="#71717A">strong</text>
 <line x1="96" y1="620" x2="1344" y2="620" stroke="#E7E5E4" stroke-width="1"/>
-<text x="96" y="640" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="11.5" font-weight="500" fill="#B45309" letter-spacing="1.4">TIPOGRAFÍA</text>
+<text x="96" y="640" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="11.5" font-weight="500" fill="#0F766E" letter-spacing="1.4">TIPOGRAFÍA</text>
 <text x="96" y="692" font-family="'Inter Tight', Inter, 'Helvetica Neue', Arial, sans-serif" font-size="44" font-weight="600" fill="#1C1917" letter-spacing="-1">La capa de inteligencia del operador soberano.</text>
 <text x="96" y="732" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="11.5" font-weight="500" fill="#71717A">Display · Inter Tight 600</text>
 <text x="96" y="776" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="17" font-weight="400" fill="#52525B">Texto humanist-neutral para el cuerpo: la voz de un consultor senior sin hype.</text>
 <text x="96" y="804" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="11.5" font-weight="500" fill="#71717A">Texto · Inter 400/500</text>
-<text x="96" y="848" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="14" font-weight="400" fill="#1C1917">atk_live_9f3c…e401 · 184203 · 250000/mes · 114/260/427</text>
+<text x="96" y="848" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="14" font-weight="400" fill="#1C1917">atk_live_9f3c…e401 · 184203 · 250000/mes · sms.otp</text>
 <text x="96" y="876" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="11.5" font-weight="500" fill="#71717A">Dato · IBM Plex Mono 400</text>
 <line x1="96" y1="916" x2="1344" y2="916" stroke="#E7E5E4" stroke-width="1"/>
-<text x="96" y="936" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="11.5" font-weight="500" fill="#B45309" letter-spacing="1.4">COMPONENTES BASE</text>
-<rect x="96" y="980" width="150" height="44" fill="#B45309" rx="6"/>
+<text x="96" y="936" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="11.5" font-weight="500" fill="#0F766E" letter-spacing="1.4">COMPONENTES BASE</text>
+<rect x="96" y="980" width="150" height="44" fill="#0F766E" rx="6"/>
   <text x="171.0" y="1007.0" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="500" fill="#FFFFFF" text-anchor="middle">Botón primario</text>
 <rect x="262" y="980" width="165" height="44" fill="#FFFFFF" rx="6" stroke="#D6D3D1" stroke-width="1"/>
   <text x="344.5" y="1007.0" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="500" fill="#1C1917" text-anchor="middle">Botón secundario</text>
 <text x="459" y="1002" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="400" fill="#71717A">Un solo primario por vista · radius 6 · sin mayúsculas</text>
-<text x="96" y="1068" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="11.5" font-weight="500" fill="#B45309" letter-spacing="1.4">RADIOS</text>
+<text x="96" y="1068" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="11.5" font-weight="500" fill="#0F766E" letter-spacing="1.4">RADIOS</text>
 <rect x="96" y="1096" width="72" height="44" fill="#FFFFFF" rx="2" stroke="#D6D3D1" stroke-width="1"/>
 <text x="132" y="1160" font-family="'IBM Plex Mono', 'SF Mono', Consolas, monospace" font-size="10" font-weight="500" fill="#71717A" text-anchor="middle">2px</text>
 <rect x="184" y="1096" width="72" height="44" fill="#FFFFFF" rx="4" stroke="#D6D3D1" stroke-width="1"/>
@@ -83,7 +83,7 @@
   <rect x="26" y="2" width="4" height="28" fill="#1C1917" rx="1"/>
   <rect x="8" y="19" width="4" height="11" fill="#1C1917" rx="1"/>
   <rect x="14" y="13" width="4" height="17" fill="#1C1917" rx="1"/>
-  <rect x="20" y="7" width="4" height="23" fill="#B45309" rx="1"/>
+  <rect x="20" y="7" width="4" height="23" fill="#0F766E" rx="1"/>
   <text x="44" y="33" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="600" fill="#1C1917" letter-spacing="-0.5">mobiconnect</text>
   </g>
   <text x="396" y="1260" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="400" fill="#71717A">Servicios de AI y high-tech para el operador soberano del grupo.</text>

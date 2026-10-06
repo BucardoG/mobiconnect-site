@@ -1,0 +1,108 @@
+---
+import Base from "../layouts/Base.astro";
+import Hero from "../components/Hero.astro";
+import SectionHeader from "../components/SectionHeader.astro";
+import FeatureCard from "../components/FeatureCard.astro";
+import CTABand from "../components/CTABand.astro";
+---
+
+<Base
+  title="Developers — Mobiconnect"
+  description="El portal de desarrolladores de Mobiconnect: referencia de la API de entitlements alineada a CAMARA (GSMA), claves de entorno y try-it real. mobiconnect.dev, en construcción."
+  locale="es"
+  path="/developers"
+>
+  <Hero
+    eyebrow="Para quienes construyen"
+    title="mobiconnect.dev — la superficie de los developers."
+    sub="El portal de desarrolladores de Mobiconnect vivirá aquí: referencia viva de la API, claves de entorno y un try-it real. Contratos explícitos, respuestas predecibles, fail-closed — el estándar con el que opera un carrier."
+    ctaPrimary={{ label: "Conversar sobre early access", href: "/contact" }}
+    ctaSecondary={{ label: "Ver la propuesta de diseño", href: "/design/" }}
+    panelLabel="Estado del portal"
+    panel={[
+      { k: "DOMINIO", v: "mobiconnect.dev" },
+      { k: "ESTADO", v: "EN CONSTRUCCIÓN" },
+      { k: "ESTÁNDAR", v: "CAMARA (GSMA)" },
+      { k: "ENTORNO", v: "STAGING · ATK_TEST_" },
+    ]}
+  />
+
+  <section class="section section--rule">
+    <div class="wrap">
+      <SectionHeader
+        eyebrow="El portal"
+        title="Tres piezas, un mismo contrato."
+        lede="Todo lo que un integrador necesita para pasar de cero a la primera llamada permitida — con la misma disciplina con la que el grupo opera su red."
+      />
+      <div class="grid grid--3">
+        <FeatureCard
+          kicker="01 · Referencia"
+          title="La API, contrato por contrato."
+          body="POST /v1/entitlements/check documentado completo: request, respuestas y errores con su semántica. Superficie alineada a CAMARA (GSMA)."
+          points={[
+            "Request y response con ejemplo real",
+            "Errores tipados: por qué ocurren y qué hacer",
+            "Versionado y deprecaciones explícitas",
+          ]}
+        />
+        <FeatureCard
+          kicker="02 · Claves"
+          title="Dos entornos, cero ambigüedad."
+          body="atk_test_ para explorar, atk_live_ para producción. Scopes granulares por clave, estados visibles y rotación sin drama."
+          points={[
+            "Scopes: check · admin",
+            "La clave se muestra una sola vez",
+            "Revocación inmediata",
+          ]}
+        />
+        <FeatureCard
+          kicker="03 · Try it"
+          title="El contrato, probado en vivo."
+          body="Request real contra staging desde el navegador: idempotencia, trazabilidad con x-correlator y respuesta fail-closed cuando el plan no alcanza."
+          points={[
+            "Idempotency-Key en cada escritura",
+            "Traza de extremo a extremo con x-correlator",
+            "Fail-closed: sin cupo, no pasa",
+          ]}
+        />
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--rule">
+    <div class="wrap">
+      <SectionHeader
+        eyebrow="Principios"
+        title="Un contrato es una promesa."
+        lede="Cuatro reglas que gobiernan cómo documentamos, qué prometemos y qué no."
+      />
+      <div class="grid grid--2">
+        <FeatureCard
+          highlight={true}
+          title="Cuota agotada no es error."
+          body="Cuando el plan se agota, la API responde 200 con allow:false y la razón. El 429 pertenece al gateway, no al contrato. Predecibilidad primero."
+        />
+        <FeatureCard
+          title="Cero datos reales en la documentación."
+          body="Los ejemplos usan staging y claves de prueba. Tus hosts de producción se mencionan solo dentro de tu consola, nunca en material público."
+        />
+        <FeatureCard
+          title="Bilingüe desde el día uno."
+          body="La referencia se mantiene en español y en inglés con la misma precisión en ambos idiomas — un estándar, dos lecturas."
+        />
+        <FeatureCard
+          title="Diseñado antes de construirse."
+          body="Las propuestas 08–11 del design system ya definen docs, referencia, claves y try-it. El portal sigue el diseño; no improvisa."
+        />
+      </div>
+    </div>
+  </section>
+
+  <CTABand
+    eyebrow="Early access"
+    title="Construye con nosotros antes que nadie."
+    body="Estamos abriendo un grupo reducido de equipos para probar la superficie de entitlements en staging. Si vendes conectividad o APIs como producto, hablemos."
+    button="Solicitar acceso"
+    href="/contact"
+  />
+</Base>
