@@ -1,5 +1,8 @@
 ---
 // Nav — sticky con blur sutil. Cero JS: el menú móvil es <details>.
+// Orden de marca D7: Entitlements → API Platform (Developers) → Open Finance → People.
+import Logo from "./Logo.astro";
+
 interface Props {
   locale: "es" | "en";
   path: string;
@@ -7,6 +10,8 @@ interface Props {
     aria: string;
     menu: string;
     entitlements: string;
+    developers: string;
+    openFinance: string;
     people: string;
     group: string;
     contact: string;
@@ -21,8 +26,9 @@ const home = locale === "en" ? "/en/" : "/";
 
 const links = [
   { key: "entitlements", href: `${pre}/products/entitlements`, label: t.entitlements, match: "/products/entitlements" },
-  { key: "people", href: `${pre}/products/people`, label: t.people, match: "/products/people" },
   { key: "developers", href: `${pre}/developers`, label: t.developers, match: "/developers" },
+  { key: "openFinance", href: `${pre}/open-finance`, label: t.openFinance, match: "/open-finance" },
+  { key: "people", href: `${pre}/products/people`, label: t.people, match: "/products/people" },
   { key: "group", href: `${pre}/about`, label: t.group, match: "/about" },
   { key: "contact", href: `${pre}/contact`, label: t.contact, match: "/contact" },
 ];
@@ -34,13 +40,8 @@ const isActive = (match: string) => path === match;
 
 <header class="nav">
   <div class="container nav-inner">
-    <a class="brand" href={home} aria-label="Mobiconnect — {locale === 'en' ? 'home' : 'inicio'}">
-      <svg width="22" height="22" viewBox="0 0 64 64" aria-hidden="true">
-        <rect width="64" height="64" rx="14" fill="var(--ink)"></rect>
-        <path d="M17 44V20l15 14.5L47 20v24" fill="none" stroke="#fff" stroke-width="5.5" stroke-linecap="square" stroke-linejoin="miter"></path>
-        <path d="M20 51h24" stroke="var(--signal-bright)" stroke-width="3" stroke-linecap="square"></path>
-      </svg>
-      <span>Mobiconnect</span>
+    <a class="brand" href={home} aria-label={`Mobiconnect — ${locale === "en" ? "home" : "inicio"}`}>
+      <Logo height={26} label="" />
     </a>
 
     <nav class="nav-links" aria-label={t.aria}>
@@ -114,12 +115,9 @@ const isActive = (match: string) => path === match;
   .brand {
     display: inline-flex;
     align-items: center;
-    gap: 0.55rem;
-    font-weight: 700;
-    letter-spacing: -0.02em;
-    font-size: 1.0625rem;
     text-decoration: none;
     margin-right: auto;
+    padding-block: 0.25rem;
   }
 
   .nav-links ul {

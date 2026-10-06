@@ -1,0 +1,120 @@
+---
+// Open Finance — WP-B1 (DOSSIER-MAESTRO D7, §4.3, §5.3).
+// Regla: sin afirmaciones regulatorias ni de habilitación (eso es WP-E1, con asesor legal).
+// Fuente de «primeros lanzamientos de Open Gateway en LATAM = antifraude» (hecho público, GSMA):
+//   gsma.com/about-us/regions/latin-america-and-the-caribbean/open-gateway-peru/ (Perú, antifraude)
+//   gsma.com/newsroom/press-release/mexicos-mobile-industry-joins-forces-to-simplify-the-development-of-applications-and-digital-services-through-gsma-open-gateway
+//   Colombia (Claro, Movistar, Tigo — verificación de identidad contra fraude, 2026).
+import Base from "../layouts/Base.astro";
+import Hero from "../components/Hero.astro";
+import SectionHeader from "../components/SectionHeader.astro";
+import FeatureCard from "../components/FeatureCard.astro";
+import Steps from "../components/Steps.astro";
+import CTABand from "../components/CTABand.astro";
+---
+
+<Base
+  title="Open Finance — donde la red y las finanzas abiertas se vuelven contrato · Mobiconnect"
+  description="Las APIs de red estandarizadas (CAMARA) y los sistemas de finanzas abiertas comparten un patrón: interfaz estándar, consentimiento y control de acceso. Mobiconnect aporta la capa que falta en ambos: el contrato comercial."
+  locale="es"
+  path="/open-finance"
+>
+  <Hero
+    eyebrow="P·03 · Open Finance Bridge"
+    title="Donde la red y las finanzas abiertas se vuelven contrato."
+    sub="Lo que el open banking hizo con el dato financiero, las APIs abiertas de red lo hacen con la red. Ambos estandarizan la interfaz; ninguno resuelve el contrato comercial — quién consume, cuánto, a qué precio y con qué medición. Esa capa es Mobiconnect."
+    ctaPrimary={{ label: "Conversar sobre el caso", href: "/contact" }}
+    ctaSecondary={{ label: "Ver Entitlements", href: "/products/entitlements" }}
+    panelLabel="Ficha del enfoque"
+    panel={[
+      { k: "PATRÓN", v: "API ESTÁNDAR + CONSENTIMIENTO" },
+      { k: "ESTÁNDAR TELCO", v: "CAMARA · GSMA OPEN GATEWAY" },
+      { k: "CASO ANCLA", v: "ANTIFRAUDE PARA BANCA Y FINTECH" },
+      { k: "NÚCLEO", v: "ENTITLEMENTS" },
+      { k: "ESTADO", v: "EN DISEÑO" },
+    ]}
+  />
+
+  <section class="section section--rule">
+    <div class="container">
+      <SectionHeader
+        eyebrow="El patrón"
+        title="Dos industrias, la misma arquitectura."
+        lede="Las finanzas abiertas y las APIs de red llegan al mismo diseño por caminos distintos. Lo que ninguna de las dos estandariza es justamente lo que define el negocio."
+      />
+      <div class="grid grid--3">
+        <FeatureCard
+          kicker="01 · Interfaz"
+          title="API estándar."
+          body="En telco, CAMARA define qué se pregunta y qué se responde: verificar un número, detectar un cambio de SIM, pedir calidad de red. En finanzas abiertas, la interfaz la definen sus propios estándares."
+        />
+        <FeatureCard
+          kicker="02 · Acceso"
+          title="Consentimiento y control."
+          body="En ambos mundos, quien consume la API debe estar autorizado, identificado y acotado. El dato es de su titular; el acceso se concede, se registra y se puede revocar."
+        />
+        <FeatureCard
+          kicker="03 · Contrato"
+          highlight={true}
+          title="El contrato comercial — el hueco."
+          body="Quién puede llamar, cuánto, bajo qué plan, a qué precio y con qué medición auditable. Ningún estándar lo resuelve. Entitlements sí: el mismo núcleo para ambas industrias."
+        />
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--rule">
+    <div class="container">
+      <SectionHeader
+        eyebrow="El caso que une ambos mundos"
+        title="El banco que consume la red."
+        lede="Los primeros lanzamientos de GSMA Open Gateway en América Latina se enfocan en prevención de fraude. El comprador natural es el mismo banco o fintech que participa de las finanzas abiertas: la intersección es el mercado."
+      />
+      <Steps
+        steps={[
+          { n: "01", title: "Verificar el número", body: "La app del banco confirma, con la red, que el número que inicia la operación es el del dispositivo — sin códigos por SMS que se puedan interceptar." },
+          { n: "02", title: "Detectar el cambio de SIM", body: "Antes de una transferencia sensible, consulta si la SIM cambió recientemente: la señal clásica de una toma de cuenta." },
+          { n: "03", title: "Decidir con contrato", body: "Cada consulta pasa por Entitlements: el banco tiene un plan, una cuota y un precio. Sin derecho, la respuesta es allow:false, explícita y trazable." },
+          { n: "04", title: "Medir y conciliar", body: "Cada consulta queda medida con su precio congelado y su x-correlator: el operador factura lo que vendió y el banco paga lo que consumió." },
+        ]}
+      />
+    </div>
+  </section>
+
+  <section class="section section--rule">
+    <div class="container">
+      <SectionHeader
+        eyebrow="Principios"
+        title="Lo que prometemos — y lo que no."
+        lede="Un puente entre dos industrias reguladas exige más precisión, no menos."
+      />
+      <div class="grid grid--2">
+        <FeatureCard
+          highlight={true}
+          title="Sin promesas regulatorias."
+          body="Mobiconnect no se presenta como participante habilitado de ningún sistema de finanzas abiertas. Cualquier integración regulada se diseña con la institución y su asesoría legal, no en una landing."
+        />
+        <FeatureCard
+          title="Soberano por diseño."
+          body="La capa de contrato se despliega en la infraestructura del operador o de la institución, dentro de su jurisdicción. Los datos del titular no viajan a una nube ajena."
+        />
+        <FeatureCard
+          title="Estándar antes que invento."
+          body="Interfaces CAMARA, errores tipados, trazabilidad de extremo a extremo y versionado explícito. Sin dialectos propios que encierren al cliente."
+        />
+        <FeatureCard
+          title="Estado honesto: en diseño."
+          body="El núcleo de Entitlements está en construcción sobre infraestructura soberana. El puente hacia finanzas abiertas está en diseño. Te diremos exactamente qué corre hoy y qué no."
+        />
+      </div>
+    </div>
+  </section>
+
+  <CTABand
+    eyebrow="Banca, fintech y operadores"
+    title="Diseñemos el primer caso juntos."
+    body="Si eres un banco o fintech que necesita señales de la red para prevenir fraude, o un operador que quiere vender esas señales con contrato y medición propios, hablemos."
+    button="Iniciar conversación"
+    href="/contact"
+  />
+</Base>
