@@ -73,7 +73,7 @@ export const es = {
     products: {
       eyebrow: "Productos",
       title: "Un núcleo comercial, dos industrias que exponen APIs.",
-      lede: "Entitlements es el núcleo: el contrato comercial de cualquier API. Sobre él se construyen la plataforma de APIs de red para operadores y el puente hacia las finanzas abiertas. En segunda línea, People mide el desempeño de equipos híbridos de personas y agentes AI.",
+      lede: "Entitlements es el núcleo: el contrato comercial de cualquier API. Sobre él se levantan la plataforma de APIs de red para operadores, en construcción, y dos líneas en diseño: el puente hacia las finanzas abiertas y Number Intelligence, para consulta de portabilidad y limpieza de bases de números. En segunda línea, People mide el desempeño de equipos híbridos de personas y agentes AI.",
       items: [
         {
           kicker: "P·01 · NÚCLEO",
@@ -112,7 +112,19 @@ export const es = {
           cta: "Ver el enfoque",
         },
         {
-          kicker: "P·04 · SEGUNDA LÍNEA",
+          kicker: "P·04 · NÚMEROS · EN DISEÑO",
+          title: "Number Intelligence",
+          body: "Consulta de portabilidad, validación y limpieza de bases de números +56: a qué operador pertenece hoy un número, si es válido y de qué tipo, uno a uno o por lote. Cada consulta pasará por Entitlements.",
+          points: [
+            "Operador vigente e indicador de portabilidad",
+            "Validación de formato, rango asignado y tipo",
+            "Limpieza de bases por lote, con veredicto por fila",
+          ],
+          href: "https://mobiconnect.dev/apis/number-intelligence/",
+          cta: "Ver el resumen técnico",
+        },
+        {
+          kicker: "P·05 · SEGUNDA LÍNEA",
           title: "People",
           body: "Un sistema de RR.HH. diseñado desde cero para equipos híbridos: personas y agentes AI en el mismo registro, medidos por resultados — no por actividad.",
           points: [
@@ -266,7 +278,7 @@ export const es = {
         "El sistema de desempeño para equipos híbridos: personas y agentes AI en el mismo registro, medidos por resultados y no por actividad. Los agentes proponen, los humanos deciden.",
     },
     hero: {
-      eyebrow: "P·04 · Segunda línea",
+      eyebrow: "P·05 · Segunda línea",
       title: "People",
       sub: "Un sistema de RR.HH. diseñado desde cero para equipos híbridos: personas y agentes AI en el mismo registro, con reglas claras — se miden resultados, no actividad.",
       ctaPrimary: { label: "Hablar de People", href: "/contact" },
@@ -373,7 +385,7 @@ export const es = {
     hero: {
       eyebrow: "El grupo detrás de Mobiconnect",
       title: "Corremos lo que vendemos.",
-      sub: "Mobiconnect es la casa de software de Inversiones Bucardo Zúñiga, un grupo que construye y opera infraestructura de telecomunicaciones propia en siete países de las Américas. Sobre ese hierro, propio y no alquilado, autorizamos, medimos y valorizamos cada consumo de una API antes de que ocurra.",
+      sub: "Mobiconnect es la casa de software de Inversiones Bucardo Zúñiga, un grupo que construye y opera infraestructura de telecomunicaciones propia en siete países de las Américas. Sobre ese hierro, propio y no alquilado, autorizamos cada consumo de una API antes de que ocurra y lo medimos y valorizamos al servirlo.",
       ctaPrimary: { label: "Iniciar conversación", href: "/contact" },
       ctaSecondary: { label: "Ver productos", href: "/#productos" },
     },
@@ -423,7 +435,14 @@ export const es = {
           cta: "Conocer la visión",
         },
         {
-          kicker: "04 · Segunda línea",
+          kicker: "04 · Números",
+          title: "Number Intelligence",
+          body: "En diseño: consulta de portabilidad, validación y limpieza de bases de números +56, con el mismo contrato y la misma medición.",
+          href: "https://mobiconnect.dev/apis/number-intelligence/",
+          cta: "Ver el resumen técnico",
+        },
+        {
+          kicker: "05 · Segunda línea",
           title: "People",
           body: "Desempeño para equipos híbridos de personas y agentes AI, medido por resultados. Complementa el núcleo; no lo es.",
           href: "/products/people",
@@ -454,7 +473,7 @@ export const es = {
         },
         {
           title: "Medir es gobernar.",
-          body: "Cada consumo se mide y se autoriza antes de ocurrir. El control no es un reporte posterior.",
+          body: "Cada consumo se autoriza antes de ocurrir y se mide al servirse. El control no es un reporte posterior.",
         },
         {
           title: "El control no se renta.",

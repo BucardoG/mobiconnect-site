@@ -33,10 +33,10 @@ const t = en
   ? {
       title: "Plans — Mobiconnect",
       description:
-        "How Mobiconnect charges: one commercial core, four products. What each modality includes and how it is metered. Amounts pending the commercial decision.",
+        "How Mobiconnect charges: one commercial core, five products. What each modality includes and how it is metered. Amounts pending the commercial decision.",
       kicker: "PLANS",
       h1: "How Mobiconnect charges.",
-      lede: "One commercial core, four products in the order we lead with. Each modality states what it includes and how it is metered. Amounts are published once the commercial decision closes.",
+      lede: "One commercial core, five products in the order we lead with. Each modality states what it includes and how it is metered. Amounts are published once the commercial decision closes.",
       principlesEyebrow: "Principles",
       principlesTitle: "Three rules behind every plan.",
       principles: [
@@ -77,10 +77,10 @@ const t = en
   : {
       title: "Planes — Mobiconnect",
       description:
-        "Cómo cobra Mobiconnect: un núcleo comercial, cuatro productos. Qué incluye cada modalidad y cómo se mide. Montos pendientes de la decisión comercial.",
+        "Cómo cobra Mobiconnect: un núcleo comercial, cinco productos. Qué incluye cada modalidad y cómo se mide. Montos pendientes de la decisión comercial.",
       kicker: "PLANES",
       h1: "Cómo cobra Mobiconnect.",
-      lede: "Un núcleo comercial, cuatro productos en el orden en que lideramos. Cada modalidad dice qué incluye y cómo se mide. Los montos se publican cuando se cierre la decisión comercial.",
+      lede: "Un núcleo comercial, cinco productos en el orden en que lideramos. Cada modalidad dice qué incluye y cómo se mide. Los montos se publican cuando se cierre la decisión comercial.",
       principlesEyebrow: "Principios",
       principlesTitle: "Tres reglas detrás de cada plan.",
       principles: [
@@ -185,8 +185,29 @@ const products: Product[] = en
         ],
       },
       {
+        id: "number-intelligence",
+        kicker: "P·04 · Numbers",
+        title: "Number Intelligence",
+        lede: "Portability lookup, validation and cleansing of +56 number databases, built on the Entitlements core.",
+        status: "In design",
+        href: "https://mobiconnect.dev/apis/number-intelligence/",
+        cta: "Read the technical summary",
+        modes: [
+          {
+            name: "Per query",
+            includes: "Current operator, portability flag and validation for one number.",
+            billing: "Metered per query. Amount to be defined.",
+          },
+          {
+            name: "Bulk cleansing",
+            includes: "Verdict per row, summary and results file.",
+            billing: "Metered per row with an issued verdict. Amount to be defined.",
+          },
+        ],
+      },
+      {
         id: "people",
-        kicker: "P·04 · Second line",
+        kicker: "P·05 · Second line",
         title: "People",
         lede: "Performance for hybrid teams of people and AI agents, measured by outcomes. It complements the core.",
         status: "Pilots",
@@ -276,8 +297,29 @@ const products: Product[] = en
         ],
       },
       {
+        id: "number-intelligence",
+        kicker: "P·04 · Números",
+        title: "Number Intelligence",
+        lede: "Consulta de portabilidad, validación y limpieza de bases de números +56, sobre el núcleo Entitlements.",
+        status: "En diseño",
+        href: "https://mobiconnect.dev/apis/number-intelligence/",
+        cta: "Ver el resumen técnico",
+        modes: [
+          {
+            name: "Por consulta",
+            includes: "Operador vigente, indicador de portabilidad y validación de un número.",
+            billing: "Se mide por consulta. Monto por definir.",
+          },
+          {
+            name: "Limpieza por lote",
+            includes: "Veredicto por fila, resumen y archivo de resultados.",
+            billing: "Se mide por fila con veredicto emitido. Monto por definir.",
+          },
+        ],
+      },
+      {
         id: "people",
-        kicker: "P·04 · Segunda línea",
+        kicker: "P·05 · Segunda línea",
         title: "People",
         lede: "Desempeño para equipos híbridos de personas y agentes AI, medido por resultados. Complementa el núcleo.",
         status: "Pilotos",

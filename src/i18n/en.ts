@@ -72,7 +72,7 @@ export const en: typeof es = {
     products: {
       eyebrow: "Products",
       title: "One commercial core, two industries that expose APIs.",
-      lede: "Entitlements is the core: the commercial contract of any API. On top of it sit the network-API platform for operators and the bridge to open finance. As a second line, People measures the performance of hybrid teams of people and AI agents.",
+      lede: "Entitlements is the core: the commercial contract of any API. On top of it sit the network-API platform for operators, under construction, and two lines in design: the bridge to open finance and Number Intelligence, for portability lookup and number database cleansing. As a second line, People measures the performance of hybrid teams of people and AI agents.",
       items: [
         {
           kicker: "P·01 · CORE",
@@ -111,7 +111,19 @@ export const en: typeof es = {
           cta: "See the approach",
         },
         {
-          kicker: "P·04 · SECOND LINE",
+          kicker: "P·04 · NUMBERS · IN DESIGN",
+          title: "Number Intelligence",
+          body: "Portability lookup, validation and cleansing of +56 number databases: which operator a number belongs to today, whether it is valid and of which type, one by one or in bulk. Every query will go through Entitlements.",
+          points: [
+            "Current operator and portability flag",
+            "Format, assigned-range and type validation",
+            "Bulk database cleansing, with a verdict per row",
+          ],
+          href: "https://mobiconnect.dev/apis/number-intelligence/",
+          cta: "Read the technical summary",
+        },
+        {
+          kicker: "P·05 · SECOND LINE",
           title: "People",
           body: "An HR system designed from the ground up for hybrid teams: people and AI agents in the same registry, measured by outcomes — not activity.",
           points: [
@@ -265,7 +277,7 @@ export const en: typeof es = {
         "The performance system for hybrid teams: people and AI agents in the same registry, measured by outcomes rather than activity. Agents propose, humans decide.",
     },
     hero: {
-      eyebrow: "P·04 · Second line",
+      eyebrow: "P·05 · Second line",
       title: "People",
       sub: "An HR system designed from the ground up for hybrid teams: people and AI agents in the same registry, with clear rules — outcomes are measured, not activity.",
       ctaPrimary: { label: "Talk about People", href: "/en/contact" },
@@ -372,7 +384,7 @@ export const en: typeof es = {
     hero: {
       eyebrow: "The group behind Mobiconnect",
       title: "We run what we sell.",
-      sub: "Mobiconnect is the software house of Inversiones Bucardo Zúñiga, a group that builds and runs its own telecommunications infrastructure across seven countries in the Americas. On that iron, owned and not rented, we authorize, meter and price every API call before it happens.",
+      sub: "Mobiconnect is the software house of Inversiones Bucardo Zúñiga, a group that builds and runs its own telecommunications infrastructure across seven countries in the Americas. On that iron, owned and not rented, we authorize every API call before it happens, and meter and price it as it is served.",
       ctaPrimary: { label: "Start a conversation", href: "/en/contact" },
       ctaSecondary: { label: "View products", href: "/en/#products" },
     },
@@ -422,7 +434,14 @@ export const en: typeof es = {
           cta: "See the vision",
         },
         {
-          kicker: "04 · Second line",
+          kicker: "04 · Numbers",
+          title: "Number Intelligence",
+          body: "In design: portability lookup, validation and cleansing of +56 number databases, under the same contract and the same metering.",
+          href: "https://mobiconnect.dev/apis/number-intelligence/",
+          cta: "Read the technical summary",
+        },
+        {
+          kicker: "05 · Second line",
           title: "People",
           body: "Performance for hybrid teams of people and AI agents, measured by outcomes. It complements the core; it is not the core.",
           href: "/en/products/people",
@@ -453,7 +472,7 @@ export const en: typeof es = {
         },
         {
           title: "Measure to govern.",
-          body: "Every call is metered and authorized before it happens. Control is not an after-the-fact report.",
+          body: "Every call is authorized before it happens and metered as it is served. Control is not an after-the-fact report.",
         },
         {
           title: "Control is not for rent.",
