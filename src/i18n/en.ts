@@ -49,7 +49,7 @@ export const en: typeof es = {
     hero: {
       eyebrow: "Entitlements · APIs for Telco and Open Finance",
       title: "The intelligence layer for the sovereign operator.",
-      sub: "The standard solves an API's interface. Mobiconnect solves the contract: who may consume, how much, at what price and with what auditable metering — for network APIs (CAMARA) and open-finance APIs, on sovereign infrastructure.",
+      sub: "The standard solves an API's interface. Mobiconnect solves the contract: who may consume, how much, at what price and with what auditable metering, readable by people, apps and AI agents — for network APIs (CAMARA) and open-finance APIs, on sovereign infrastructure.",
       ctaPrimary: { label: "Talk to the founder", href: "/en/contact" },
       ctaSecondary: { label: "See Entitlements", href: "/en/products/entitlements" },
       panelLabel: "System card",
@@ -66,7 +66,7 @@ export const en: typeof es = {
       title: "Margin and control are not given away: they are built.",
       body: [
         "The group built its own telecommunications operation — presence in seven countries — and brought its infrastructure back onto its own hardware. That control is not delegated: it is the starting condition.",
-        "The coming decade is about exposure: verifying a number, detecting a SIM change, sharing financial data with consent — all as standard APIs. Whoever controls the contract of those APIs controls the margin. Mobiconnect builds that layer, with a carrier's engineering discipline and a software house's pace.",
+        "The coming decade is about exposure: verifying a number, detecting a SIM change, sharing financial data with consent — all as standard APIs. And, more and more, those APIs are also consumed by AI agents, which need a machine-readable contract before every call. Whoever controls that contract controls the margin. Mobiconnect builds that layer, with a carrier's engineering discipline and a software house's pace.",
       ],
     },
     products: {
@@ -79,7 +79,7 @@ export const en: typeof es = {
           title: "Entitlements",
           body: "The commercial layer for APIs: plans, quotas, usage licenses, frozen pricing and auditable metering — for anyone selling an API as a product.",
           points: [
-            "Plans, SKUs and quotas per contract",
+            "Plans, permissions and quotas per contract",
             "Allow/deny decisions with explicit fail-closed",
             "Asynchronous, reproducible, billable metering",
           ],
@@ -125,7 +125,7 @@ export const en: typeof es = {
         {
           kicker: "P·05 · SECOND LINE",
           title: "People",
-          body: "An HR system designed from the ground up for hybrid teams: people and AI agents in the same registry, measured by outcomes — not activity.",
+          body: "A performance system designed from the ground up for hybrid teams: people and AI agents in the same registry, measured by outcomes, not activity.",
           points: [
             "People and agents in a single registry",
             "Agents propose, humans decide",
@@ -157,7 +157,7 @@ export const en: typeof es = {
     hero: {
       eyebrow: "P·01 · Core",
       title: "Entitlements",
-      sub: "The commercial layer for APIs: plans, quotas, usage licenses and metering for anyone selling an API as a product: operators, banks, fintechs and platforms. CAMARA (GSMA)-aligned surface.",
+      sub: "The commercial layer for APIs: plans, quotas, usage licenses and metering for anyone selling an API as a product: operators, banks, fintechs and platforms. API Ready by design: a documented contract, decision reasons in a closed enum and deterministic responses, designed for AI agents to consume too. The OpenAPI specification is on its way. CAMARA (GSMA)-aligned surface.",
       ctaPrimary: { label: "Talk about Entitlements", href: "/en/contact" },
       ctaSecondary: { label: "Read the docs", href: "https://mobiconnect.dev" },
       panelLabel: "Product card",
@@ -175,7 +175,7 @@ export const en: typeof es = {
       items: [
         {
           kicker: "C·01",
-          title: "Plans and SKUs",
+          title: "Plan catalog",
           body: "A commercial catalog on top of the API: segments, units and plan matrices per contract, without redesigning the backend for every commercial change.",
         },
         {
@@ -190,13 +190,13 @@ export const en: typeof es = {
         },
         {
           kicker: "C·04",
-          title: "Feature flags",
-          body: "Enable functionality per plan, per tenant or per market, without deploying new code or coordinating maintenance windows.",
+          title: "Designed for AI agents",
+          body: "Every decision is deterministic and machine-readable: permission, remaining quota, price reference and the reason for a denial. It is designed for an AI agent to consume without stepping outside the contract.",
         },
         {
           kicker: "C·05",
-          title: "Trials and upgrades",
-          body: "Trials, plan upgrades and downgrades as first-class operations — not exceptions your engineering team fears.",
+          title: "Idempotency and fail-closed",
+          body: "Idempotency governs retries: no call is charged twice. If it cannot decide, it does not serve: uncertainty never grants access.",
         },
         {
           kicker: "C·06",
@@ -222,7 +222,7 @@ export const en: typeof es = {
         {
           n: "03",
           title: "Grow without redesigning",
-          body: "New plans, markets or SKUs are catalog changes, not architecture changes. The business moves at contract speed.",
+          body: "New plans, markets or capabilities are catalog changes, not architecture changes. Every call is evaluated against that explicit contract.",
         },
       ],
     },
@@ -245,7 +245,7 @@ export const en: typeof es = {
       items: [
         {
           q: "What exactly is an entitlement server?",
-          a: "The layer that decides what each API client may consume, in what quantity and under which plan. It is the difference between exposing a service and selling it as a product.",
+          a: "The layer that decides what each API client may consume, in what quantity and under which plan. It is the difference between exposing a service and selling it as a product. For an AI agent, it is also what turns every call into an explicit decision it can act on.",
         },
         {
           q: "Who is it for?",
@@ -279,7 +279,7 @@ export const en: typeof es = {
     hero: {
       eyebrow: "P·05 · Second line",
       title: "People",
-      sub: "An HR system designed from the ground up for hybrid teams: people and AI agents in the same registry, with clear rules — outcomes are measured, not activity.",
+      sub: "A performance system designed from the ground up for hybrid teams: people and AI agents in the same registry, with clear rules: outcomes are measured, not activity.",
       ctaPrimary: { label: "Talk about People", href: "/en/contact" },
       ctaSecondary: { label: "View Entitlements", href: "/en/products/entitlements" },
       panelLabel: "Product card",
@@ -357,8 +357,8 @@ export const en: typeof es = {
           a: "With labor discipline, yes: role-defined outcomes, real work signals and human review.",
         },
         {
-          q: "Does it replace HR?",
-          a: "No. It orders the conversation: HR defines the criteria and decides; People measures, remembers and presents the evidence.",
+          q: "Does it replace the people team?",
+          a: "No. It orders the conversation: the people team defines the criteria and decides; People measures, remembers and presents the evidence.",
         },
         {
           q: "What does “hybrid team” mean?",
