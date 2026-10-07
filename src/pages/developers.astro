@@ -4,6 +4,8 @@ import Hero from "../components/Hero.astro";
 import SectionHeader from "../components/SectionHeader.astro";
 import FeatureCard from "../components/FeatureCard.astro";
 import CTABand from "../components/CTABand.astro";
+import Diagram from "../components/Diagram.astro";
+import apiReady from "../assets/visual/v5-api-ai-ready.svg?raw";
 ---
 
 <Base
@@ -26,6 +28,20 @@ import CTABand from "../components/CTABand.astro";
       { k: "IDIOMA", v: "ESPAÑOL" },
     ]}
   />
+
+  <section class="section section--rule">
+    <div class="container">
+      <SectionHeader
+        eyebrow="API Ready por diseño"
+        title="Diseñada para aplicaciones y agentes AI."
+      />
+      <Diagram
+        wide
+        svg={apiReady}
+        caption="La misma respuesta sirve a una aplicación y a un agente AI."
+      />
+    </div>
+  </section>
 
   <section class="section section--rule">
     <div class="container">

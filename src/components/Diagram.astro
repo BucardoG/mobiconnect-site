@@ -1,0 +1,76 @@
+---
+interface Props {
+  svg: string;
+  caption: string;
+  eyebrow?: string;
+  wide?: boolean;
+}
+
+const { svg, caption, eyebrow, wide = false } = Astro.props;
+// Prefijo de ids estable y único por diagrama: hash del SVG + leyenda (varios diagramas comparten ids como "t" y "d").
+let hash = 0;
+for (const ch of svg + caption) hash = (hash * 31 + ch.charCodeAt(0)) | 0;
+const prefix = `dg${(hash >>> 0).toString(36)}`;
+const inlineSvg = svg
+  .replace(/\bid="([^"]+)"/g, (_, id) => `id="${prefix}-${id}"`)
+  .replace(/\baria-(labelledby|describedby)="([^"]+)"/g, (_, attr, ids) =>
+    `aria-${attr}="${ids.split(/\s+/).map((id: string) => `${prefix}-${id}`).join(" ")}"`
+  )
+  .replace(/url\(#([^)]+)\)/g, (_, id) => `url(#${prefix}-${id})`);
+---
+
+<figure class:list={["diagram", { "diagram--wide": wide }]}>
+  {eyebrow && <p class="eyebrow">{eyebrow}</p>}
+  <div class="diagram-visual" set:html={inlineSvg} />
+  <figcaption>{caption}</figcaption>
+</figure>
+
+<style>
+  .diagram {
+    width: 100%;
+    min-width: 0;
+    max-width: 60rem;
+    margin-inline: auto;
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    background: var(--surface);
+    padding: clamp(1rem, 3vw, 2rem);
+    display: grid;
+    gap: 1rem;
+  }
+
+  .diagram--wide {
+    max-width: none;
+  }
+
+  .diagram .eyebrow {
+    margin-bottom: 0;
+  }
+
+  .diagram-visual {
+    min-width: 0;
+  }
+
+  .diagram-visual :global(svg) {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  /* En pantallas chicas el diagrama conserva un ancho legible y se desplaza dentro de su tarjeta. */
+  @media (max-width: 640px) {
+    .diagram-visual {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .diagram-visual :global(svg) {
+      min-width: 860px;
+    }
+  }
+
+  .diagram figcaption {
+    color: var(--ink-3);
+    font-size: 0.875rem;
+  }
+</style>

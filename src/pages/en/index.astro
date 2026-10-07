@@ -5,9 +5,19 @@ import SectionHeader from "../../components/SectionHeader.astro";
 import FeatureCard from "../../components/FeatureCard.astro";
 import StatBlock from "../../components/StatBlock.astro";
 import CTABand from "../../components/CTABand.astro";
+import Diagram from "../../components/Diagram.astro";
+import decision from "../../assets/visual/v1-flujo-decision.en.svg?raw";
+import economy from "../../assets/visual/v2-economia-agentes.en.svg?raw";
+import contract from "../../assets/visual/v6-contrato-legible.en.svg?raw";
+import entitlementsIcon from "../../assets/visual/icons/1.svg?raw";
+import platformIcon from "../../assets/visual/icons/2.svg?raw";
+import openFinanceIcon from "../../assets/visual/icons/3.svg?raw";
+import numberIntelligenceIcon from "../../assets/visual/icons/4.svg?raw";
+import peopleIcon from "../../assets/visual/icons/5.svg?raw";
 import { en } from "../../i18n";
 
 const t = en.home;
+const productIcons = [entitlementsIcon, platformIcon, openFinanceIcon, numberIntelligenceIcon, peopleIcon];
 ---
 
 <Base title={t.meta.title} description={t.meta.description} locale="en" path="/">
@@ -21,6 +31,16 @@ const t = en.home;
     panelLabel={t.hero.panelLabel}
   />
 
+  <section class="section section--rule">
+    <div class="container">
+      <SectionHeader eyebrow="How it decides" title="A decision before every call." />
+      <Diagram
+        svg={decision}
+        caption="People, apps and AI agents go through the same decision: permission, quota and price. Every unit served is metered."
+      />
+    </div>
+  </section>
+
   <!-- Thesis -->
   <section class="section section--rule">
     <div class="container thesis-grid">
@@ -28,6 +48,9 @@ const t = en.home;
       <div class="prose">
         {t.thesis.body.map((p) => <p>{p}</p>)}
       </div>
+    </div>
+    <div class="container thesis-diagram">
+      <Diagram svg={economy} caption="The agent economy demands machine-readable contracts." />
     </div>
   </section>
 
@@ -37,8 +60,9 @@ const t = en.home;
       <SectionHeader eyebrow={t.products.eyebrow} title={t.products.title} lede={t.products.lede} />
       <div class="grid grid--2 products-grid">
         {
-          t.products.items.map((item) => (
+          t.products.items.map((item, index) => (
             <FeatureCard
+              icon={productIcons[index]}
               kicker={item.kicker}
               title={item.title}
               body={item.body}
@@ -49,6 +73,16 @@ const t = en.home;
           ))
         }
       </div>
+    </div>
+  </section>
+
+  <section class="section section--rule">
+    <div class="container">
+      <SectionHeader eyebrow="Contract" title="From a PDF to a rule that runs." />
+      <Diagram
+        svg={contract}
+        caption="Every call is evaluated against the contract, not a PDF."
+      />
     </div>
   </section>
 
@@ -88,6 +122,10 @@ const t = en.home;
     grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
     gap: clamp(2rem, 5vw, 4.5rem);
     align-items: start;
+  }
+
+  .thesis-diagram {
+    margin-top: clamp(2rem, 5vw, 3.5rem);
   }
 
   .group-grid {

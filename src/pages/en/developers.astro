@@ -4,6 +4,8 @@ import Hero from "../../components/Hero.astro";
 import SectionHeader from "../../components/SectionHeader.astro";
 import FeatureCard from "../../components/FeatureCard.astro";
 import CTABand from "../../components/CTABand.astro";
+import Diagram from "../../components/Diagram.astro";
+import apiReady from "../../assets/visual/v5-api-ai-ready.en.svg?raw";
 ---
 
 <Base
@@ -26,6 +28,20 @@ import CTABand from "../../components/CTABand.astro";
       { k: "LANGUAGE", v: "SPANISH" },
     ]}
   />
+
+  <section class="section section--rule">
+    <div class="container">
+      <SectionHeader
+        eyebrow="API Ready by design"
+        title="Designed for apps and AI agents."
+      />
+      <Diagram
+        wide
+        svg={apiReady}
+        caption="The same response serves an app and an AI agent."
+      />
+    </div>
+  </section>
 
   <section class="section section--rule">
     <div class="container">

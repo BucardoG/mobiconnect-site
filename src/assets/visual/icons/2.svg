@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="30 30 140 140" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" role="img" aria-labelledby="icon-2-title">
+  <title id="icon-2-title">Plataforma de APIs</title>
+  <g id="icon-2">
+    <g stroke="#0a0a0a">
+      <path d="M92.9289 92.9289L62.9497 62.9497M107.0711 92.9289L137.0503 62.9497M92.9289 107.0711L62.9497 137.0503M107.0711 107.0711L137.0503 137.0503"/>
+      <circle cx="100" cy="100" r="10"/>
+      <circle cx="58" cy="58" r="7"/>
+      <circle cx="142" cy="58" r="7"/>
+      <circle cx="58" cy="142" r="7"/>
+      <circle cx="142" cy="142" r="7"/>
+    </g>
+    <path d="M80 73Q100 53 120 73" stroke="#0f766e"/>
+  </g>
+</svg>

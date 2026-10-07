@@ -7,6 +7,9 @@ import Steps from "../../components/Steps.astro";
 import CodeBlock from "../../components/CodeBlock.astro";
 import FAQ from "../../components/FAQ.astro";
 import CTABand from "../../components/CTABand.astro";
+import Diagram from "../../components/Diagram.astro";
+import idempotency from "../../assets/visual/v3-idempotencia.svg?raw";
+import failClosed from "../../assets/visual/v4-fail-closed.svg?raw";
 import { es } from "../../i18n";
 
 const t = es.entitlements;
@@ -33,6 +36,16 @@ const t = es.entitlements;
             <FeatureCard kicker={item.kicker} title={item.title} body={item.body} />
           ))
         }
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--rule">
+    <div class="container">
+      <SectionHeader eyebrow="Garantías" title="Idempotencia y fail-closed." />
+      <div class="diagram-stack">
+        <Diagram svg={idempotency} caption="Un reintento con el mismo correlation_id responde 409: nunca se cobra dos veces." />
+        <Diagram svg={failClosed} caption="Si el decisor no responde, la llamada se detiene con 503 pdp_unavailable." />
       </div>
     </div>
   </section>
@@ -66,6 +79,11 @@ const t = es.entitlements;
 </Base>
 
 <style>
+  .diagram-stack {
+    display: grid;
+    gap: clamp(1.5rem, 4vw, 2.5rem);
+  }
+
   .code-wrap {
     margin-top: clamp(2rem, 5vw, 3.25rem);
     max-width: 46rem;
