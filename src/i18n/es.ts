@@ -36,8 +36,8 @@ export const es = {
   shared: {
     cta: {
       eyebrow: "Contacto",
-      title: "Hable con quien construye.",
-      body: "Contacto fundador-led: conversaciones técnicas directas con quienes diseñan y operan la plataforma. Sin funnels ni intermediarios.",
+      title: "Habla con quien construye.",
+      body: "Conversaciones técnicas directas con quienes diseñan y operan la plataforma. Sin embudos ni intermediarios.",
       button: "Iniciar conversación",
     },
   },
@@ -55,7 +55,7 @@ export const es = {
       ctaSecondary: { label: "Ver Entitlements", href: "/products/entitlements" },
       panelLabel: "Ficha del sistema",
       panel: [
-        { k: "NÚCLEO", v: "ENTITLEMENTS · PDP COMERCIAL" },
+        { k: "NÚCLEO", v: "ENTITLEMENTS · DECISIÓN COMERCIAL" },
         { k: "ESTÁNDAR", v: "CAMARA · GSMA OPEN GATEWAY" },
         { k: "SECTORES", v: "TELCO · OPEN FINANCE" },
         { k: "DESPLIEGUE", v: "INFRAESTRUCTURA SOBERANA" },
@@ -73,7 +73,7 @@ export const es = {
     products: {
       eyebrow: "Productos",
       title: "Un núcleo comercial, dos industrias que exponen APIs.",
-      lede: "Entitlements es el núcleo: el contrato comercial de cualquier API. Sobre él se construyen la plataforma de APIs de red para operadores y el puente hacia las finanzas abiertas. People completa la casa: el sistema que mide a los equipos híbridos que lo construyen.",
+      lede: "Entitlements es el núcleo: el contrato comercial de cualquier API. Sobre él se construyen la plataforma de APIs de red para operadores y el puente hacia las finanzas abiertas. En segunda línea, People mide el desempeño de equipos híbridos de personas y agentes AI.",
       items: [
         {
           kicker: "P·01 · NÚCLEO",
@@ -90,11 +90,11 @@ export const es = {
         {
           kicker: "P·02 · TELCO",
           title: "Plataforma de APIs",
-          body: "La plataforma servidora de las APIs CAMARA de un operador: gateway, entitlements y portal de developers bajo un solo estándar — desplegable en su propia infraestructura.",
+          body: "En construcción: la plataforma que sirve las APIs CAMARA de un operador, con gateway, Entitlements y portal de developers bajo un solo estándar, desplegable en su propia infraestructura.",
           points: [
             "Commonalities CAMARA: ErrorInfo, x-correlator, versionado",
             "Claves atk_test_ / atk_live_ y OAuth2 con scopes",
-            "Portal con referencia y try-it",
+            "Portal de developers con referencia pública",
           ],
           href: "/platform",
           cta: "Ver la plataforma",
@@ -112,7 +112,7 @@ export const es = {
           cta: "Ver el enfoque",
         },
         {
-          kicker: "P·04",
+          kicker: "P·04 · SEGUNDA LÍNEA",
           title: "People",
           body: "Un sistema de RR.HH. diseñado desde cero para equipos híbridos: personas y agentes AI en el mismo registro, medidos por resultados — no por actividad.",
           points: [
@@ -128,7 +128,7 @@ export const es = {
     group: {
       eyebrow: "El grupo",
       title: "Una operación real detrás de cada producto.",
-      body: "Mobiconnect pertenece a Inversiones Bucardo Zúñiga: el grupo que construye y opera infraestructura de telecomunicaciones propia, con presencia en siete países y creciendo. Cada producto nace de una necesidad real de esa operación — y se endurece ahí antes de salir al mercado.",
+      body: "Mobiconnect pertenece a Inversiones Bucardo Zúñiga: el grupo que construye y opera infraestructura de telecomunicaciones propia, con presencia en siete países y creciendo. Entitlements nació de una necesidad real de esa operación.",
       stats: [
         { value: "7", label: "países con presencia" },
         { value: "CAMARA", label: "superficie de APIs alineada (GSMA)" },
@@ -141,14 +141,14 @@ export const es = {
     meta: {
       title: "Entitlements — planes, cuotas y medición para APIs · Mobiconnect",
       description:
-        "La capa comercial de las APIs carrier-grade: planes, cuotas, licencias y medición para operadores y plataformas que venden conectividad como producto. En construcción sobre infraestructura soberana.",
+        "La capa comercial de las APIs: planes, cuotas, licencias de uso y medición para quien vende una API como producto. Entitlements v1 en staging sobre infraestructura soberana; documentación en mobiconnect.dev.",
     },
     hero: {
       eyebrow: "P·01 · Núcleo",
       title: "Entitlements",
-      sub: "La capa comercial de las APIs: planes, cuotas, licencias y medición para quien vende conectividad como producto. Superficie alineada a CAMARA (GSMA) y diseñada para operadores con estándares carrier-grade.",
+      sub: "La capa comercial de las APIs: planes, cuotas, licencias de uso y medición para quien vende una API como producto: operadores, bancos, fintech y plataformas. Superficie alineada a CAMARA (GSMA).",
       ctaPrimary: { label: "Hablar de Entitlements", href: "/contact" },
-      ctaSecondary: { label: "Ver People", href: "/products/people" },
+      ctaSecondary: { label: "Ver la documentación", href: "https://mobiconnect.dev" },
       panelLabel: "Ficha de producto",
       panel: [
         { k: "PRODUCTO", v: "ENTITLEMENT SERVER" },
@@ -190,7 +190,7 @@ export const es = {
         {
           kicker: "C·06",
           title: "Estándar CAMARA (GSMA)",
-          body: "Superficie pública conforme a las Commonalities de CAMARA: modelo de errores común, correlación de trazas, OAuth2/OpenID con scopes y versionado SemVer. Un solo dialecto para todo el ecosistema de APIs del operador.",
+          body: "Superficie pública diseñada sobre las Commonalities de CAMARA: modelo de errores común, correlación de trazas, OAuth2/OpenID con scopes y versionado SemVer. Un solo dialecto para todo el ecosistema de APIs del operador.",
         },
       ],
     },
@@ -218,13 +218,13 @@ export const es = {
     code: {
       filename: "entitlement.json — ejemplo ilustrativo",
       code: `{
-  "tenant": "operador-demo",
-  "plan": "connectivity-m",
+  "tenant": "banco-demo",
+  "plan": "antifraude-m",
   "entitlements": {
-    "api.sms.send":   { "quota": "250000/mes", "used": 184203 },
-    "api.did.reserve": { "quota": "1200",       "used": 914 }
+    "number-verification:verify": { "quota": "250000/mes", "used": 184203 },
+    "sim-swap:check":             { "quota": "120000/mes", "used": 91412 }
   },
-  "licensed_features": ["rutas-premium", "reportes-auditoria"]
+  "licensed_features": ["reportes-auditoria"]
 }`,
       note: "Ejemplo ilustrativo del modelo de datos, no una respuesta real de la API.",
     },
@@ -238,11 +238,11 @@ export const es = {
         },
         {
           q: "¿Para quién está pensado?",
-          a: "Operadores y plataformas que venden conectividad o APIs como producto y necesitan control comercial fino: planes, cuotas, licencias y medición consistentes.",
+          a: "Operadores, bancos, fintech y plataformas que venden APIs como producto y necesitan control comercial fino: planes, cuotas, licencias y medición consistentes.",
         },
         {
           q: "¿En qué estado está?",
-          a: "En construcción sobre la infraestructura soberana del grupo. El diseño sigue la disciplina de ingeniería del operador y se valida primero en uso real.",
+          a: "Entitlements v1 corre en staging sobre la infraestructura soberana del grupo, con su documentación pública en mobiconnect.dev. Staging no es producción: la disponibilidad en producción se anuncia cuando esté habilitada.",
         },
         {
           q: "¿Cómo se integra?",
@@ -250,11 +250,11 @@ export const es = {
         },
         {
           q: "¿Qué es CAMARA y por qué importa?",
-          a: "CAMARA es la iniciativa de GSMA que estandariza las APIs telco — errores, seguridad, versionado y semántica comunes para SMS, verificación de números, SIM Swap y más. Cumplirla significa que un partner o MNA peer integra nuestras APIs sin aprender un dialecto propietario.",
+          a: "CAMARA es el proyecto de código abierto de la Linux Foundation, con apoyo de GSMA, que estandariza las APIs de red: errores, seguridad, versionado y semántica comunes para verificación de números, SIM Swap, calidad de red y más. Seguirlo permite que un partner u otro operador integre nuestras APIs sin aprender un dialecto propietario.",
         },
         {
           q: "¿Quién está detrás?",
-          a: "Mobiconnect, la plataforma de AI y high-tech de Inversiones Bucardo Zúñiga — el mismo grupo que construye y opera Airtime Connect.",
+          a: "Mobiconnect, la casa de software de Inversiones Bucardo Zúñiga: un grupo que construye y opera infraestructura de telecomunicaciones propia en siete países. Corremos lo que vendemos.",
         },
       ],
     },
@@ -266,14 +266,14 @@ export const es = {
         "El sistema de desempeño para equipos híbridos: personas y agentes AI en el mismo registro, medidos por resultados y no por actividad. Los agentes proponen, los humanos deciden.",
     },
     hero: {
-      eyebrow: "P·04 · Equipos híbridos",
+      eyebrow: "P·04 · Segunda línea",
       title: "People",
-      sub: "Un sistema de RR.HH. diseñado desde cero para equipos híbridos: personas y agentes AI en el mismo registro, con reglas claras — se mide resultados, no actividad.",
+      sub: "Un sistema de RR.HH. diseñado desde cero para equipos híbridos: personas y agentes AI en el mismo registro, con reglas claras — se miden resultados, no actividad.",
       ctaPrimary: { label: "Hablar de People", href: "/contact" },
       ctaSecondary: { label: "Ver Entitlements", href: "/products/entitlements" },
       panelLabel: "Ficha de producto",
       panel: [
-        { k: "PRODUCTO", v: "WORKFORCE OS" },
+        { k: "PRODUCTO", v: "DESEMPEÑO DE EQUIPOS" },
         { k: "EQUIPOS", v: "PERSONAS + AGENTES AI" },
         { k: "MEDIDA", v: "RESULTADOS, NO ACTIVIDAD" },
         { k: "REGLA", v: "AGENTES PROPONEN · HUMANOS DECIDEN" },
@@ -343,7 +343,7 @@ export const es = {
       items: [
         {
           q: "¿Se puede evaluar un agente AI como a un empleado?",
-          a: "Con disciplina laboral, sí: resultados definidos por rol, señales de trabajo real y revisión humana. Casi nadie lo hace hoy con ese rigor — ahí está el nicho.",
+          a: "Con disciplina laboral, sí: resultados definidos por rol, señales de trabajo real y revisión humana.",
         },
         {
           q: "¿Reemplaza a RR.HH.?",
@@ -381,9 +381,9 @@ export const es = {
       eyebrow: "Por qué existimos",
       title: "El estándar resuelve la interfaz. El contrato sigue abierto.",
       body: [
-        "La próxima década de telecomunicaciones y finanzas se trata de exponer: verificar un número, detectar un cambio de SIM, garantizar calidad de red, compartir datos financieros con consentimiento. Todo eso se convierte en APIs estandarizadas — CAMARA y GSMA Open Gateway en telco; finanzas abiertas en banca.",
-        "El estándar resuelve la interfaz. Nadie resuelve el contrato comercial: quién puede consumir, cuánto, a qué precio, bajo qué plan y con qué medición auditable. Hoy esa capa se terceriza a agregadores globales o se programa a mano — y cada capa tercerizada es margen y control ajeno.",
-        "Ahí está Mobiconnect: la capa donde una API regulada se vuelve contrato. Un mismo patrón en dos industrias — API estándar, consentimiento, participantes, control de acceso y cobro — y el mismo comprador: los primeros casos de Open Gateway en Latinoamérica son antifraude para la banca. El banco que entra a finanzas abiertas es el mismo que consume APIs de red. La intersección es el mercado.",
+        "La próxima década de telecomunicaciones y finanzas se trata de exponer: verificar un número, detectar un cambio de SIM, pedir calidad de red, compartir datos financieros con consentimiento. Todo eso se convierte en APIs estandarizadas — CAMARA y GSMA Open Gateway en telco; finanzas abiertas en banca.",
+        "El estándar resuelve la interfaz, no el contrato comercial: quién puede consumir, cuánto, a qué precio, bajo qué plan y con qué medición auditable. Hoy esa capa se terceriza a agregadores globales o se programa a mano — y cada capa tercerizada es margen y control ajeno.",
+        "Ahí está Mobiconnect: la capa donde una API de red o de finanzas abiertas se vuelve contrato. Un mismo patrón en dos industrias — API estándar, consentimiento, participantes, control de acceso y cobro — y el mismo comprador: los primeros casos de Open Gateway en Latinoamérica son antifraude para la banca. El banco que entra a finanzas abiertas es el mismo que consume APIs de red. La intersección es el mercado.",
       ],
       quote:
         "Lo que el open banking hizo con el dato financiero, las APIs abiertas de red lo hacen con la red. Falta la capa que convierte ese acceso en contrato. Esa capa es Mobiconnect.",
@@ -394,7 +394,7 @@ export const es = {
       body: [
         "La historia empieza con conectividad. El grupo construyó su operación de telecomunicaciones en Chile y creció con ella: Ecuador, Perú, Nicaragua, Estados Unidos, México, y Colombia en apertura.",
         "Después vino la corrección de fondo: salir de la infraestructura ajena y volver a hierro propio. Hoy el grupo opera su plataforma sobre hardware soberano, y esa infraestructura es la condición de partida de todo lo demás.",
-        "Mobiconnect es el siguiente paso: la capa de inteligencia del operador hecha producto. Nació dentro de la propia operación, se endureció ahí y hoy se abre al mercado — el núcleo comercial de APIs para telco y finanzas abiertas, con People como segunda línea.",
+        "Mobiconnect es el siguiente paso: la capa de inteligencia del operador hecha producto. Nació dentro de la propia operación del grupo y hoy se abre al mercado — el núcleo comercial de APIs para telco y finanzas abiertas, con People como segunda línea.",
       ],
     },
     offer: {
@@ -404,7 +404,7 @@ export const es = {
         {
           kicker: "01 · Núcleo",
           title: "Entitlements",
-          body: "Planes, cuotas, licencias de uso y medición para cualquier API que se venda como producto. Nació dentro del operador y se endureció ahí.",
+          body: "Planes, cuotas, licencias de uso y medición para cualquier API que se venda como producto. Nació dentro de la operación del grupo.",
           href: "/products/entitlements",
           cta: "Ver producto",
         },
@@ -418,7 +418,7 @@ export const es = {
         {
           kicker: "03 · Finanzas abiertas",
           title: "Open Finance Bridge",
-          body: "El puente del operador hacia las finanzas abiertas: el mismo control de contrato, aplicado al dato financiero compartido con consentimiento.",
+          body: "En diseño: el mismo control de contrato, aplicado al dato financiero compartido con consentimiento.",
           href: "/open-finance",
           cta: "Conocer la visión",
         },
@@ -467,12 +467,12 @@ export const es = {
     meta: {
       title: "Contacto · Mobiconnect",
       description:
-        "Contacto fundador-led: conversaciones técnicas directas con quienes diseñan y operan Mobiconnect. Cuéntanos qué operas y qué quieres construir sobre ello.",
+        "Conversaciones técnicas directas con quienes diseñan y operan Mobiconnect. Cuéntanos qué operas y qué quieres construir sobre ello.",
     },
     hero: {
       eyebrow: "Contacto",
-      title: "Hable con quien construye.",
-      sub: "Conversaciones técnicas directas, sin funnels ni intermediarios. Cuéntanos qué operas y qué quieres vender sobre ello.",
+      title: "Habla con quien construye.",
+      sub: "Conversaciones técnicas directas, sin embudos ni intermediarios. Cuéntanos qué operas y qué quieres vender sobre ello.",
     },
     form: {
       name: "Nombre",
