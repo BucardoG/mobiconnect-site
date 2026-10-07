@@ -36,7 +36,7 @@ export const en: typeof es = {
     cta: {
       eyebrow: "Contact",
       title: "Talk to the people who build.",
-      body: "Founder-led contact: direct technical conversations with the people who design and operate the platform. No funnels, no intermediaries.",
+      body: "Direct technical conversations with the people who design and operate the platform. No funnels, no intermediaries.",
       button: "Start a conversation",
     },
   },
@@ -54,7 +54,7 @@ export const en: typeof es = {
       ctaSecondary: { label: "See Entitlements", href: "/en/products/entitlements" },
       panelLabel: "System card",
       panel: [
-        { k: "CORE", v: "ENTITLEMENTS · COMMERCIAL PDP" },
+        { k: "CORE", v: "ENTITLEMENTS · COMMERCIAL DECISION" },
         { k: "STANDARD", v: "CAMARA · GSMA OPEN GATEWAY" },
         { k: "SECTORS", v: "TELCO · OPEN FINANCE" },
         { k: "DEPLOYMENT", v: "SOVEREIGN INFRASTRUCTURE" },
@@ -72,7 +72,7 @@ export const en: typeof es = {
     products: {
       eyebrow: "Products",
       title: "One commercial core, two industries that expose APIs.",
-      lede: "Entitlements is the core: the commercial contract of any API. On top of it sit the network-API platform for operators and the bridge to open finance. People completes the house: the system that measures the hybrid teams who build it.",
+      lede: "Entitlements is the core: the commercial contract of any API. On top of it sit the network-API platform for operators and the bridge to open finance. As a second line, People measures the performance of hybrid teams of people and AI agents.",
       items: [
         {
           kicker: "P·01 · CORE",
@@ -89,11 +89,11 @@ export const en: typeof es = {
         {
           kicker: "P·02 · TELCO",
           title: "API Platform",
-          body: "The serving platform for an operator's CAMARA APIs: gateway, entitlements and developer portal under one standard — deployable on the operator's own infrastructure.",
+          body: "Under construction: the platform that serves an operator's CAMARA APIs, with gateway, Entitlements and developer portal under one standard, deployable on the operator's own infrastructure.",
           points: [
             "CAMARA Commonalities: ErrorInfo, x-correlator, versioning",
             "atk_test_ / atk_live_ keys and scoped OAuth2",
-            "Portal with reference and try-it",
+            "Developer portal with public reference",
           ],
           href: "/en/platform",
           cta: "See the platform",
@@ -111,7 +111,7 @@ export const en: typeof es = {
           cta: "See the approach",
         },
         {
-          kicker: "P·04",
+          kicker: "P·04 · SECOND LINE",
           title: "People",
           body: "An HR system designed from the ground up for hybrid teams: people and AI agents in the same registry, measured by outcomes — not activity.",
           points: [
@@ -127,7 +127,7 @@ export const en: typeof es = {
     group: {
       eyebrow: "The group",
       title: "A real operation behind every product.",
-      body: "Mobiconnect belongs to Inversiones Bucardo Zúñiga: the group that builds and operates its own telecommunications infrastructure, with presence in seven countries and growing. Every product is born from a real need of that operation — and hardened there before reaching the market.",
+      body: "Mobiconnect belongs to Inversiones Bucardo Zúñiga: the group that builds and operates its own telecommunications infrastructure, with presence in seven countries and growing. Entitlements was born from a real need of that operation.",
       stats: [
         { value: "7", label: "countries with presence" },
         { value: "CAMARA", label: "GSMA-aligned API surface" },
@@ -140,14 +140,14 @@ export const en: typeof es = {
     meta: {
       title: "Entitlements — plans, quotas and metering for APIs · Mobiconnect",
       description:
-        "The commercial layer for carrier-grade APIs: plans, quotas, licenses and metering for operators and platforms that sell connectivity as a product. Under construction on sovereign infrastructure.",
+        "The commercial layer for APIs: plans, quotas, usage licenses and metering for anyone selling an API as a product. Entitlements v1 in staging on sovereign infrastructure; documentation at mobiconnect.dev.",
     },
     hero: {
       eyebrow: "P·01 · Core",
       title: "Entitlements",
-      sub: "The commercial layer for APIs: plans, quotas, licenses and metering for anyone selling connectivity as a product. CAMARA (GSMA)-aligned surface, designed for operators with carrier-grade standards.",
+      sub: "The commercial layer for APIs: plans, quotas, usage licenses and metering for anyone selling an API as a product: operators, banks, fintechs and platforms. CAMARA (GSMA)-aligned surface.",
       ctaPrimary: { label: "Talk about Entitlements", href: "/en/contact" },
-      ctaSecondary: { label: "View People", href: "/en/products/people" },
+      ctaSecondary: { label: "Read the docs", href: "https://mobiconnect.dev" },
       panelLabel: "Product card",
       panel: [
         { k: "PRODUCT", v: "ENTITLEMENT SERVER" },
@@ -189,7 +189,7 @@ export const en: typeof es = {
         {
           kicker: "C·06",
           title: "CAMARA standard (GSMA)",
-          body: "Public surface conformant to CAMARA Commonalities: common error model, trace correlation, OAuth2/OpenID with scopes and SemVer versioning. One dialect for the operator's entire API ecosystem.",
+          body: "Public surface designed on CAMARA Commonalities: common error model, trace correlation, OAuth2/OpenID with scopes and SemVer versioning. One dialect for the operator's entire API ecosystem.",
         },
       ],
     },
@@ -217,13 +217,13 @@ export const en: typeof es = {
     code: {
       filename: "entitlement.json — illustrative example",
       code: `{
-  "tenant": "operator-demo",
-  "plan": "connectivity-m",
+  "tenant": "bank-demo",
+  "plan": "antifraud-m",
   "entitlements": {
-    "api.sms.send":   { "quota": "250000/month", "used": 184203 },
-    "api.did.reserve": { "quota": "1200",         "used": 914 }
+    "number-verification:verify": { "quota": "250000/month", "used": 184203 },
+    "sim-swap:check":             { "quota": "120000/month", "used": 91412 }
   },
-  "licensed_features": ["premium-routes", "audit-reports"]
+  "licensed_features": ["audit-reports"]
 }`,
       note: "Illustrative example of the data model, not a real API response.",
     },
@@ -237,11 +237,11 @@ export const en: typeof es = {
         },
         {
           q: "Who is it for?",
-          a: "Operators and platforms that sell connectivity or APIs as a product and need fine commercial control: consistent plans, quotas, licenses and metering.",
+          a: "Operators, banks, fintechs and platforms that sell APIs as a product and need fine commercial control: consistent plans, quotas, licenses and metering.",
         },
         {
           q: "What state is it in?",
-          a: "Under construction on the group's sovereign infrastructure. The design follows the operator's engineering discipline and is validated in real use first.",
+          a: "Entitlements v1 runs in staging on the group's sovereign infrastructure, with public documentation at mobiconnect.dev. Staging is not production: production availability is announced once it is enabled.",
         },
         {
           q: "How does it integrate?",
@@ -249,11 +249,11 @@ export const en: typeof es = {
         },
         {
           q: "What is CAMARA and why does it matter?",
-          a: "CAMARA is the GSMA initiative standardizing telco APIs — common errors, security, versioning and semantics for SMS, Number Verification, SIM Swap and more. Conformance means a partner or peer MNO integrates our APIs without learning a proprietary dialect.",
+          a: "CAMARA is the Linux Foundation open-source project, backed by GSMA, that standardizes network APIs: common errors, security, versioning and semantics for Number Verification, SIM Swap, network quality and more. Following it lets a partner or another operator integrate our APIs without learning a proprietary dialect.",
         },
         {
           q: "Who is behind it?",
-          a: "Mobiconnect, the AI and high-tech platform of Inversiones Bucardo Zúñiga — the same group that builds and operates Airtime Connect.",
+          a: "Mobiconnect, the software house of Inversiones Bucardo Zúñiga: a group that builds and runs its own telecommunications infrastructure across seven countries. We run what we sell.",
         },
       ],
     },
@@ -265,14 +265,14 @@ export const en: typeof es = {
         "The performance system for hybrid teams: people and AI agents in the same registry, measured by outcomes rather than activity. Agents propose, humans decide.",
     },
     hero: {
-      eyebrow: "P·04 · Hybrid teams",
+      eyebrow: "P·04 · Second line",
       title: "People",
       sub: "An HR system designed from the ground up for hybrid teams: people and AI agents in the same registry, with clear rules — outcomes are measured, not activity.",
       ctaPrimary: { label: "Talk about People", href: "/en/contact" },
       ctaSecondary: { label: "View Entitlements", href: "/en/products/entitlements" },
       panelLabel: "Product card",
       panel: [
-        { k: "PRODUCT", v: "WORKFORCE OS" },
+        { k: "PRODUCT", v: "TEAM PERFORMANCE" },
         { k: "TEAMS", v: "PEOPLE + AI AGENTS" },
         { k: "MEASURE", v: "OUTCOMES, NOT ACTIVITY" },
         { k: "RULE", v: "AGENTS PROPOSE · HUMANS DECIDE" },
@@ -342,7 +342,7 @@ export const en: typeof es = {
       items: [
         {
           q: "Can an AI agent really be evaluated like an employee?",
-          a: "With labor discipline, yes: role-defined outcomes, real work signals and human review. Almost nobody does this with that rigor today — that is the niche.",
+          a: "With labor discipline, yes: role-defined outcomes, real work signals and human review.",
         },
         {
           q: "Does it replace HR?",
@@ -380,9 +380,9 @@ export const en: typeof es = {
       eyebrow: "Why we exist",
       title: "The standard solves the interface. The contract is still open.",
       body: [
-        "The coming decade of telecommunications and finance is about exposing: verifying a number, detecting a SIM swap, guaranteeing network quality, sharing financial data with consent. All of it becomes standardized APIs — CAMARA and GSMA Open Gateway in telco; open finance in banking.",
-        "The standard solves the interface. Nobody solves the commercial contract: who may consume, how much, at what price, under which plan, with which auditable measurement. Today that layer is outsourced to global aggregators or hand-coded — and every outsourced layer is margin and control that belongs to someone else.",
-        "That is where Mobiconnect lives: the layer where a regulated API becomes a contract. One pattern across two industries — standard API, consent, participants, access control and billing — and the same buyer: the first Open Gateway cases in Latin America are anti-fraud for banking. The bank entering open finance is the same one consuming network APIs. The intersection is the market.",
+        "The coming decade of telecommunications and finance is about exposing: verifying a number, detecting a SIM swap, requesting network quality, sharing financial data with consent. All of it becomes standardized APIs — CAMARA and GSMA Open Gateway in telco; open finance in banking.",
+        "The standard solves the interface, not the commercial contract: who may consume, how much, at what price, under which plan, with which auditable measurement. Today that layer is outsourced to global aggregators or hand-coded — and every outsourced layer is margin and control that belongs to someone else.",
+        "That is where Mobiconnect lives: the layer where a network or open-finance API becomes a contract. One pattern across two industries — standard API, consent, participants, access control and billing — and the same buyer: the first Open Gateway cases in Latin America are anti-fraud for banking. The bank entering open finance is the same one consuming network APIs. The intersection is the market.",
       ],
       quote:
         "What open banking did with financial data, open network APIs are doing with the network. The layer that turns that access into a contract is missing. That layer is Mobiconnect.",
@@ -393,7 +393,7 @@ export const en: typeof es = {
       body: [
         "The story starts with connectivity. The group built its telecommunications operation in Chile and grew with it: Ecuador, Peru, Nicaragua, the United States, Mexico, and Colombia now opening.",
         "Then came the structural correction: leaving third-party infrastructure and returning to its own iron. Today the group runs its platform on sovereign hardware, and that infrastructure is the starting condition for everything else.",
-        "Mobiconnect is the next step: the operator's intelligence layer made product. It was born inside the operator's own operation, hardened there, and is now opening to the market — the commercial core for network APIs and open finance, with People as a second line.",
+        "Mobiconnect is the next step: the operator's intelligence layer made product. It was born inside the group's own operation and is now opening to the market — the commercial core for network APIs and open finance, with People as a second line.",
       ],
     },
     offer: {
@@ -403,7 +403,7 @@ export const en: typeof es = {
         {
           kicker: "01 · Core",
           title: "Entitlements",
-          body: "Plans, quotas, usage licenses and measurement for any API sold as a product. Born inside the operator and hardened there.",
+          body: "Plans, quotas, usage licenses and measurement for any API sold as a product. Born inside the group's operation.",
           href: "/en/products/entitlements",
           cta: "View product",
         },
@@ -417,7 +417,7 @@ export const en: typeof es = {
         {
           kicker: "03 · Open finance",
           title: "Open Finance Bridge",
-          body: "The operator's bridge into open finance: the same contract control, applied to financial data shared with consent.",
+          body: "In design: the same contract control, applied to financial data shared with consent.",
           href: "/en/open-finance",
           cta: "See the vision",
         },
@@ -466,7 +466,7 @@ export const en: typeof es = {
     meta: {
       title: "Contact · Mobiconnect",
       description:
-        "Founder-led contact: direct technical conversations with the people who design and operate Mobiconnect. Tell us what you operate and what you want to build on top of it.",
+        "Direct technical conversations with the people who design and operate Mobiconnect. Tell us what you operate and what you want to build on top of it.",
     },
     hero: {
       eyebrow: "Contact",

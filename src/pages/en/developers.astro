@@ -8,61 +8,61 @@ import CTABand from "../../components/CTABand.astro";
 
 <Base
   title="Developers — Mobiconnect"
-  description="The Mobiconnect developer portal: the CAMARA (GSMA)-aligned entitlements API reference, environment keys and a live try-it console. mobiconnect.dev, coming up."
+  description="Mobiconnect's developer portal: public documentation for Entitlements v1, in staging. API reference, authentication, errors and contract concepts at mobiconnect.dev."
   locale="en"
   path="/developers"
 >
   <Hero
     eyebrow="Developer portal"
-    title="mobiconnect.dev — the platform's technical surface."
-    sub="The API reference, environment keys and the try-it console: the technical surface of the Mobiconnect API Platform. Explicit contracts, predictable responses, fail-closed — the standard a carrier runs on."
-    ctaPrimary={{ label: "Talk early access", href: "/en/contact" }}
+    title="mobiconnect.dev: the API's public documentation."
+    sub="Entitlements v1 reference, authentication, errors and the contract concepts. It runs in staging today, with synthetic tenants and no real money."
+    ctaPrimary={{ label: "Open mobiconnect.dev", href: "https://mobiconnect.dev" }}
     ctaSecondary={{ label: "About the API Platform", href: "/en/platform" }}
     panelLabel="Portal status"
     panel={[
       { k: "DOMAIN", v: "mobiconnect.dev" },
-      { k: "STATUS", v: "IN THE MAKING" },
+      { k: "STATUS", v: "PUBLISHED · API IN STAGING" },
       { k: "STANDARD", v: "CAMARA (GSMA)" },
-      { k: "ENV", v: "STAGING · ATK_TEST_" },
+      { k: "LANGUAGE", v: "SPANISH" },
     ]}
   />
 
   <section class="section section--rule">
     <div class="container">
       <SectionHeader
-        eyebrow="The portal"
+        eyebrow="What you find today"
         title="Three pieces, one contract."
-        lede="Everything an integrator needs to go from zero to the first allowed call — with the same discipline the group runs its network with."
+        lede="What an integrator needs to understand Entitlements' first decision before writing a line of code."
       />
       <div class="grid grid--3">
         <FeatureCard
           kicker="01 · Reference"
           title="The API, contract by contract."
-          body="POST /v1/entitlements/check documented end to end: request, responses and errors with their semantics. A CAMARA (GSMA)-aligned surface."
+          body="POST /v1/entitlements/check and /release, administration and health: headers, body, decision reasons and responses."
           points={[
-            "Request and response with a real example",
-            "Typed errors: why they happen and what to do",
-            "Explicit versioning and deprecations",
+            "Decision reasons in a closed enum",
+            "Errors with their meaning and what to do",
+            "Examples on staging, never real data",
           ]}
         />
         <FeatureCard
-          kicker="02 · Keys"
-          title="Two environments, zero ambiguity."
-          body="atk_test_ to explore, atk_live_ for production. Granular per-key scopes, visible states and rotation without ceremony."
+          kicker="02 · Authentication"
+          title="OAuth2 today; keys with the console."
+          body="Today: OAuth2 client_credentials with one-hour tokens and per-client scopes, against staging. atk_test_ and atk_live_ keys arrive with the portal console, under construction."
           points={[
-            "Scopes: check · admin",
-            "The key is shown once",
-            "Instant revocation",
+            "OAuth2 client_credentials, one-hour tokens",
+            "Explicit scopes per client",
+            "Production is enabled at public opening",
           ]}
         />
         <FeatureCard
-          kicker="03 · Try it"
-          title="The contract, proven live."
-          body="A real request against staging from the browser: idempotency, x-correlator tracing and a fail-closed answer when the plan runs out."
+          kicker="03 · Concepts"
+          title="The contract, before the code."
+          body="Plans and quotas, authorization decisions, idempotency and fail-closed, explained before the first call."
           points={[
-            "Idempotency-Key on every write",
-            "End-to-end trace with x-correlator",
-            "Fail-closed: no quota, no go",
+            "Deny-by-default: no explicit authorization, no service",
+            "Idempotency-Key on every write with economic effect",
+            "Fail-closed: if it cannot decide, it does not serve",
           ]}
         />
       </div>
@@ -74,25 +74,25 @@ import CTABand from "../../components/CTABand.astro";
       <SectionHeader
         eyebrow="Principles"
         title="A contract is a promise."
-        lede="Four rules that govern how we document, what we promise and what we don't."
+        lede="Four rules that govern how we document, what we promise and what we do not."
       />
       <div class="grid grid--2">
         <FeatureCard
           highlight={true}
           title="An exhausted quota is not an error."
-          body="When a plan runs out, the API answers 200 with allow:false and the reason. The 429 belongs to the gateway, not the contract. Predictability first."
+          body="When the plan runs out, the API answers 200 with allow:false and the reason. The 429 belongs to the gateway, not to the contract. Predictability first."
         />
         <FeatureCard
-          title="Zero real data in the docs."
-          body="Examples use staging and test keys. Your production hosts are mentioned only inside your console — never in public material."
+          title="Zero real data in the documentation."
+          body="Examples run on staging, with synthetic tenants and no real money. No customer data appears in public material."
         />
         <FeatureCard
-          title="Bilingual from day one."
-          body="The reference is maintained in Spanish and English with the same precision in both languages — one standard, two readings."
+          title="Status, stated plainly."
+          body="Every API in the portal declares its status: staging, under construction or in design. We do not document as available what is not running."
         />
         <FeatureCard
-          title="Designed before being built."
-          body="Design frames 08–11 already define docs, reference, keys and try-it. The portal follows the design; it doesn't improvise."
+          title="What is missing, in writing."
+          body="The in-browser test console, the English edition and full CAMARA conformance are on the roadmap. They are announced when they run."
         />
       </div>
     </div>
@@ -100,8 +100,8 @@ import CTABand from "../../components/CTABand.astro";
 
   <CTABand
     eyebrow="Early access"
-    title="Build with us before everyone else."
-    body="We are opening a small group of teams to test the entitlements surface on staging. If you sell connectivity or APIs as a product, let's talk."
+    title="Build with us before anyone else."
+    body="We are opening a small group of teams to test Entitlements in staging. If you sell or consume an API as a product, let's talk."
     button="Request access"
     href="/en/contact"
   />

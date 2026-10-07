@@ -8,61 +8,61 @@ import CTABand from "../components/CTABand.astro";
 
 <Base
   title="Developers — Mobiconnect"
-  description="El portal de desarrolladores de Mobiconnect: referencia de la API de entitlements alineada a CAMARA (GSMA), claves de entorno y try-it real. mobiconnect.dev, en construcción."
+  description="El portal de desarrolladores de Mobiconnect: documentación pública de Entitlements v1, en staging. Referencia de la API, autenticación, errores y conceptos del contrato en mobiconnect.dev."
   locale="es"
   path="/developers"
 >
   <Hero
     eyebrow="Portal de developers"
-    title="mobiconnect.dev — la superficie técnica de la plataforma."
-    sub="La referencia de la API, las claves de entorno y el try-it: la superficie técnica de la Plataforma de APIs de Mobiconnect. Contratos explícitos, respuestas predecibles, fail-closed — el estándar con el que opera un carrier."
-    ctaPrimary={{ label: "Conversar sobre early access", href: "/contact" }}
+    title="mobiconnect.dev: la documentación pública de la API."
+    sub="Referencia de Entitlements v1, autenticación, errores y los conceptos del contrato. Hoy corre en staging, con tenants sintéticos y sin dinero real."
+    ctaPrimary={{ label: "Abrir mobiconnect.dev", href: "https://mobiconnect.dev" }}
     ctaSecondary={{ label: "Conocer la Plataforma de APIs", href: "/platform" }}
     panelLabel="Estado del portal"
     panel={[
       { k: "DOMINIO", v: "mobiconnect.dev" },
-      { k: "ESTADO", v: "EN CONSTRUCCIÓN" },
+      { k: "ESTADO", v: "PUBLICADO · API EN STAGING" },
       { k: "ESTÁNDAR", v: "CAMARA (GSMA)" },
-      { k: "ENTORNO", v: "STAGING · ATK_TEST_" },
+      { k: "IDIOMA", v: "ESPAÑOL" },
     ]}
   />
 
   <section class="section section--rule">
     <div class="container">
       <SectionHeader
-        eyebrow="El portal"
+        eyebrow="Qué encuentras hoy"
         title="Tres piezas, un mismo contrato."
-        lede="Todo lo que un integrador necesita para pasar de cero a la primera llamada permitida — con la misma disciplina con la que el grupo opera su red."
+        lede="Lo que un integrador necesita para entender la primera decisión de Entitlements antes de escribir una línea de código."
       />
       <div class="grid grid--3">
         <FeatureCard
           kicker="01 · Referencia"
           title="La API, contrato por contrato."
-          body="POST /v1/entitlements/check documentado completo: request, respuestas y errores con su semántica. Superficie alineada a CAMARA (GSMA)."
+          body="POST /v1/entitlements/check y /release, administración y salud: encabezados, cuerpo, razones de decisión y respuestas."
           points={[
-            "Request y response con ejemplo real",
-            "Errores tipados: por qué ocurren y qué hacer",
-            "Versionado y deprecaciones explícitas",
+            "Razones de decisión en un enum cerrado",
+            "Errores con su semántica y qué hacer",
+            "Ejemplos sobre staging, nunca datos reales",
           ]}
         />
         <FeatureCard
-          kicker="02 · Claves"
-          title="Dos entornos, cero ambigüedad."
-          body="atk_test_ para explorar, atk_live_ para producción. Scopes granulares por clave, estados visibles y rotación sin drama."
+          kicker="02 · Autenticación"
+          title="OAuth2 hoy; claves con la consola."
+          body="Hoy: OAuth2 client_credentials con tokens de una hora y scopes por cliente, contra staging. Las claves atk_test_ y atk_live_ llegan con la consola del portal, en construcción."
           points={[
-            "Scopes: check · admin",
-            "La clave se muestra una sola vez",
-            "Revocación inmediata",
+            "OAuth2 client_credentials, tokens de una hora",
+            "Scopes explícitos por cliente",
+            "Producción se habilita con la apertura pública",
           ]}
         />
         <FeatureCard
-          kicker="03 · Try it"
-          title="El contrato, probado en vivo."
-          body="Request real contra staging desde el navegador: idempotencia, trazabilidad con x-correlator y respuesta fail-closed cuando el plan no alcanza."
+          kicker="03 · Conceptos"
+          title="El contrato, antes del código."
+          body="Planes y cuotas, decisiones de autorización, idempotencia y fail-closed, explicados antes de la primera llamada."
           points={[
-            "Idempotency-Key en cada escritura",
-            "Traza de extremo a extremo con x-correlator",
-            "Fail-closed: sin cupo, no pasa",
+            "Deny-by-default: sin autorización explícita, no se sirve",
+            "Idempotency-Key en cada escritura con efecto económico",
+            "Fail-closed: si no se puede decidir, no se sirve",
           ]}
         />
       </div>
@@ -84,24 +84,24 @@ import CTABand from "../components/CTABand.astro";
         />
         <FeatureCard
           title="Cero datos reales en la documentación."
-          body="Los ejemplos usan staging y claves de prueba. Tus hosts de producción se mencionan solo dentro de tu consola, nunca en material público."
+          body="Los ejemplos corren sobre staging, con tenants sintéticos y sin dinero real. Ningún dato de clientes aparece en material público."
         />
         <FeatureCard
-          title="Bilingüe desde el día uno."
-          body="La referencia se mantiene en español y en inglés con la misma precisión en ambos idiomas — un estándar, dos lecturas."
+          title="El estado, dicho en voz alta."
+          body="Cada API del portal declara su estado: staging, en construcción o en diseño. No documentamos como disponible lo que no corre."
         />
         <FeatureCard
-          title="Diseñado antes de construirse."
-          body="Las propuestas 08–11 del design system ya definen docs, referencia, claves y try-it. El portal sigue el diseño; no improvisa."
+          title="Lo que falta, por escrito."
+          body="La consola de pruebas en el navegador, la versión en inglés y la conformidad CAMARA completa están en la hoja de ruta. Se anuncian cuando corran."
         />
       </div>
     </div>
   </section>
 
   <CTABand
-    eyebrow="Early access"
+    eyebrow="Acceso anticipado"
     title="Construye con nosotros antes que nadie."
-    body="Estamos abriendo un grupo reducido de equipos para probar la superficie de entitlements en staging. Si vendes conectividad o APIs como producto, hablemos."
+    body="Estamos abriendo un grupo reducido de equipos para probar Entitlements en staging. Si vendes o consumes una API como producto, hablemos."
     button="Solicitar acceso"
     href="/contact"
   />

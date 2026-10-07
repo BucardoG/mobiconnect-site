@@ -8,7 +8,7 @@ import CTABand from "../../components/CTABand.astro";
 
 <Base
   title="API Platform — Mobiconnect"
-  description="The operator's CAMARA (GSMA) API serving platform: gateway, Entitlements and the developer portal under one standard, deployable on your own infrastructure. Number Verification, SIM Swap, network quality and more — exposed under a commercial contract."
+  description="The platform that serves the operator's CAMARA (GSMA) APIs: gateway, Entitlements and the developer portal under one standard, deployable on your own infrastructure. Number Verification, SIM Swap, network quality and more — exposed under a commercial contract."
   locale="en"
   path="/platform"
 >
@@ -22,7 +22,7 @@ import CTABand from "../../components/CTABand.astro";
     panel={[
       { k: "STANDARD", v: "CAMARA (GSMA)" },
       { k: "COMPONENTS", v: "GATEWAY · ENTITLEMENTS · PORTAL" },
-      { k: "STATUS", v: "STAGING GATEWAY LIVE" },
+      { k: "STATUS", v: "UNDER CONSTRUCTION · ENTITLEMENTS V1 IN STAGING" },
       { k: "DEPLOYMENT", v: "YOUR OWN INFRASTRUCTURE" },
     ]}
   />
@@ -80,7 +80,7 @@ import CTABand from "../../components/CTABand.astro";
         <FeatureCard
           kicker="CAMARA"
           title="Quality on Demand"
-          body="Guaranteed network quality for a session, under contract and with measurement."
+          body="Network quality requested for a session, under contract and with measurement. The operator provides the implementation."
         />
         <FeatureCard
           kicker="CAMARA"
@@ -114,7 +114,7 @@ import CTABand from "../../components/CTABand.astro";
         <FeatureCard
           kicker="Component 03"
           title="Developer portal"
-          body="The experience: API reference, environment keys and try-it. This platform's technical surface."
+          body="The experience: the API reference, already public at mobiconnect.dev. Environment keys arrive with the portal console."
           href="/en/developers"
           cta="Go to the portal"
         />
@@ -131,8 +131,8 @@ import CTABand from "../../components/CTABand.astro";
       <div class="grid grid--2">
         <FeatureCard
           highlight={true}
-          title="Today: a live staging gateway."
-          body="The Entitlements server runs on staging with its CAMARA-aligned surface; the developer portal is designed and in the making — reference, test keys and try-it."
+          title="Today: Entitlements v1 in staging."
+          body="The Entitlements server runs in staging, behind its gateway, with public documentation at mobiconnect.dev. Network API exposure on top of it is under construction."
         />
         <FeatureCard
           title="On the way: CAMARA conformance."

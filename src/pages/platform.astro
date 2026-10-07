@@ -8,7 +8,7 @@ import CTABand from "../components/CTABand.astro";
 
 <Base
   title="Plataforma de APIs — Mobiconnect"
-  description="La plataforma servidora de APIs CAMARA (GSMA) del operador: gateway, Entitlements y portal de developers bajo un solo estándar, desplegable en infraestructura propia. Verificación, SIM Swap, calidad de red y más — expuestas bajo contrato comercial."
+  description="La plataforma que sirve las APIs CAMARA (GSMA) del operador: gateway, Entitlements y portal de developers bajo un solo estándar, desplegable en infraestructura propia. Verificación, SIM Swap, calidad de red y más — expuestas bajo contrato comercial."
   locale="es"
   path="/platform"
 >
@@ -22,7 +22,7 @@ import CTABand from "../components/CTABand.astro";
     panel={[
       { k: "ESTÁNDAR", v: "CAMARA (GSMA)" },
       { k: "COMPONENTES", v: "GATEWAY · ENTITLEMENTS · PORTAL" },
-      { k: "ESTADO", v: "GATEWAY DE STAGING OPERATIVO" },
+      { k: "ESTADO", v: "EN CONSTRUCCIÓN · ENTITLEMENTS V1 EN STAGING" },
       { k: "DESPLIEGUE", v: "INFRAESTRUCTURA PROPIA" },
     ]}
   />
@@ -78,7 +78,7 @@ import CTABand from "../components/CTABand.astro";
         <FeatureCard
           kicker="CAMARA"
           title="Quality on Demand"
-          body="Calidad de red garantizada para una sesión, bajo contrato y con medición."
+          body="Calidad de red solicitada para una sesión, bajo contrato y con medición. La implementación la aporta el operador."
         />
         <FeatureCard
           kicker="CAMARA"
@@ -112,7 +112,7 @@ import CTABand from "../components/CTABand.astro";
         <FeatureCard
           kicker="Componente 03"
           title="Portal de developers"
-          body="La experiencia: referencia de la API, claves de entorno y try-it. La superficie técnica de esta plataforma."
+          body="La experiencia: la referencia de la API, ya pública en mobiconnect.dev. Las claves de entorno llegan con la consola del portal."
           href="/developers"
           cta="Ir al portal"
         />
@@ -129,8 +129,8 @@ import CTABand from "../components/CTABand.astro";
       <div class="grid grid--2">
         <FeatureCard
           highlight={true}
-          title="Hoy: gateway de staging operativo."
-          body="El servidor de Entitlements corre en staging con su superficie alineada a CAMARA; el portal de developers está diseñado y en construcción — referencia, claves de prueba y try-it."
+          title="Hoy: Entitlements v1 en staging."
+          body="El servidor de Entitlements corre en staging, detrás de su gateway, con su documentación pública en mobiconnect.dev. La exposición de APIs de red sobre él está en construcción."
         />
         <FeatureCard
           title="En camino: conformidad CAMARA."
