@@ -35,7 +35,7 @@ const t = es.home;
   <section class="section section--rule" id="productos">
     <div class="container">
       <SectionHeader eyebrow={t.products.eyebrow} title={t.products.title} lede={t.products.lede} />
-      <div class="grid grid--2">
+      <div class="grid grid--2 products-grid">
         {
           t.products.items.map((item) => (
             <FeatureCard
@@ -78,6 +78,11 @@ const t = es.home;
 </Base>
 
 <style>
+  /* Número impar de productos: el último (segunda línea) ocupa la fila completa. */
+  .products-grid > :global(:last-child:nth-child(odd)) {
+    grid-column: 1 / -1;
+  }
+
   .thesis-grid {
     display: grid;
     grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
