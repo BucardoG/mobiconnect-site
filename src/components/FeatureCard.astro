@@ -1,6 +1,7 @@
 ---
 // FeatureCard — tarjeta con hairline, kicker mono, puntos y CTA opcional.
 interface Props {
+  icon?: string;
   kicker?: string;
   title: string;
   body: string;
@@ -10,10 +11,11 @@ interface Props {
   highlight?: boolean;
 }
 
-const { kicker, title, body, points, href, cta, highlight = false } = Astro.props;
+const { icon, kicker, title, body, points, href, cta, highlight = false } = Astro.props;
 ---
 
 <article class:list={["fcard", { "fcard--highlight": highlight }]}>
+  {icon && <div class="fcard-icon" aria-hidden="true" set:html={icon} />}
   {kicker && <p class="fcard-kicker mono">{kicker}</p>}
   <h3>{title}</h3>
   <p>{body}</p>
@@ -47,6 +49,23 @@ const { kicker, title, body, points, href, cta, highlight = false } = Astro.prop
 
   .fcard--highlight {
     border-color: var(--signal);
+  }
+
+  .fcard-icon {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 0.25rem;
+  }
+
+  .fcard-icon :global(svg) {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  /* El ícono se dibuja en una celda de 200; el trazo se mantiene en 1.5 px reales al reducirlo. */
+  .fcard-icon :global(svg *) {
+    vector-effect: non-scaling-stroke;
   }
 
   .fcard-kicker {

@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 520" fill="none" role="img" aria-labelledby="t" aria-describedby="d">
+  <title id="t">One response, two readers</title>
+  <desc id="d">Mobiconnect Entitlements JSON response annotated with a deterministic allow or deny decision, deny-by-default, a reason from a closed enum, remaining quota, plan and price reference. An app and an AI agent read the same response.</desc>
+  <defs>
+    <marker id="v5-arrow" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1L6 3.5L1 6" stroke="#0f766e" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+
+  <text x="48" y="36" fill="#78716c" font-family="IBM Plex Mono, ui-monospace, monospace" font-size="11" letter-spacing="1.6">ENTITLEMENTS · RESPONSE</text>
+  <text x="48" y="60" fill="#0a0a0a" font-family="Inter, -apple-system, Segoe UI, sans-serif" font-size="24" font-weight="600" letter-spacing="-0.5">One response, two readers</text>
+  <path d="M48 80H912" stroke="#e7e5e4" stroke-width="1"/>
+
+  <rect x="48" y="108" width="712" height="388" rx="10" fill="#ffffff" stroke="#d6d3d1" stroke-width="1.25"/>
+  <text x="64" y="134" fill="#78716c" font-family="IBM Plex Mono, ui-monospace, monospace" font-size="11">POST /v1/entitlements/check → 200</text>
+  <path d="M48 148H760M296 164V480" stroke="#e7e5e4" stroke-width="1"/>
+  <rect x="60" y="188" width="224" height="36" rx="6" fill="#f0fdfa"/>
+
+  <g font-family="IBM Plex Mono, ui-monospace, monospace" font-size="15">
+    <text x="64" y="176" fill="#78716c">{</text>
+    <text x="76" y="210"><tspan fill="#0a0a0a">"allow"</tspan><tspan fill="#78716c">: </tspan><tspan fill="#0f766e" font-weight="600">true</tspan><tspan fill="#78716c">,</tspan></text>
+    <text x="76" y="266"><tspan fill="#0a0a0a">"reason"</tspan><tspan fill="#78716c">: </tspan><tspan fill="#0f766e">"ok"</tspan><tspan fill="#78716c">,</tspan></text>
+    <text x="76" y="322"><tspan fill="#0a0a0a">"remaining_quota"</tspan><tspan fill="#78716c">: </tspan><tspan fill="#0a0a0a">978</tspan><tspan fill="#78716c">,</tspan></text>
+    <text x="76" y="378"><tspan fill="#0a0a0a">"plan_id"</tspan><tspan fill="#78716c">: </tspan><tspan fill="#57534e">"…"</tspan><tspan fill="#78716c">,</tspan></text>
+    <text x="76" y="434"><tspan fill="#0a0a0a">"price_ref"</tspan><tspan fill="#78716c">: </tspan><tspan fill="#57534e">"…"</tspan></text>
+    <text x="64" y="476" fill="#78716c">}</text>
+  </g>
+
+  <g stroke="#d6d3d1" stroke-width="1" stroke-linecap="round">
+    <path d="M296 206H306M306 202V210"/>
+    <path d="M296 262H306M306 258V266"/>
+    <path d="M296 318H306M306 314V322"/>
+    <path d="M296 374H306M306 370V378"/>
+    <path d="M296 430H306M306 426V434"/>
+  </g>
+  <g fill="#0a0a0a" font-family="Inter, -apple-system, Segoe UI, sans-serif" font-size="12" font-weight="600">
+    <text x="318" y="210">deterministic decision</text>
+    <text x="318" y="266">reason from a closed enum</text>
+    <text x="318" y="322">remaining quota</text>
+    <text x="318" y="378">plan</text>
+    <text x="318" y="434">price reference</text>
+  </g>
+  <g fill="#57534e" font-family="IBM Plex Mono, ui-monospace, monospace" font-size="11">
+    <text x="318" y="228">allow / deny · deny-by-default</text>
+    <text x="318" y="284">ok · no_subscription · suspended · scope_denied · quota_exceeded</text>
+    <text x="318" y="340">units available</text>
+    <text x="318" y="396">plan_id</text>
+    <text x="318" y="452">price_ref</text>
+  </g>
+
+  <g stroke="#0f766e" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M760 310H780M780 238V382"/>
+    <path d="M780 238H800" marker-end="url(#v5-arrow)"/>
+    <path d="M780 382H800" marker-end="url(#v5-arrow)"/>
+  </g>
+  <circle cx="780" cy="310" r="3" fill="#0f766e"/>
+  <rect x="800" y="204" width="112" height="68" rx="8" fill="#f0fdfa" stroke="#0f766e" stroke-width="1.25"/>
+  <rect x="800" y="348" width="112" height="68" rx="8" fill="#f0fdfa" stroke="#0f766e" stroke-width="1.25"/>
+  <g fill="#115e59" font-family="Inter, -apple-system, Segoe UI, sans-serif" font-size="16" font-weight="500" text-anchor="middle">
+    <text x="856" y="244">app</text>
+    <text x="856" y="388">AI agent</text>
+  </g>
+</svg>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="30 30 140 140" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" role="img" aria-labelledby="icon-5-title">
+  <title id="icon-5-title">People</title>
+  <g id="icon-5">
+    <g stroke="#0a0a0a">
+      <circle cx="70" cy="72" r="12"/>
+      <path d="M46 140V108C46 95 58 84 70 84C82 84 94 95 94 108V140Z"/>
+      <path d="M94 114H112.5"/>
+    </g>
+    <g stroke="#0f766e">
+      <rect x="118" y="60" width="24" height="24" rx="6"/>
+      <path d="M126 70V74M134 70V74"/>
+      <path d="M120 84H140L154 140H106Z"/>
+      <path d="M120 112V128M130 106V134M140 112V128"/>
+    </g>
+  </g>
+</svg>

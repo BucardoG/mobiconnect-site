@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 480" fill="none" role="img" aria-labelledby="t" aria-describedby="d">
+  <title id="t">Del documento comercial al contrato legible por máquina</title>
+  <desc id="d">Un contrato comercial en PDF, de interpretación humana, se transforma en un objeto estructurado que se evalúa en cada llamada. Las filas muestran plan, scope, cuota, periodo y price_ref con valores de plantilla, y fail_mode cerrado: sin decisión, la respuesta es 503 y no se sirve la llamada. La regla inferior representa cada consumo medido contra el contrato.</desc>
+
+  <text x="72" y="36" fill="#78716c" font-family="IBM Plex Mono, ui-monospace, monospace" font-size="11" letter-spacing="1.4">ENTITLEMENTS · CONTRATO COMERCIAL</text>
+  <text x="72" y="64" fill="#0a0a0a" font-family="Inter, -apple-system, Segoe UI, sans-serif" font-size="22" font-weight="600">El contrato, legible por máquina</text>
+  <path d="M72 80H888" stroke="#e7e5e4" stroke-width="1"/>
+
+  <g font-family="Inter, -apple-system, Segoe UI, sans-serif">
+    <text x="98" y="112" fill="#57534e" font-size="15">PDF · interpretación humana</text>
+    <text x="426" y="112" fill="#0a0a0a" font-size="17" font-weight="600">Contrato legible por máquina</text>
+    <text x="426" y="134" fill="#57534e" font-size="13">se evalúa en cada llamada</text>
+  </g>
+
+  <path d="M106 146H248L278 176V366C278 370.4 274.4 374 270 374H106C101.6 374 98 370.4 98 366V154C98 149.6 101.6 146 106 146Z" fill="#ffffff" stroke="#d6d3d1" stroke-width="1.2" stroke-linejoin="round"/>
+  <path d="M248 146V170C248 173.3 250.7 176 254 176H278" stroke="#d6d3d1" stroke-width="1.2"/>
+  <g fill="#e7e5e4">
+    <rect x="122" y="184" width="91" height="6" rx="2"/>
+    <rect x="122" y="210" width="132" height="4" rx="2"/>
+    <rect x="122" y="221" width="119" height="4" rx="2"/>
+    <rect x="122" y="232" width="130" height="4" rx="2"/>
+    <rect x="122" y="243" width="74" height="4" rx="2"/>
+    <rect x="122" y="267" width="126" height="4" rx="2"/>
+    <rect x="122" y="278" width="132" height="4" rx="2"/>
+    <rect x="122" y="289" width="100" height="4" rx="2"/>
+    <rect x="122" y="313" width="132" height="4" rx="2"/>
+    <rect x="122" y="324" width="116" height="4" rx="2"/>
+    <rect x="122" y="335" width="128" height="4" rx="2"/>
+    <rect x="122" y="346" width="65" height="4" rx="2"/>
+  </g>
+
+  <rect x="426" y="146" width="462" height="228" rx="8" fill="#ffffff" stroke="#d6d3d1" stroke-width="1.2"/>
+  <path d="M278 260H426M418 255L426 260L418 265" stroke="#0f766e" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M450 184H864M450 222H864M450 260H864M450 298H864M450 336H864" stroke="#e7e5e4" stroke-width="1"/>
+
+  <g font-family="IBM Plex Mono, ui-monospace, monospace" font-size="15">
+    <g fill="#0a0a0a">
+      <text x="450" y="171">plan</text>
+      <text x="450" y="209">scope</text>
+      <text x="450" y="247">cuota</text>
+      <text x="450" y="285">periodo</text>
+      <text x="450" y="323">price_ref</text>
+      <text x="450" y="361">fail_mode</text>
+    </g>
+    <g fill="#57534e">
+      <text x="582" y="171">…</text>
+      <text x="582" y="209">…</text>
+      <text x="582" y="247">…</text>
+      <text x="582" y="285">…</text>
+      <text x="582" y="323">…</text>
+    </g>
+    <text x="582" y="361" fill="#0f766e">closed</text>
+  </g>
+  <rect x="664" y="342" width="200" height="26" rx="6" fill="#f0fdfa" stroke="#0f766e" stroke-width="1"/>
+  <text x="764" y="360" text-anchor="middle" fill="#115e59" font-family="IBM Plex Mono, ui-monospace, monospace" font-size="13">sin decisión → 503</text>
+
+  <path d="M72 418H888" stroke="#d6d3d1" stroke-width="1"/>
+  <g stroke="#0f766e" stroke-width="1.5" stroke-linecap="round">
+    <path d="M112 414V422M176 410V426M240 413V423M304 408V428M368 414V422M432 411V425M496 406V430M560 412V424M624 409V427M688 414V422M752 411V425M816 408V428M880 413V423"/>
+  </g>
+  <text x="480" y="454" text-anchor="middle" fill="#57534e" font-family="Inter, -apple-system, Segoe UI, sans-serif" font-size="15">cada consumo, medido contra el contrato</text>
+</svg>

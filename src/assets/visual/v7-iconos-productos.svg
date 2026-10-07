@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 200" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" role="img" aria-labelledby="t" aria-describedby="d">
+  <title id="t">Íconos de productos Mobiconnect</title>
+  <desc id="d">Cinco íconos lineales en celdas independientes: Entitlements como compuerta con muestras, salida allow en teal y salida deny hueca en tinta con tope; Plataforma de APIs como un nodo central conectado a cuatro satélites y una onda; Open Finance como dos bloques unidos por un arco con tres muestras; Number Intelligence como una retícula de nueve puntos junto a una lupa que no los oculta; People como una silueta humana y un agente trapezoidal conectados.</desc>
+
+  <g id="icon-1">
+    <g stroke="#0a0a0a">
+      <rect x="82" y="58" width="36" height="84" rx="8"/>
+      <path d="M44 100H118M118 121H150"/>
+      <circle cx="154" cy="121" r="4"/>
+      <path d="M154 125V144M148 144H159"/>
+    </g>
+    <g stroke="#0f766e">
+      <path d="M52 94V106M62 88V112M72 94V106"/>
+      <path d="M118 79H150M144 74L150 79L144 84"/>
+      <circle cx="154" cy="79" r="4" fill="#0f766e"/>
+    </g>
+  </g>
+
+  <g id="icon-2" transform="translate(200 0)">
+    <g stroke="#0a0a0a">
+      <path d="M92.9289 92.9289L62.9497 62.9497M107.0711 92.9289L137.0503 62.9497M92.9289 107.0711L62.9497 137.0503M107.0711 107.0711L137.0503 137.0503"/>
+      <circle cx="100" cy="100" r="10"/>
+      <circle cx="58" cy="58" r="7"/>
+      <circle cx="142" cy="58" r="7"/>
+      <circle cx="58" cy="142" r="7"/>
+      <circle cx="142" cy="142" r="7"/>
+    </g>
+    <path d="M80 73Q100 53 120 73" stroke="#0f766e"/>
+  </g>
+
+  <g id="icon-3" transform="translate(400 0)">
+    <g stroke="#0a0a0a">
+      <rect x="44" y="90" width="28" height="56" rx="6"/>
+      <rect x="128" y="90" width="28" height="56" rx="6"/>
+    </g>
+    <g stroke="#0f766e">
+      <path d="M72 104Q100 12 128 104"/>
+      <path d="M86 69.5V77.5M100 58V68M114 69.5V77.5"/>
+    </g>
+  </g>
+
+  <g id="icon-4" transform="translate(600 0)">
+    <g stroke="#0f766e" fill="#0f766e">
+      <circle cx="52" cy="60" r="2.5"/>
+      <circle cx="72" cy="60" r="2.5"/>
+      <circle cx="92" cy="60" r="2.5"/>
+      <circle cx="52" cy="80" r="2.5"/>
+      <circle cx="72" cy="80" r="2.5"/>
+      <circle cx="92" cy="80" r="2.5"/>
+      <circle cx="52" cy="100" r="2.5"/>
+      <circle cx="72" cy="100" r="2.5"/>
+      <circle cx="92" cy="100" r="2.5"/>
+    </g>
+    <g stroke="#0a0a0a">
+      <circle cx="120" cy="106" r="23"/>
+      <path d="M136.2635 122.2635L155 141"/>
+    </g>
+  </g>
+
+  <g id="icon-5" transform="translate(800 0)">
+    <g stroke="#0a0a0a">
+      <circle cx="70" cy="72" r="12"/>
+      <path d="M46 140V108C46 95 58 84 70 84C82 84 94 95 94 108V140Z"/>
+      <path d="M94 114H112.5"/>
+    </g>
+    <g stroke="#0f766e">
+      <rect x="118" y="60" width="24" height="24" rx="6"/>
+      <path d="M126 70V74M134 70V74"/>
+      <path d="M120 84H140L154 140H106Z"/>
+      <path d="M120 112V128M130 106V134M140 112V128"/>
+    </g>
+  </g>
+</svg>
