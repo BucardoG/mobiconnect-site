@@ -72,7 +72,7 @@ import CTABand from "../components/CTABand.astro";
       />
       <Steps
         steps={[
-          { n: "01", title: "Verificar el número", body: "La app del banco confirma, con la red, que el número que inicia la operación es el del dispositivo — sin códigos por SMS que se puedan interceptar." },
+          { n: "01", title: "Verificar el número", body: "La app del banco confirma, con la red, que el número que inicia la operación es el del dispositivo, sin códigos que se puedan interceptar." },
           { n: "02", title: "Detectar el cambio de SIM", body: "Antes de una transferencia sensible, consulta si la SIM cambió recientemente: la señal clásica de una toma de cuenta." },
           { n: "03", title: "Decidir con contrato", body: "Cada consulta pasa por Entitlements: el banco tiene un plan, una cuota y un precio. Sin derecho, la respuesta es allow:false, explícita y trazable." },
           { n: "04", title: "Medir y conciliar", body: "Cada consulta queda medida con su precio congelado y su x-correlator: el operador cobra lo que vendió y el banco paga lo que consumió." },
@@ -100,7 +100,7 @@ import CTABand from "../components/CTABand.astro";
         />
         <FeatureCard
           title="Estándar antes que invento."
-          body="Interfaces CAMARA, errores tipados, trazabilidad de extremo a extremo y versionado explícito. Sin dialectos propios que encierren al cliente."
+          body="El diseño sigue las interfaces CAMARA y su modelo común de errores, trazabilidad y versionado. Sin dialectos propios que encierren al cliente."
         />
         <FeatureCard
           title="Estado honesto: en diseño."

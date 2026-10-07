@@ -68,7 +68,7 @@ import CTABand from "../../components/CTABand.astro";
       />
       <Steps
         steps={[
-          { n: "01", title: "Verify the number", body: "The bank's app confirms with the network that the number starting the operation belongs to the device — no interceptable SMS codes." },
+          { n: "01", title: "Verify the number", body: "The bank's app confirms with the network that the number starting the operation belongs to the device, with no interceptable codes." },
           { n: "02", title: "Detect the SIM change", body: "Before a sensitive transfer, it checks whether the SIM changed recently: the classic signal of an account takeover." },
           { n: "03", title: "Decide by contract", body: "Every query goes through Entitlements: the bank has a plan, a quota and a price. Without the right, the answer is allow:false — explicit and traceable." },
           { n: "04", title: "Meter and reconcile", body: "Every query is metered with its frozen price and its x-correlator: the operator charges for what it sold, and the bank pays for what it consumed." },
@@ -96,7 +96,7 @@ import CTABand from "../../components/CTABand.astro";
         />
         <FeatureCard
           title="Standard before invention."
-          body="CAMARA interfaces, typed errors, end-to-end traceability and explicit versioning. No proprietary dialects that lock the customer in."
+          body="The design follows CAMARA interfaces and their common error, traceability and versioning model. No proprietary dialects that lock the customer in."
         />
         <FeatureCard
           title="Honest status: in design."

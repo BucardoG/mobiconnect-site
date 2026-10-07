@@ -50,7 +50,7 @@ export const es = {
     hero: {
       eyebrow: "Entitlements · APIs para Telco y Open Finance",
       title: "La capa de inteligencia del operador soberano.",
-      sub: "El estándar resuelve la interfaz de una API. Mobiconnect resuelve el contrato: quién puede consumir, cuánto, a qué precio y con qué medición auditable — para las APIs de red (CAMARA) y las de finanzas abiertas, sobre infraestructura soberana.",
+      sub: "El estándar resuelve la interfaz de una API. Mobiconnect resuelve el contrato: quién puede consumir, cuánto, a qué precio y con qué medición auditable, legible por personas, aplicaciones y agentes AI — para las APIs de red (CAMARA) y las de finanzas abiertas, sobre infraestructura soberana.",
       ctaPrimary: { label: "Conversar con el fundador", href: "/contact" },
       ctaSecondary: { label: "Ver Entitlements", href: "/products/entitlements" },
       panelLabel: "Ficha del sistema",
@@ -67,7 +67,7 @@ export const es = {
       title: "El margen y el control no se regalan: se construyen.",
       body: [
         "El grupo construyó su propia operación de telecomunicaciones — presencia en siete países — y recuperó su infraestructura sobre hardware propio. Ese control no se delega: es la condición de partida.",
-        "La década que viene se trata de exponer: verificar un número, detectar un cambio de SIM, compartir datos financieros con consentimiento — todo como API estándar. Quien controle el contrato de esas APIs controlará el margen. Mobiconnect construye esa capa, con la disciplina de ingeniería de un carrier y el ritmo de una casa de software.",
+        "La década que viene se trata de exponer: verificar un número, detectar un cambio de SIM, compartir datos financieros con consentimiento — todo como API estándar. Y, cada vez más, quien consume esas APIs también es un agente AI, que necesita un contrato legible por máquina antes de cada llamada. Quien controle ese contrato controlará el margen. Mobiconnect construye esa capa, con la disciplina de ingeniería de un carrier y el ritmo de una casa de software.",
       ],
     },
     products: {
@@ -80,7 +80,7 @@ export const es = {
           title: "Entitlements",
           body: "La capa comercial de las APIs: planes, cuotas, licencias de uso, precio congelado y medición auditable — para quien vende una API como producto.",
           points: [
-            "Planes, SKUs y cuotas por contrato",
+            "Planes, permisos y cuotas por contrato",
             "Decisión allow/deny con fail-closed explícito",
             "Medición asíncrona, reproducible y facturable",
           ],
@@ -126,7 +126,7 @@ export const es = {
         {
           kicker: "P·05 · SEGUNDA LÍNEA",
           title: "People",
-          body: "Un sistema de RR.HH. diseñado desde cero para equipos híbridos: personas y agentes AI en el mismo registro, medidos por resultados — no por actividad.",
+          body: "Un sistema de desempeño diseñado desde cero para equipos híbridos: personas y agentes AI en el mismo registro, medidos por resultados, no por actividad.",
           points: [
             "Personas y agentes en un solo registro",
             "Los agentes proponen, los humanos deciden",
@@ -158,7 +158,7 @@ export const es = {
     hero: {
       eyebrow: "P·01 · Núcleo",
       title: "Entitlements",
-      sub: "La capa comercial de las APIs: planes, cuotas, licencias de uso y medición para quien vende una API como producto: operadores, bancos, fintech y plataformas. Superficie alineada a CAMARA (GSMA).",
+      sub: "La capa comercial de las APIs: planes, cuotas, licencias de uso y medición para quien vende una API como producto: operadores, bancos, fintech y plataformas. API Ready por diseño: contrato documentado, razones de decisión en un enum cerrado y respuestas deterministas, pensadas para que también las consuma un agente AI. La especificación OpenAPI está en camino. Superficie alineada a CAMARA (GSMA).",
       ctaPrimary: { label: "Hablar de Entitlements", href: "/contact" },
       ctaSecondary: { label: "Ver la documentación", href: "https://mobiconnect.dev" },
       panelLabel: "Ficha de producto",
@@ -176,7 +176,7 @@ export const es = {
       items: [
         {
           kicker: "C·01",
-          title: "Planes y SKUs",
+          title: "Catálogo de planes",
           body: "Catálogo comercial sobre la API: segmentos, unidades y matrices de planes por contrato, sin rediseñar el backend por cada cambio comercial.",
         },
         {
@@ -191,13 +191,13 @@ export const es = {
         },
         {
           kicker: "C·04",
-          title: "Feature flags",
-          body: "Activa funcionalidad por plan, por tenant o por mercado, sin desplegar código nuevo ni coordinar ventanas de mantenimiento.",
+          title: "Pensado para agentes AI",
+          body: "Cada decisión es determinista y legible por máquina: permiso, cuota restante, referencia de precio y razón del rechazo. Está pensada para que un agente AI la consuma sin salir del contrato.",
         },
         {
           kicker: "C·05",
-          title: "Trials y upgrades",
-          body: "Pruebas, escalas de plan y downgrades como operaciones de primera clase — no como excepciones que el equipo de ingeniería teme.",
+          title: "Idempotencia y fail-closed",
+          body: "La idempotencia controla los reintentos: ningún consumo se cobra dos veces. Si no se puede decidir, no se sirve: la incertidumbre no concede acceso.",
         },
         {
           kicker: "C·06",
@@ -223,7 +223,7 @@ export const es = {
         {
           n: "03",
           title: "Crece sin rediseñar",
-          body: "Nuevos planes, mercados o SKUs son cambios de catálogo, no de arquitectura. El negocio cambia a la velocidad del contrato.",
+          body: "Nuevos planes, mercados o capacidades son cambios de catálogo, no de arquitectura. Cada consumo se evalúa contra ese contrato explícito.",
         },
       ],
     },
@@ -246,7 +246,7 @@ export const es = {
       items: [
         {
           q: "¿Qué es exactamente un entitlement server?",
-          a: "La capa que decide qué puede consumir cada cliente de una API, en qué cantidad y bajo qué plan. Es la diferencia entre exponer un servicio y venderlo como producto.",
+          a: "La capa que decide qué puede consumir cada cliente de una API, en qué cantidad y bajo qué plan. Es la diferencia entre exponer un servicio y venderlo como producto. Para un agente AI, además, es lo que convierte cada llamada en una decisión explícita sobre la que puede actuar.",
         },
         {
           q: "¿Para quién está pensado?",
@@ -280,7 +280,7 @@ export const es = {
     hero: {
       eyebrow: "P·05 · Segunda línea",
       title: "People",
-      sub: "Un sistema de RR.HH. diseñado desde cero para equipos híbridos: personas y agentes AI en el mismo registro, con reglas claras — se miden resultados, no actividad.",
+      sub: "Un sistema de desempeño diseñado desde cero para equipos híbridos: personas y agentes AI en el mismo registro, con reglas claras: se miden resultados, no actividad.",
       ctaPrimary: { label: "Hablar de People", href: "/contact" },
       ctaSecondary: { label: "Ver Entitlements", href: "/products/entitlements" },
       panelLabel: "Ficha de producto",
@@ -358,8 +358,8 @@ export const es = {
           a: "Con disciplina laboral, sí: resultados definidos por rol, señales de trabajo real y revisión humana.",
         },
         {
-          q: "¿Reemplaza a RR.HH.?",
-          a: "No. Ordena la conversación: RR.HH. define los criterios y decide; People mide, recuerda y presenta la evidencia.",
+          q: "¿Reemplaza al área de personas?",
+          a: "No. Ordena la conversación: el área de personas define los criterios y decide; People mide, recuerda y presenta la evidencia.",
         },
         {
           q: "¿Qué significa “equipo híbrido”?",
